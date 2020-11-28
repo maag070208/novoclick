@@ -2,6 +2,12 @@
     background: linear-gradient(to right, #000, #081f31, #0e3555, #164769, #4bbbe8);
     height: 90px;
 }
-.navbarText{
-    color: #FFFFFF;
+.container-hamburger {
+    position: relative;
+    top: 5px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    margin-left: 40px;
+    margin-bottom: 5px;
 }

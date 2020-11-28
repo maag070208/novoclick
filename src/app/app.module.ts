@@ -1,3 +1,4 @@
+import { HamburgerComponent } from './component/hamburger/hamburger.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -35,7 +36,8 @@ import { FooterComponent } from './component/home/footer/footer.component';
     AcademyComponent,
     BlogComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    HamburgerComponent
   ],
   imports: [
     BrowserModule,
