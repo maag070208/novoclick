@@ -1,9 +1,9 @@
+import { HamburgerComponent } from './component/hamburger/hamburger.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
 import { NavbarComponent } from './component/navbar/navbar.component';
 import { StartComponent } from './component/home/start/start.component';
 import { AboutUsComponent } from './component/home/about-us/about-us.component';
@@ -19,7 +19,6 @@ import { AcademyComponent } from './component/home/academy/academy.component';
 import { BlogComponent } from './component/home/blog/blog.component';
 import { ContactComponent } from './component/home/contact/contact.component';
 import { FooterComponent } from './component/home/footer/footer.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +36,8 @@ import { FooterComponent } from './component/home/footer/footer.component';
     AcademyComponent,
     BlogComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    HamburgerComponent
   ],
   imports: [
     BrowserModule,
