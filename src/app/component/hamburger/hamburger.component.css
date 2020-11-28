@@ -1,209 +1,160 @@
-:root {
-  --primary-color: rgba(1, 79, 248, 0.6);
-  --secondary-color: rgba(255, 168, 7, 0.795);
-  --overlay-color: rgba(0, 0, 0, 0.7)
+section {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.2;
-}
-
-h1,
-h2,
-h3 {
-  padding: 1rem 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-.conatainer {
-  display: block;
-  margin: auto;
-  max-width: 960px;
-}
-
-.showcase {
-  height: 100vh;
-  background-color: var(--primary-color);
-  color: #fff;
+section h1 {
+  font-size: 46px;
   text-align: center;
+}
+
+section p {
+  font-size: 26px;
+  text-align: center;
+}
+
+/* hamburger */
+.checkbox {
+  display: none;
+}
+
+.button {
   position: relative;
+  background-color: white;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  position: fixed;
+  right: 5vw; 
+  margin-right: -4.5%;
+  z-index: 2000;
+  box-shadow: 0 1rem 3rem black;
+  text-align: center; 
+  cursor: pointer;
 }
 
-.showcase:before {
-  content: '';
-  background: url('https://res.cloudinary.com/dnuoffzlr/image/upload/v1601075572/entertainment1.jpg') no-repeat center center/cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
+.background {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  position: fixed;
+  right: 5.5vw; 
+  margin-right: -5%;
+  background: linear-gradient(to top, #4b4949, #081f31, #0e3555, #164769, #4bbbe8);
+  z-index: 1000;
+  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
-.showcase-content {
-  display: flex;
-  flex-direction: column;
+.nav {
   height: 100vh;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-.showcase-content h1 {
-  font-size: 2.5rem;
-}
-
-.showcase-content p {
-  font-size: 1.2rem;
-}
-
-.btn {
-  background-color: var(--secondary-color);
-  color: #fff;
-  text-align: center;
-  padding: 0.7rem 1.2rem;
-  display: inline-block;
-  margin-top: 1rem;
-}
-
-/* menu styling */
-.menu-wrap {
   position: fixed;
   top: 0;
-  left: 0;
-  z-index: 2;
-}
-
-.menu-wrap .toggler {
-  position: absolute;
-  width: 50px;
-  height: 50px;
+  right: -60vw;
+  z-index: 1500;
   opacity: 0;
-  top: 0;
+  width: 0;
+  transition: all 0.8s;
+}
+
+.list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+  width: 100%;
+}
+
+.item {
+  margin: 1rem;
+  font-size: 36px;
+}
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 300;
+  padding: 1rem 2rem;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    120deg,
+    transparent 0%,
+    transparent 50%,
+    white 50%
+  );
+  background-size: 220%;
+  transition: all 0.4s;
+}
+
+.link:hover,
+.link:active {
+  color: lightgreen;
+  cursor: pointer;
+}
+
+/* functionality */
+.checkbox:checked ~ .background {
+  transform: scale(80);
+}
+.checkbox:checked ~ .nav {
+  opacity: 1;
+  width: 100%;
+  right: 0;
+}
+
+/*  */
+/* styling hamb ICON */
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon,
+.icon::before,
+.icon::after {
+  width: 3rem;
+  height: 2px;
+  background-color: gray;
+  display: inline-block;
+}
+
+.icon::before,
+.icon::after {
+  content: "";
+  position: absolute;
   left: 0;
-  z-index: 2;
+  transition: all 0.2s;
 }
 
-.menu-wrap .hamburger {
-  position: absolute;
-  display: flex;
-  width: 60px;
-  height: 60px;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  z-index: 1;
-  background-color: var(--secondary-color);
+.icon::before {
+  top: -0.8rem;
+}
+.icon::after {
+  top: 0.8rem;
 }
 
-.menu-wrap .hamburger>div {
-  transition: all 0.4s ease-in;
-  position: relative;
-  width: 100%;
-  height: 2px;
-  background-color: #fff;
+.button:hover icon:before {
+  top: -1rem;
+}
+.button:hover icon::after {
+  top: 1rem;
 }
 
-.menu-wrap .hamburger>div::before,
-.menu-wrap .hamburger>div::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: #fff;
-  top: 10px;
+.checkbox:checked + .button .icon {
+  background-color: transparent;
 }
 
-.menu-wrap .hamburger>div::after {
-  top: -10px;
-}
-
-.menu-wrap .toggler:checked+.hamburger>div {
+.checkbox:checked + .button .icon::before {
+  top: 0;
   transform: rotate(135deg);
 }
-
-.menu-wrap .toggler:checked+.hamburger>div::before,
-.menu-wrap .toggler:checked+.hamburger>div:after {
-  transform: rotate(90deg);
+.checkbox:checked + .button .icon::after {
   top: 0;
-}
-
-.menu-wrap .toggler:checked:hover+.hamburger>div {
-  transform: rotate(225deg);
-}
-
-.menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  visibility: hidden;
-}
-
-
-/* overlay */
-
-.menu>div {
-  background-color: var(--overlay-color);
-  width: 200vw;
-  height: 200vw;
-  border-radius: 50%;
-  display: flex;
-  flex: none;
-  transform: scale(0);
-  transition: all 0.4s ease-in;
-  justify-content: center;
-  align-items: center;
-}
-
-.menu>div>div {
-  opacity: 0;
-  text-align: center;
-  height: 100vh;
-  width: 90vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: opacity 0.4s ease-in 0.4s;
-}
-
-.menu>div>div li {
-  list-style: none;
-  padding: 1rem;
-}
-
-.menu>div>div li a {
-  color: #fff;
-  transition: color 0.3s ease-in;
-  font-size: 1.3rem;
-}
-
-.menu>div>div li a:hover {
-  color: var(--secondary-color);
-}
-
-.menu-wrap .toggler:checked~.menu {
-  visibility: visible;
-}
-
-.menu-wrap .toggler:checked~.menu>div {
-  transform: scale(1);
-}
-
-.menu-wrap .toggler:checked~.menu>div>div {
-  opacity: 1;
+  transform: rotate(-135deg);
 }
