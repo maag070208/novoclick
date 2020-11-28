@@ -1,0 +1,24 @@
+.video{
+    margin-top: -22.5%;
+    width: -webkit-fill-available;
+ }
+
+@media (max-width: 600px) {
+    .video{
+        margin-top: -110%;
+        bottom: 0;
+        width: 500%;
+        left: 1px;
+     }
+ }
+ .contenedor-bienvenida {
+    display: flex;
+    position: absolute;
+    justify-content: flex-start;
+    margin-top: -25%;
+    margin-left: 3%;
+}
+.container-welcome {
+    position: relative;
+    margin-left: 25px;
+}
