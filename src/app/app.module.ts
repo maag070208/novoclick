@@ -4,9 +4,9 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { StartComponent } from './components/home/start/start.component';
-import { AboutUsComponent } from './componen/home/about-us/about-us.component';
+import { NavbarComponent } from './component/navbar/navbar.component';
+import { StartComponent } from './component/home/start/start.component';
+import { AboutUsComponent } from './component/home/about-us/about-us.component';
 import { WhatWeDoForYouComponent } from './component/home/what-we-do-for-you/what-we-do-for-you.component';
 import { ToolsComponent } from './component/home/tools/tools.component';
 import { DishesComponent } from './component/home/dishes/dishes.component';
