@@ -1,17 +1,16 @@
- <!-- hamburger -->
- <input type="checkbox" id="navi-toggle" class="checkbox" />
- <label for="navi-toggle" class="button">
-   <span class="icon">&nbsp;</span>
- </label>
- <div class="background">&nbsp;</div>
-
- <!-- nav -->
- <nav class="nav">
-   <ul class="list">
-     <li class="item"> <a class="link"> Link 1 </a> </li>
-     <li class="item"> <a class="link"> Link 2 </a> </li>
-     <li class="item"> <a class="link"> Link 4 </a> </li>
-     <li class="item"> <a class="link"> Link 5 </a> </li>
-     <li class="item"> <a class="link"> Link 6 </a> </li>
-   </ul>
+<div id="hamButtom" class="container-hamburger effect">
+  <i (click)="visibleClick()" class="fa fa-bars"></i>
+</div>
+<nav>
+      <a class="item1 px-2 disableHamItems" id="nosotros-1" href="#nosotros">
+          <p (click)="invisibleClick()" >Nosotros</p>
+      </a>
+ 
+      <a class="item2 px-2 disableHamItems"  id="herramientas-1" href="#herramientas">
+          <p (click)="invisibleClick()">Herramientas Digitales</p>
+      </a>
+    
+      <a class="item3 px-2 disableHamItems"  id="platos-digitales-1" href="#platos-digitales">
+          <p (click)="invisibleClick()">Platos Digitales</p>
+      </a>
 </nav>
