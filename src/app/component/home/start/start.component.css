@@ -1,24 +1,45 @@
 .video{
-    margin-top: -22.5%;
+    margin-top: 4.5%;
     width: -webkit-fill-available;
  }
+ .contenedor-bienvenida {
+    display: flex;
+    position: absolute;
+    justify-content: flex-start;
+    margin-top: -35%;
+    margin-left: 8%;
+}
+.container-welcome {
+    position: relative;
+    margin-left: 25px;
+}
+
+.boton{
+    cursor: pointer;
+    margin-top: 53%;
+    margin-left: -71%;
+    position: absolute;
+}
 
 @media (max-width: 600px) {
+    .contenedor-bienvenida {
+        display: flex;
+        position: absolute;
+        justify-content: flex-start;
+        margin-top: -94%;
+        margin-left: 105%;
+    }
     .video{
         margin-top: -110%;
         bottom: 0;
         width: 500%;
         left: 1px;
      }
+     .boton{
+        cursor: pointer;
+        margin-top: 53%;
+        margin-left: -71%;
+        position: absolute;
+    }
+    
  }
- .contenedor-bienvenida {
-    display: flex;
-    position: absolute;
-    justify-content: flex-start;
-    margin-top: -25%;
-    margin-left: 3%;
-}
-.container-welcome {
-    position: relative;
-    margin-left: 25px;
-}
