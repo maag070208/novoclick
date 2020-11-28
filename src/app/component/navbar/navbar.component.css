@@ -1,7 +1,8 @@
 .navbarCss{ 
     background: linear-gradient(to right, #000, #081f31, #0e3555, #164769, #4bbbe8);
-    height: 90px;
-   
+    height: 100px;
+    width: 100%;
+    position: fixed;
 }
 .container-hamburger {
     position: relative;
@@ -16,3 +17,11 @@
 .navbarText{
     margin-right: 7.5%;
 }
+
+@media screen and (max-width: 600px) {
+    .navbarCss{ 
+        background: linear-gradient(to right, #000, #081f31, #0e3555, #164769, #4bbbe8);
+        height: 150px;
+        
+    }
+  }
