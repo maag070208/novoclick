@@ -1,0 +1,7 @@
+.navbarCss{ 
+    background: linear-gradient(to right, #000, #081f31, #0e3555, #164769, #4bbbe8);
+    height: 90px;
+}
+.navbarText{
+    color: #FFFFFF;
+}
