@@ -1,0 +1,124 @@
+/* Footer */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#footer {
+    background: #ffffff !important;
+    margin-top: -1%;
+}
+#footer h5{
+	padding-left: 10px;
+    border-left: 3px solid;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+}
+#footer a {
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+	padding: 3px 0;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
+}
+
+#footer ul.quick-links li{
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:700;
+}
+#footer ul.quick-links li a i{
+	margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+@media (max-width:767px){
+	#footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+}
+h3.titulouno {
+    font-size: 90px;
+    color: #4ac3f2;
+    margin: 0;
+    margin-left: -15%;
+}
+
+h4#titulodos {
+    font-size: 80px;
+    color: #606060;
+    margin-top: -15px;
+    text-align: center;
+    margin-left: 23%;
+}
+p.line {
+    text-align: inherit;
+    font-weight: 900;
+    color: #4ac3f2;
+    margin-top: -6%;
+    margin-left: -15%;
+}
+
+.imgtomate{
+    margin-left: -109%;
+    margin-top: -45%;
+}
+.texttomato{
+    margin-top: -33%;
+    margin-left: 40%;
+    font-size: 20px;
+}
+.somos {
+    font-size: 25px;
+    text-align: left;
+    color: #000 !important;
+    text-align: left;
+    line-height: 1.7;
+}
+
+.img-avatar {
+    position: relative;
+}
+
+.text-avatar a {
+    color: #4bbbe8 !important;
+}
+.btn-avatar {
+    background-color: #074173;
+    font-size: 12px;
+    color: white;
+    border-radius: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.divsomos{
+
+}

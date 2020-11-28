@@ -19,13 +19,13 @@ section p {
 }
 
 .button {
-  position: relative;
+  position: relative !important;
   background-color: white;
   height: 4rem;
   width: 4rem;
   border-radius: 50%;
   position: fixed;
-  right: 5vw; 
+  right: 1vw; 
   margin-right: -4.5%;
   z-index: 2000;
   box-shadow: 0 1rem 3rem black;
@@ -38,7 +38,7 @@ section p {
   width: 4rem;
   border-radius: 50%;
   position: fixed;
-  right: 5.5vw; 
+  right: 1vw; 
   margin-right: -5%;
   background: linear-gradient(to top, #4b4949, #081f31, #0e3555, #164769, #4bbbe8);
   z-index: 1000;
