@@ -8,14 +8,14 @@
     display: flex;
     position: absolute;
     justify-content: flex-start;
-    margin-top: -35%;
+    margin-top: -48%;
     margin-left: 8%;
 }
 .container-welcome {
     position: relative;
     margin-left: 25px;
 }
-
+ 
 .boton{
     cursor: pointer;
     margin-top: 53%;

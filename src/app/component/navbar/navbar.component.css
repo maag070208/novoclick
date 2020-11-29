@@ -3,6 +3,7 @@
     height: 100px;
     width: 100%;
     position: fixed;
+    z-index: 9999;
 }
 .container-hamburger {
     position: relative;
