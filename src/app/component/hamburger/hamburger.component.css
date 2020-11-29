@@ -82,7 +82,12 @@ section p {
 .disableHamItems{
   display: none;
 }
-
+.itemx {
+  font-size: 4pc;
+  position: fixed;
+  margin-top: 69%;
+  margin-left: -60%;
+}
 .item1 {
   font-size: 4pc;
   position: fixed;
