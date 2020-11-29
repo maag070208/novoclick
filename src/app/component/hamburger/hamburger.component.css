@@ -85,8 +85,16 @@ section p {
 .itemx {
   font-size: 4pc;
   position: fixed;
-  margin-top: 69%;
-  margin-left: -60%;
+  margin-top: 27%;
+  margin-left: -54%;
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+}
+.itemx:hover{
+  cursor: default;
+  transform: rotate(360deg);
+  transition: all 0.3s ease-in-out 0s;
 }
 .item1 {
   font-size: 4pc;

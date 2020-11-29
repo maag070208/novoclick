@@ -15,12 +15,13 @@ export class HamburgerComponent implements OnInit {
   visible: String = 'false';
   
   visibleClick = () =>{
-     //Navbar Items
+     //Navbar Items closeHamburgerMenu
       let element = document.getElementById('hamButtom');
       let Nosotros = document.getElementById('nosotros-1');
       let Herramientas = document.getElementById('herramientas-1');
       let Platos = document.getElementById('platos-digitales-1');
-    
+      let CloseMenu = document.getElementById('closeHamburgerMenu');
+
       //Components
       let Start = document.getElementById('start');
       let About = document.getElementById('about-us');
@@ -30,7 +31,8 @@ export class HamburgerComponent implements OnInit {
       Nosotros.classList.replace('disableHamItems', 'item1');
       Herramientas.classList.replace('disableHamItems', 'item2');
       Platos.classList.replace('disableHamItems', 'item3');
-      
+      CloseMenu.classList.replace('disableHamItems', 'itemx');
+
       //Components
       Start.className = 'disableComponents';
       About.className = 'disableComponents';
@@ -42,6 +44,7 @@ export class HamburgerComponent implements OnInit {
       let Nosotros = document.getElementById('nosotros-1');
       let Herramientas = document.getElementById('herramientas-1');
       let Platos = document.getElementById('platos-digitales-1');
+      let CloseMenu = document.getElementById('closeHamburgerMenu');
 
       //Components
       let Start = document.getElementById('start');
@@ -52,7 +55,8 @@ export class HamburgerComponent implements OnInit {
       Nosotros.className = 'disableHamItems';
       Herramientas.className ='disableHamItems';
       Platos.className ='disableHamItems';
-      
+      CloseMenu.className ='disableHamItems';
+
       //Components
       Start.classList.replace('disableComponents', 'start');
       About.classList.replace('disableComponents', 'about');
