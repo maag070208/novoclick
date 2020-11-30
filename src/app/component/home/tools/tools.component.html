@@ -18,7 +18,7 @@
     <div id="carousel-example" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner row w-100 mx-auto" role="listbox">
 
-        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active noVisibleCard" >
+        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active  noVisibleCard">
           <div class="cardCarrousel">
             <div class="card rotate">
               <div >
@@ -31,7 +31,7 @@
           </div>
         </div>
 
-        <div *ngFor="let c of card; let i = index" class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+        <div id="slide" *ngFor="let c of card; let i = index" class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 " attr.data-interval="{{time}}">
         
           <div (click)="rotateCard(this.i)" id={{i}} class="card noRotate">
             <div class="on">
@@ -48,12 +48,13 @@
                {{c.description}}
               </p>
             </div>
+            
           </div>
         </div>
         
       </div>
       <a
-        class="carousel-control-prev invisible"
+        class="carousel-control-prev"
         href="#carousel-example"
         role="button"
         data-slide="prev"
@@ -62,7 +63,7 @@
         <span class="sr-only">Previous</span>
       </a>
       <a
-        class="carousel-control-next invisible"
+        class="carousel-control-next"
         href="#carousel-example"
         role="button"
         data-slide="next"

@@ -1,4 +1,5 @@
-import { element } from 'protractor';
+import * as $ from 'jquery';
+import 'jqueryui'
 import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-tools',
@@ -7,11 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToolsComponent implements OnInit {
 
-  constructor() { }
-  
-  ngOnInit(): void {
-    
+  constructor() { 
+   
   }
+  time = 1000;
+
+  ngOnInit(): void { 
+
+    setTimeout(()=>{ 
+        this.time = 500;
+        console.log(this.time);
+        
+        },1000);
+  }
+
+  
+    
 state: Boolean = false;
 
 card = [{
@@ -138,32 +150,21 @@ card = [{
     title: 'Zoom'
 }]
 
+oldId: Number = 0;
+
 rotateCard(id){
   let card = document.getElementById(id);
-    switch (this.state){
-      case false:
-        console.log('%c'+ this.state, 'color: green; font-size: 1.5em');
-        card = document.getElementById(id);
-        card.classList.replace('noRotate','rotate');
-        this.state = true;
-        console.log('%c'+ this.state, 'color: red; font-size: 1.5em');
-        console.log('%c'+ id, 'color: green; font-size: 1.5em');
-        break;
-
-      case true:
-        console.log('%c'+ this.state, 'color: green; font-size: 1.5em');
-        card = document.getElementById(id);
-        card.classList.replace('rotate','noRotate');
-        this.state = false;
-        console.log('%c'+ this.state, 'color: red; font-size: 1.5em');
-        console.log('%c'+ id, 'color: green; font-size: 1.5em');
-        break;
-    }
-
+  if(card.click){
+    card = document.getElementById(id);
+    card.classList.replace('noRotate','rotate');
+    this.oldId += id;
+    console.log(this.oldId);
   }
 
-  carrouselSlice(){
-      let carrousel = document.getElementById('');
-  }
+ setTimeout(()=>{ 
+  card.classList.replace('rotate','noRotate');
+  },3000);
+}
+
 
 }
