@@ -56,42 +56,53 @@ export class DishesComponent implements OnInit {
   plato3.classList.replace('contenedorPlatoActivo','contenedorPlato');
   plato3.classList.replace('plato3Active','plato3');
   pplato3.classList.replace('tituloPlato3','tituloPlato');
-    //4
-    let plato4 = document.getElementById('plato4');
-    let pplato4 = document.getElementById('pplato4');
-    plato4.classList.replace('contenedorPlatoActivo','contenedorPlato');
-    plato4.classList.replace('plato4Active','plato4');
-    pplato4.classList.replace('tituloPlato4','tituloPlato');
+  //4
+  let plato4 = document.getElementById('plato4');
+  let pplato4 = document.getElementById('pplato4');
+  plato4.classList.replace('contenedorPlatoActivo','contenedorPlato');
+  plato4.classList.replace('plato4Active','plato4');
+  pplato4.classList.replace('tituloPlato4','tituloPlato');
+  //5
+  let plato5 = document.getElementById('plato5');
+  let pplato5 = document.getElementById('pplato5');
+  plato5.classList.replace('contenedorPlatoActivo','contenedorPlato');
+  plato5.classList.replace('plato5Active','plato5');
+  pplato5.classList.replace('tituloPlato5','tituloPlato');
   }
 
   onSelectPlato2(){
-    let plato2 = document.getElementById('plato2');
-    let pplato2 = document.getElementById('pplato2');
-    plato2.classList.replace('contenedorPlato','contenedorPlatoActivo');
-    plato2.classList.replace('plato2','plato2Active');
-    pplato2.classList.replace('tituloPlato','tituloPlato2');
+  let plato2 = document.getElementById('plato2');
+  let pplato2 = document.getElementById('pplato2');
+  plato2.classList.replace('contenedorPlato','contenedorPlatoActivo');
+  plato2.classList.replace('plato2','plato2Active');
+  pplato2.classList.replace('tituloPlato','tituloPlato2');
 
     //Desactive other dishes
 
-    //1
-    let plato = document.getElementById('plato1');
-    let pplato1 = document.getElementById('pplato1');
-    plato.classList.replace('contenedorPlatoActivo','contenedorPlato');
-    plato.classList.replace('plato1Active','plato1');
-    pplato1.classList.replace('tituloPlato1','tituloPlato');
-
-    //3
-    let plato3 = document.getElementById('plato3');
-    let pplato3 = document.getElementById('pplato3');
-    plato3.classList.replace('contenedorPlatoActivo','contenedorPlato');
-    plato3.classList.replace('plato3Active','plato3');
-    pplato3.classList.replace('tituloPlato3','tituloPlato');
-      //4
-      let plato4 = document.getElementById('plato4');
-      let pplato4 = document.getElementById('pplato4');
-      plato4.classList.replace('contenedorPlatoActivo','contenedorPlato');
-      plato4.classList.replace('plato4Active','plato4');
-      pplato4.classList.replace('tituloPlato4','tituloPlato');
+  //1
+  let plato = document.getElementById('plato1');
+  let pplato1 = document.getElementById('pplato1');
+  plato.classList.replace('contenedorPlatoActivo','contenedorPlato');
+  plato.classList.replace('plato1Active','plato1');
+  pplato1.classList.replace('tituloPlato1','tituloPlato');
+  //3
+  let plato3 = document.getElementById('plato3');
+  let pplato3 = document.getElementById('pplato3');
+  plato3.classList.replace('contenedorPlatoActivo','contenedorPlato');
+  plato3.classList.replace('plato3Active','plato3');
+  pplato3.classList.replace('tituloPlato3','tituloPlato');
+  //4
+  let plato4 = document.getElementById('plato4');
+  let pplato4 = document.getElementById('pplato4');
+  plato4.classList.replace('contenedorPlatoActivo','contenedorPlato');
+  plato4.classList.replace('plato4Active','plato4');
+  pplato4.classList.replace('tituloPlato4','tituloPlato');
+  //5
+  let plato5 = document.getElementById('plato5');
+  let pplato5 = document.getElementById('pplato5');
+  plato5.classList.replace('contenedorPlatoActivo','contenedorPlato');
+  plato5.classList.replace('plato5Active','plato5');
+  pplato5.classList.replace('tituloPlato5','tituloPlato');
   }
 
   onSelectPlato3(){
@@ -109,16 +120,22 @@ export class DishesComponent implements OnInit {
     plato.classList.replace('contenedorPlatoActivo','contenedorPlato');
     plato.classList.replace('plato1Active','plato1');
     pplato1.classList.replace('tituloPlato1','tituloPlato');
-   //2
-   let plato2 = document.getElementById('plato2');
-   plato2.classList.replace('contenedorPlatoActivo','contenedorPlato');
-   plato2.classList.replace('plato2Active','plato2');
-     //4
-     let plato4 = document.getElementById('plato4');
-     let pplato4 = document.getElementById('pplato4');
-     plato4.classList.replace('contenedorPlatoActivo','contenedorPlato');
-     plato4.classList.replace('plato4Active','plato4');
-     pplato4.classList.replace('tituloPlato4','tituloPlato');
+    //2
+    let plato2 = document.getElementById('plato2');
+    plato2.classList.replace('contenedorPlatoActivo','contenedorPlato');
+    plato2.classList.replace('plato2Active','plato2');
+    //4
+    let plato4 = document.getElementById('plato4');
+    let pplato4 = document.getElementById('pplato4');
+    plato4.classList.replace('contenedorPlatoActivo','contenedorPlato');
+    plato4.classList.replace('plato4Active','plato4');
+    pplato4.classList.replace('tituloPlato4','tituloPlato');
+    //5
+    let plato5 = document.getElementById('plato5');
+    let pplato5 = document.getElementById('pplato5');
+    plato5.classList.replace('contenedorPlatoActivo','contenedorPlato');
+    plato5.classList.replace('plato5Active','plato5');
+    pplato5.classList.replace('tituloPlato5','tituloPlato');
   }
 
 
@@ -128,6 +145,39 @@ export class DishesComponent implements OnInit {
     plato4.classList.replace('contenedorPlato','contenedorPlatoActivo');
     plato4.classList.replace('plato4','plato4Active');
     pplato4.classList.replace('tituloPlato','tituloPlato4');
+
+    //Desactive other dishes
+    //1
+    let plato = document.getElementById('plato1');
+    let pplato1 = document.getElementById('pplato1');
+    plato.classList.replace('contenedorPlatoActivo','contenedorPlato');
+    plato.classList.replace('plato1Active','plato1');
+    pplato1.classList.replace('tituloPlato1','tituloPlato');
+    //2
+    let plato2 = document.getElementById('plato2');
+    plato2.classList.replace('contenedorPlatoActivo','contenedorPlato');
+    plato2.classList.replace('plato2Active','plato2');
+    //3
+    let plato3 = document.getElementById('plato3');
+    let pplato3 = document.getElementById('pplato3');
+    plato3.classList.replace('contenedorPlatoActivo','contenedorPlato');
+    plato3.classList.replace('plato3Active','plato3');
+    pplato3.classList.replace('tituloPlato3','tituloPlato');
+    //5
+    let plato5 = document.getElementById('plato5');
+    let pplato5 = document.getElementById('pplato5');
+    plato5.classList.replace('contenedorPlatoActivo','contenedorPlato');
+    plato5.classList.replace('plato5Active','plato5');
+    pplato5.classList.replace('tituloPlato5','tituloPlato');
+   
+  }
+
+  onSelectPlato5(){
+    let plato5 = document.getElementById('plato5');
+    let pplato5 = document.getElementById('pplato5');
+    plato5.classList.replace('contenedorPlato','contenedorPlatoActivo');
+    plato5.classList.replace('plato5','plato5Active');
+    pplato5.classList.replace('tituloPlato','tituloPlato5');
 
     //Desactive other dishes
 
@@ -147,7 +197,12 @@ export class DishesComponent implements OnInit {
     plato3.classList.replace('contenedorPlatoActivo','contenedorPlato');
     plato3.classList.replace('plato3Active','plato3');
     pplato3.classList.replace('tituloPlato3','tituloPlato');
-   
+    //4
+    let plato4 = document.getElementById('plato4');
+    let pplato4 = document.getElementById('pplato4');
+    plato4.classList.replace('contenedorPlatoActivo','contenedorPlato');
+    plato4.classList.replace('plato4Active','plato4');
+    pplato4.classList.replace('tituloPlato4','tituloPlato');
   }
 
 }
