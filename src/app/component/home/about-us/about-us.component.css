@@ -16,7 +16,7 @@ section .section-title {
 }
 #footer {
     background: #ffffff !important;
-    margin-top: -1%;
+    margin-top: -7%;
 }
 #footer h5{
 	padding-left: 10px;
@@ -68,13 +68,26 @@ section .section-title {
     border-left: transparent;
     padding-bottom: 0px;
     margin-bottom: 10px;
+  }
 }
+@media (max-width:1930px){
+  .divsomos{
+    margin-left: -10%;
+ }
 }
+@media (max-width:1690px){
+    .divsomos{
+      margin-left: -1%;
+   }
+   .imgtomate{
+       height: 300px;
+   }
+  }
 h3.titulouno {
     font-size: 90px;
     color: #4ac3f2;
     margin: 0;
-    margin-left: -15%;
+    margin-left: 22%;
 }
 
 h4#titulodos {
@@ -82,23 +95,23 @@ h4#titulodos {
     color: #606060;
     margin-top: -15px;
     text-align: center;
-    margin-left: 23%;
+    margin-left: 61%;
 }
 p.line {
     text-align: inherit;
     font-weight: 900;
     color: #4ac3f2;
     margin-top: -6%;
-    margin-left: -15%;
+    margin-left: 25%;
 }
 
 .imgtomate{
-    margin-left: -109%;
+    margin-left: -64%;
     margin-top: -45%;
 }
 .texttomato{
     margin-top: -33%;
-    margin-left: 40%;
+    margin-left: 48%;
     font-size: 20px;
 }
 .somos {
@@ -123,7 +136,4 @@ p.line {
     border-radius: 12px;
     padding-left: 10px;
     padding-right: 10px;
-}
-.divsomos{
-
 }
