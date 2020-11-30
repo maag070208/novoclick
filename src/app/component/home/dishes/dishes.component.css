@@ -232,70 +232,122 @@ img#final-avatar {
     border-radius: 10px;
 }
 
+.platosNavbar{
+    margin-left: 25%;
+}
+.cardW{
+    width: 550px;
+    height: 250px !important;
+    border-radius: 10px;
+    box-shadow: 6px 4px 5px #999;
+    position: absolute;
+    margin-top: 80%;
+    margin-left: -216%;
+}
+.btn-size{
+    width: 80px !important;
+    margin-top: -7%;
+}
 
-.plato1{
-    margin-left: 0%;
+@media only screen and (max-width:1690px){
+.contenedorPlatoActivo{
+    background-color: rgb(255, 5, 5);
+    height: 90px;
+    box-shadow: 2px 2px 5px #999;
+    width: 149px;
+    border-radius: 10px;
 }
 .plato1Active{
-    margin-left:9%;
-    transform: translate(100%);
-}
-.tituloPlato1{
-    margin-top: 0%;
-    position: absolute;
-    margin-left: 2.2%;
-}
-
-.plato2{
-    margin-left:9%;
+    transform: translate(10%);
 }
 .plato2Active{
     margin-left:9%;
-    transform: translate(100%);
-}
-.tituloPlato2{
-    margin-top: 0%;
-    position: absolute;
-    margin-left: 20%;
-}
-
-.plato3{
-    margin-left: 18%;
+    transform: translate(10%);
 }
 .plato3Active{
     margin-left:9%;
-    transform: translate(210%);
+    transform: translate(19%);
 }
-.tituloPlato3{
-    position: absolute;
-    margin-left: 8% !important;
-}
-.plato3p{
-    text-align: -webkit-center;
-    margin-left: 14%;
-}
-.plato4{
-    margin-left: 27%;
-}
+
 .plato4Active{
     margin-left:9%;
-    transform: translate(327%);
-}
-.tituloPlato4{
-    margin-top: 0%;
-    position: absolute;
-    margin-left: 25.5%;
+    transform: translate(37%);
 }
 
-.plato5{
-    margin-left: 36%;
-}
-.tituloPlato5{
-    margin-top: 0%;
-    position: absolute;
-    margin-left: 2.2%;
+.plato5Active{
+    margin-left:9%;
+    transform: translate(27%);
+ }
 }
 
-.platosNavbar{
-    margin-left: 25%;
+@media (max-width:1930px){
+   
+    .plato1{
+        margin-left: 0%;
+    }
+    .plato1Active{
+        margin-left:9%;
+        transform: translate(100%);
+    }
+    .tituloPlato1{
+        margin-top: 0%;
+        position: absolute;
+        margin-left: 2.2%;
+    }
+    
+    .plato2{
+        margin-left:9%;
+    }
+    .plato2Active{
+        margin-left:9%;
+        transform: translate(110%) ;
+    }
+    .tituloPlato2{
+        margin-top: 0%;
+        position: absolute;
+        margin-left: 20%;
+    }
+    
+    .plato3{
+        margin-left: 18%;
+    }
+    .plato3Active{
+        margin-left:9%;
+        transform: translate(240%) ;
+    }
+    .tituloPlato3{
+        position: absolute;
+        margin-left: 8% !important;
+    }
+    .plato3p{
+        text-align: -webkit-center;
+        margin-left: 14%;
+    }
+    .plato4{
+        margin-left: 27%;
+    }
+    .plato4Active{
+        margin-left:9%;
+        transform: translate(360%) ;
+    }
+    .tituloPlato4{
+        margin-top: 0%;
+        position: absolute;
+        margin-left: 25.5%;
+    }
+    
+    .plato5{
+        margin-left: 36%;
+    }
+    .plato5Active{
+        margin-left:9%;
+        transform: translate(490%) ;
+    }
+    .tituloPlato5{
+        margin-top: 0%;
+        position: absolute;
+        margin-left: 30.2%;
+    }
+    
+    
 }
