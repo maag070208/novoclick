@@ -295,10 +295,11 @@ p.line {
 }
 .somos {
     font-size: 25px;
-    text-align: left;
     color: #000 !important;
     text-align: left;
     line-height: 1.7;
+    align-items: center;
+    text-align:center;
 }
 
 .divsomos{

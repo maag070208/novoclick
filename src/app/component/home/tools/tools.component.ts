@@ -1,3 +1,4 @@
+import { element } from 'protractor';
 import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-tools',
@@ -156,19 +157,13 @@ rotateCard(id){
         this.state = false;
         console.log('%c'+ this.state, 'color: red; font-size: 1.5em');
         console.log('%c'+ id, 'color: green; font-size: 1.5em');
-        this.oldPositionCard(id);
         break;
     }
 
   }
 
-  oldPositionCard(id){
-    let card = document.getElementById(id);
-    if(id != 0){
-        card = document.getElementById(id);
-        card.classList.replace('rotate','noRotate');
-        this.state = false;
-    }
+  carrouselSlice(){
+      let carrousel = document.getElementById('');
   }
 
 }
