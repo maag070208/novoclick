@@ -1,1 +1,133 @@
-<p>dishes works!</p>
+<section id="platos-digitales">
+  <div class="contenedor">
+    <div class="title">
+      <h4 class="mod-1" id="uno">PLATOS</h4>
+      <hr class="mod-1" />
+      <h4 class="mod-2" id="dos">DIGITALES</h4>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-12 texttomato">
+    <p class="somos" id="dishes">
+      Escoge los platos digitales que sean de tu interés, estos estarán
+      presentes en tu carrito, a continuación te mostraremos cada uno de
+      nuestros ingredientes y metodología que usamos en función de medir las
+      recetas par llegar al mejor resultado de alta calidad.
+    </p>
+  </div>
+  <div class="avatar avatar-galeria">
+    <div>
+      <div class="img-avatar">
+        <img
+          src="../../../../assets/images/avatar_y_popups/avatar platos digi.png"
+        />
+      </div>
+      <div class="text-avatar ava-dish">
+        <button class="btn-avatar">Aceptar</button>
+        <a class="no-show-avatar">Omitir </a>
+      </div>
+    </div>
+  </div>
+  <section class="pop-my-menu-1">
+    <div class="popup-overlay-1"></div>
+  </section>
+</section>
+<section class="pop-my-menu">
+  <div class="popup-overlay">
+    <div class="logo-container">
+      <img
+        class="logo-card"
+        src="../../../../assets/images/LOGONOVOCLICK.png"
+        alt=""
+      />
+    </div>
+    <div class="shopping-card">
+      <i class="fas fa-shopping-cart"></i>
+      <h2>Platos Seleccionados</h2>
+    </div>
+    <div class="items-selected"></div>
+    <div class="avatar third-avatar">
+      <div>
+        <div class="img-avatar">
+          <img
+            src="../../../../assets/images/avatar_y_popups/platos seleccionados.png"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="contain-buttom-end return-page" style="padding: 10px">
+      <button class="btn-end">Atras</button>
+      <button type="submit" class="btn-end">Enviar</button>
+    </div>
+  </div>
+</section>
+
+<div class="contenedor-menu-platos">
+
+  <h1 class="menudeldia">Menu el día</h1>
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav platosNavbar">
+
+        <li (click)="onSelectPlato()" id="plato1" class="nav-items activeDish contenedorPlato plato1" data-options="../../../../assets/images/menu-img/foto aperitivo.png">
+             <div>
+               <p id="pplato1" class="tituloPlato">Aperitivo</p>
+                <img
+                  id="icon-platos"
+                  src="../../../../assets/images/+fotos platos digitales/menu-platosD/aperitivos.png"
+                  class="imgPlato"
+                />
+            </div>
+        </li>
+
+        <li (click)="onSelectPlato2()"  id="plato2" class="nav-items activeDish contenedorPlato plato2" data-options="../../../../assets/images/menu-img/foto aperitivo.png">
+            <div>
+              <p id="pplato2" class="tituloPlato2">Platos Fuertes</p>
+               <img
+                 id="icon-platos"
+                 src="../../../../assets/images/+fotos platos digitales/menu-platosD/Platos fuertes.png"
+                 class="imgPlato"
+               />
+           </div>
+       </li>
+
+       <li  (click)="onSelectPlato3()" id="plato3" class="nav-items activeDish contenedorPlato plato3" data-options="../../../../assets/images/menu-img/foto aperitivo.png">
+        <div>
+          <p id="pplato3" class="tituloPlato plato3p">Platos Especiales</p>
+           <img
+             id="icon-platos"
+             src="../../../../assets/images/+fotos platos digitales/menu-platosD/platos especiales.png"
+             class="imgPlato"
+           />
+       </div>
+   </li>
+       
+   <li (click)="onSelectPlato4()"  id="plato4" class="nav-items activeDish contenedorPlato plato4" data-options="../../../../assets/images/menu-img/foto aperitivo.png">
+    <div>
+      <p id="pplato4" class="tituloPlato ">Adiciones</p>
+       <img
+         id="icon-platos"
+         src="../../../../assets/images/+fotos platos digitales/menu-platosD/postres.png"
+         class="imgPlato"
+       />
+   </div>
+</li>
+
+<li  id="plato5" class="nav-items activeDish contenedorPlato plato5" data-options="../../../../assets/images/menu-img/foto aperitivo.png">
+    <div>
+      <p id="pplato5" class="tituloPlato">Postres</p>
+       <img
+         id="icon-platos"
+         src="../../../../assets/images/+fotos platos digitales/menu-platosD/aperitivos.png"
+         class="imgPlato"
+       />
+   </div>
+</li>
+      </ul>
+    </div>
+
+  </nav>
+  <div class="contain-descripcion-select"></div>
+  <div class="contenedor-carusel items"></div>
+</div>

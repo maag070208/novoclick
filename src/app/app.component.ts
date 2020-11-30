@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,23 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'novoclick';
+  public showOverlay = true;
+
+  constructor( ) {}
+
+  ngOnInit(): void {
+
+    setTimeout(()=>{
+      this.displayLoader();
+      document.getElementById('loading').style.display = 'none';
+    },1000);
+  }
+
+   displayLoader(){
+     let loader = document.getElementById('loading');
+     loader.className = "animated fadeOut";
+   }
+
+
+
 }
