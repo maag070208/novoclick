@@ -13,3 +13,9 @@
 .disableComponents{
     display: none;
 }
+.tools{
+    top: 0%;
+}
+body{
+    overflow-x: hidden;
+ }

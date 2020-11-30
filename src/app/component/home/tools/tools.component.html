@@ -1,1 +1,88 @@
-<p>tools works!</p>
+<section id="footer">
+  <div class="container">
+      <div class="row text-center text-xs-center text-sm-left text-md-left">
+          <div class="col-xs-12 col-sm-4 col-md-4 divsomos">
+              <h3 class="titulouno ">HERRAMIENTAS</h3>
+              <p class="line">______________________</p>
+              <h4 id="titulodos">NOVOCLICK</h4>
+          </div>
+          <div class="col-xs-12 col-sm-10 col-md-10 texttomato">
+                  <a class="somos">
+                      La magia de nuestras recetas de los platos sucede gracias a nuestro equipo de chefs digitales, son más de 50 profesionales con compromiso de alta calidad, quienes son referentes de alto conocimiento experiencial de las siguientes herramientas Novoclick.
+                  </a>
+          </div>
+      </div>
+  </div><!-- Top content -->
+<div class="top-content">
+  <div class="container-fluid">
+    <div id="carousel-example" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner row w-100 mx-auto" role="listbox">
+
+        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active noVisibleCard" >
+
+          <div class="cardCarrousel">
+            <div class="card rotate">
+              <div class="on">
+                <img  src="../../../../assets/images/herramientas/Mesa de trabajo 50.png" class="img-fluid mx-auto d-block" alt="img2" />
+              </div>
+              <!--Ahmet Kaptan Siberci.com-->
+              <div class="reverseContent">
+                <h1>
+                  
+                  >
+                </h1>
+                <br>
+                <p>
+               
+                </p>
+              </div>
+             
+            </div>
+
+          </div>
+
+        </div>
+
+        <div *ngFor="let c of card; let i = index" class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+        
+          <div (click)="rotateCard(this.i)" id={{i}} class="card noRotate">
+            <div class="on">
+              <img  src="{{c.img}}" class="img-fluid mx-auto d-block" alt="img2" />
+            </div>
+            <!--Ahmet Kaptan Siberci.com-->
+            <div class="reverseContent">
+              <h1>
+                <a>{{c.title}}</a
+                >
+              </h1>
+              <br>
+              <p>
+               {{c.description}}
+              </p>
+            </div>
+          </div>
+          <h1>{{i}}</h1>
+        </div>
+        
+      </div>
+      <a
+        class="carousel-control-prev invisible"
+        href="#carousel-example"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next invisible"
+        href="#carousel-example"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</div>
