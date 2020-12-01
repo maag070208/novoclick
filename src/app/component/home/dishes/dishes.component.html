@@ -1,4 +1,4 @@
-<section id="platos-digitales">
+<!--<section id="platos-digitales">
   <div class="contenedor">
     <div class="title">
       <h4 class="mod-1" id="uno">PLATOS</h4>
@@ -59,98 +59,92 @@
       <button type="submit" class="btn-end">Enviar</button>
     </div>
   </div>
-</section>
+</section> -->
+<!--Navbar-->
 
-<div class="contenedor-menu-platos">
+<section  >
+<nav class="navbar navbar-expand-lg navbar-dark primary-color znavbar">
 
-  <h1 class="menudeldia">Menu el día</h1>
+  <!-- Navbar brand -->
+  <h1 class="navbar-brand" >Platos Digitales</h1>
 
-  <nav class="navbar navbar-expand-lg navbar-light">
-
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav platosNavbar">
-
-        <li (click)="onSelectPlato()" id="plato1" class="nav-items activeDish contenedorPlato plato1" data-options="../../../../assets/images/menu-img/foto aperitivo.png">
-             <div>
-               <p id="pplato1" class="tituloPlato">Aperitivo</p>
-                <img
-                  id="icon-platos"
-                  src="../../../../assets/images/+fotos platos digitales/menu-platosD/aperitivos.png"
-                  class="imgPlato"
-                />
-            </div>
-        </li>
-
-        <li (click)="onSelectPlato2()"  id="plato2" class="nav-items activeDish contenedorPlato plato2" data-options="../../../../assets/images/menu-img/foto aperitivo.png">
-            <div>
-              <p id="pplato2" class="tituloPlato2">Platos Fuertes</p>
-               <img
-                 id="icon-platos"
-                 src="../../../../assets/images/+fotos platos digitales/menu-platosD/Platos fuertes.png"
-                 class="imgPlato"
-               />
-           </div>
-       </li>
-
-       <li  (click)="onSelectPlato3()" id="plato3" class="nav-items activeDish contenedorPlato plato3" data-options="../../../../assets/images/menu-img/foto aperitivo.png">
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="basicExampleNav">
+    <!-- Links -->
+    <ul class="navbar-nav ml-12 texttomato">
+      <li style="display: none;"  class="nav-items  contenedorPlatoActivo">
         <div>
-          <p id="pplato3" class="tituloPlato plato3p">Platos Especiales</p>
            <img
              id="icon-platos"
-             src="../../../../assets/images/+fotos platos digitales/menu-platosD/platos especiales.png"
+             src="../../../../assets/images/+fotos platos digitales/menu-platosD/aperitivos.png"
              class="imgPlato"
            />
        </div>
    </li>
-       
-   <li (click)="onSelectPlato4()"  id="plato4" class="nav-items activeDish contenedorPlato plato4" data-options="../../../../assets/images/menu-img/foto aperitivo.png">
-    <div>
-      <p id="pplato4" class="tituloPlato ">Adiciones</p>
-       <img
-         id="icon-platos"
-         src="../../../../assets/images/+fotos platos digitales/menu-platosD/postres.png"
-         class="imgPlato"
-       />
-   </div>
+      <li (click)="onSelectPlato()" id="plato1" class="nav-items  contenedorPlato plato1" data-options="../../../../assets/images/menu-img/foto aperitivo.png">
+        <div>
+          <p id="pplato1" class="tituloPlato">Aperitivo</p>
+           <img
+             id="icon-platos"
+             src="../../../../assets/images/+fotos platos digitales/menu-platosD/aperitivos.png"
+             class="imgPlato"
+           />
+       </div>
+   </li>
+
+   <li (click)="onSelectPlato2()"  id="plato2" class="nav-items  contenedorPlato plato2" data-options="../../../../assets/images/menu-img/foto aperitivo.png">
+       <div>
+         <p id="pplato2" class="tituloPlato2">Platos Fuertes</p>
+          <img
+            id="icon-platos"
+            src="../../../../assets/images/+fotos platos digitales/menu-platosD/Platos fuertes.png"
+            class="imgPlato"
+          />
+      </div>
+  </li>
+
+  <li  (click)="onSelectPlato3()" id="plato3" class="nav-items  contenedorPlato plato3" data-options="../../../../assets/images/menu-img/foto aperitivo.png">
+   <div>
+     <p id="pplato3" class="tituloPlato plato3p">Platos Especiales</p>
+      <img
+        id="icon-platos"
+        src="../../../../assets/images/+fotos platos digitales/menu-platosD/platos especiales.png"
+        class="imgPlato"
+      />
+  </div>
+</li>
+  
+<li (click)="onSelectPlato4()"  id="plato4" class="nav-items  contenedorPlato plato4" data-options="../../../../assets/images/menu-img/foto aperitivo.png">
+<div>
+ <p id="pplato4" class="tituloPlato ">Adiciones</p>
+  <img
+    id="icon-platos"
+    src="../../../../assets/images/+fotos platos digitales/menu-platosD/postres.png"
+    class="imgPlato"
+  />
+</div>
 </li>
 
-<li  (click)="onSelectPlato5()"  id="plato5" class="nav-items activeDish contenedorPlato plato5" data-options="../../../../assets/images/menu-img/foto aperitivo.png">
-    <div>
-      <p id="pplato5" class="tituloPlato">Postres</p>
-       <img
-         id="icon-platos"
-         src="../../../../assets/images/+fotos platos digitales/menu-platosD/aperitivos.png"
-         class="imgPlato"
-       />
-   </div>
+<li  (click)="onSelectPlato5()"  id="plato5" class="nav-items  contenedorPlato plato5" data-options="../../../../assets/images/menu-img/foto aperitivo.png">
+<div>
+ <p id="pplato5" class="tituloPlato">Postres</p>
+  <img
+    id="icon-platos"
+    src="../../../../assets/images/+fotos platos digitales/menu-platosD/aperitivos.png"
+    class="imgPlato"
+  />
+</div>
 </li>
-      </ul>
-    </div>
-
-  </nav>
-  <div class="contain-descripcion-select"></div>
-  <div class="contenedor-carusel items"></div>
-
-  <section >
+    </ul>
+  </div>
+</nav>
+<!--/.Navbar-->
+<section class="backgroundPlato1">
     <div class="container">
         <div class="row text-center text-xs-center text-sm-left text-md-left">
             <div class="col-xs-12 col-sm-4 col-md-4 ">
                 <div class="col-sm-4 py-2">
-                    <div class="card h-100 cardW card-body">
-                      <h2 style="color: #074173;">INTEGRACIÓN A SU CRM ACTUAL</h2>
-                      <br>
-                      <p style="color: #074173; font-size: 20px; text-align: left;">
-                        Brief de integración
-                        Modelado de la solución API
-                        Creación de código de integración
-                        Pruebas de integración
-                        Implementación de la solución
-                        Soporte
-                        
-                      </p>
-                      <br>
-                      <button class="btn btn-primary btn-size">Añadir</button>
-                    </div>
+                   <img class="mujerplatosDigitales" src="../../../../assets/images/mujerplatosdigitales.png">
                 </div>
             </div>
             <div class="col-xs-8 col-sm-8 col-md-8 ">
@@ -159,6 +153,4 @@
         </div>
     </div>
 </section>
-
-</div>
-
+</section>

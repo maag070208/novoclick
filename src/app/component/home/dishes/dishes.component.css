@@ -1,6 +1,5 @@
 section#platos-digitales {
-    width: 1186px;
-   
+    width: 1000px;
 }
 
 .contenedor{
@@ -191,15 +190,18 @@ img#final-avatar {
 }
 .texttomato{
    margin-left: 25%;
-   align-items: center;
+
 }
 
 .menudeldia{
-    margin-left: 45%;
+    margin-left: -0.5;
+    margin-top: -1%;
+    position: absolute;
+    color: #093d73;
+    font-style: oblique;
 }
 
 .contenedorPlato{
-    margin-top: 0%;
     margin-left: 14%;
     position: absolute;
 }
@@ -209,8 +211,9 @@ img#final-avatar {
     margin-left: 27%;
 }
 .imgPlato{ 
-    margin-left: 15%;
-    margin-top: 17%;
+    margin-left: 30%;
+    margin-top: 28%;
+    height: 40px;
 }
 
 .contenedorPlato{
@@ -225,15 +228,18 @@ img#final-avatar {
     margin-left: 27%;
 }
 .contenedorPlatoActivo{
-    background-color: rgb(255, 255, 255);
-    height: 90px;
+    background-color: rgb(0, 0, 0);
+    height: 80px;
     box-shadow: 2px 2px 5px #999;
     width: 149px;
     border-radius: 10px;
 }
 
 .platosNavbar{
+    padding-top: 5%;
+    position: absolute;
     margin-left: 25%;
+    z-index: 2;
 }
 .cardW{
     width: 550px;
@@ -249,36 +255,6 @@ img#final-avatar {
     margin-top: -7%;
 }
 
-@media only screen and (max-width:1690px){
-.contenedorPlatoActivo{
-    background-color: rgb(255, 5, 5);
-    height: 90px;
-    box-shadow: 2px 2px 5px #999;
-    width: 149px;
-    border-radius: 10px;
-}
-.plato1Active{
-    transform: translate(10%);
-}
-.plato2Active{
-    margin-left:9%;
-    transform: translate(10%);
-}
-.plato3Active{
-    margin-left:9%;
-    transform: translate(19%);
-}
-
-.plato4Active{
-    margin-left:9%;
-    transform: translate(37%);
-}
-
-.plato5Active{
-    margin-left:9%;
-    transform: translate(27%);
- }
-}
 
 @media (max-width:1930px){
    
@@ -290,11 +266,21 @@ img#final-avatar {
         transform: translate(100%);
     }
     .tituloPlato1{
-        margin-top: 0%;
         position: absolute;
         margin-left: 2.2%;
     }
-    
+    .contenedorPlato1Activo{
+        background-color: rgb(70, 102, 172);
+        height: 80px;
+        box-shadow: 2px 2px 5px #999;
+        width: 149px;
+        border-radius: 10px;
+    }
+    .backgroundPlato1{
+     background-image: url("../../../../assets/images/aperitivo.png");
+     background-repeat: no-repeat;
+     background-position-x: -25%;
+    }
     .plato2{
         margin-left:9%;
     }
@@ -303,11 +289,11 @@ img#final-avatar {
         transform: translate(110%) ;
     }
     .tituloPlato2{
-        margin-top: 0%;
         position: absolute;
         margin-left: 20%;
     }
-    
+  
+
     .plato3{
         margin-left: 18%;
     }
@@ -323,31 +309,47 @@ img#final-avatar {
         text-align: -webkit-center;
         margin-left: 14%;
     }
+
     .plato4{
         margin-left: 27%;
     }
     .plato4Active{
         margin-left:9%;
-        transform: translate(360%) ;
+        transform: translate(370%) ;
     }
     .tituloPlato4{
-        margin-top: 0%;
         position: absolute;
         margin-left: 25.5%;
     }
-    
+     
+
     .plato5{
         margin-left: 36%;
     }
     .plato5Active{
         margin-left:9%;
-        transform: translate(490%) ;
+        position: relative;
+        transform: translate(480%) ;
     }
     .tituloPlato5{
-        margin-top: 0%;
         position: absolute;
         margin-left: 30.2%;
     }
     
-    
+}
+.znavbar{
+    z-index: 2;
+}
+.mujerplatosDigitales{
+    height: 650px;
+    position: relative;
+    margin-top: 93%;
+    margin-left: -450%;
+    z-index: 1;
+    display: -webkit-inline-box;
+    margin-bottom: -10%;
+}
+
+.sectionPlatos{
+    padding-top: 15%;
 }

@@ -43,6 +43,7 @@ export class DishesComponent implements OnInit {
   
   plato.classList.replace('contenedorPlato','contenedorPlatoActivo');
   pplato1.classList.replace('tituloPlato','tituloPlato1');
+  plato.style.background = '#8edff4';
 
   //Desactive other dishes
   
@@ -50,24 +51,28 @@ export class DishesComponent implements OnInit {
   let plato2 = document.getElementById('plato2');
   plato2.classList.replace('contenedorPlatoActivo','contenedorPlato');
   plato2.classList.replace('plato2Active','plato2');
+  plato2.style.background = '#FFFFFF';
   //3
   let plato3 = document.getElementById('plato3');
   let pplato3 = document.getElementById('pplato3');
   plato3.classList.replace('contenedorPlatoActivo','contenedorPlato');
   plato3.classList.replace('plato3Active','plato3');
   pplato3.classList.replace('tituloPlato3','tituloPlato');
+  plato3.style.background = '#FFFFFF';
   //4
   let plato4 = document.getElementById('plato4');
   let pplato4 = document.getElementById('pplato4');
   plato4.classList.replace('contenedorPlatoActivo','contenedorPlato');
   plato4.classList.replace('plato4Active','plato4');
   pplato4.classList.replace('tituloPlato4','tituloPlato');
+  plato4.style.background = '#FFFFFF';
   //5
   let plato5 = document.getElementById('plato5');
   let pplato5 = document.getElementById('pplato5');
   plato5.classList.replace('contenedorPlatoActivo','contenedorPlato');
   plato5.classList.replace('plato5Active','plato5');
   pplato5.classList.replace('tituloPlato5','tituloPlato');
+  plato5.style.background = '#FFFFFF';
   }
 
   onSelectPlato2(){
@@ -76,7 +81,7 @@ export class DishesComponent implements OnInit {
   plato2.classList.replace('contenedorPlato','contenedorPlatoActivo');
   plato2.classList.replace('plato2','plato2Active');
   pplato2.classList.replace('tituloPlato','tituloPlato2');
-
+  plato2.style.background = '#f7b05e';
     //Desactive other dishes
 
   //1
@@ -103,6 +108,11 @@ export class DishesComponent implements OnInit {
   plato5.classList.replace('contenedorPlatoActivo','contenedorPlato');
   plato5.classList.replace('plato5Active','plato5');
   pplato5.classList.replace('tituloPlato5','tituloPlato');
+
+  plato.style.background = '#FFFFFF';
+  plato3.style.background = '#FFFFFF';
+  plato4.style.background = '#FFFFFF';
+  plato5.style.background = '#FFFFFF';
   }
 
   onSelectPlato3(){
@@ -111,7 +121,7 @@ export class DishesComponent implements OnInit {
     plato3.classList.replace('contenedorPlato','contenedorPlatoActivo');
     plato3.classList.replace('plato3','plato3Active');
     pplato3.classList.replace('tituloPlato','tituloPlato3');
-
+    plato3.style.background = '#f4d350';
     //Desactive other dishes
 
     //1
@@ -136,6 +146,11 @@ export class DishesComponent implements OnInit {
     plato5.classList.replace('contenedorPlatoActivo','contenedorPlato');
     plato5.classList.replace('plato5Active','plato5');
     pplato5.classList.replace('tituloPlato5','tituloPlato');
+
+  plato.style.background = '#FFFFFF';
+  plato2.style.background = '#FFFFFF';
+  plato4.style.background = '#FFFFFF';
+  plato5.style.background = '#FFFFFF';
   }
 
 
@@ -145,6 +160,7 @@ export class DishesComponent implements OnInit {
     plato4.classList.replace('contenedorPlato','contenedorPlatoActivo');
     plato4.classList.replace('plato4','plato4Active');
     pplato4.classList.replace('tituloPlato','tituloPlato4');
+    plato4.style.background = '#60adb5';
 
     //Desactive other dishes
     //1
@@ -170,6 +186,10 @@ export class DishesComponent implements OnInit {
     plato5.classList.replace('plato5Active','plato5');
     pplato5.classList.replace('tituloPlato5','tituloPlato');
    
+  plato.style.background = '#FFFFFF';
+  plato2.style.background = '#FFFFFF';
+  plato3.style.background = '#FFFFFF';
+  plato5.style.background = '#FFFFFF';
   }
 
   onSelectPlato5(){
@@ -178,7 +198,8 @@ export class DishesComponent implements OnInit {
     plato5.classList.replace('contenedorPlato','contenedorPlatoActivo');
     plato5.classList.replace('plato5','plato5Active');
     pplato5.classList.replace('tituloPlato','tituloPlato5');
-
+    plato5.style.background = '#cae771';
+    plato5.style.opacity ='opacity: 80%';
     //Desactive other dishes
 
     //1
@@ -203,6 +224,10 @@ export class DishesComponent implements OnInit {
     plato4.classList.replace('contenedorPlatoActivo','contenedorPlato');
     plato4.classList.replace('plato4Active','plato4');
     pplato4.classList.replace('tituloPlato4','tituloPlato');
+    plato.style.background = '#FFFFFF';
+    plato2.style.background = '#FFFFFF';
+    plato3.style.background = '#FFFFFF';
+    plato4.style.background = '#FFFFFF';
   }
 
 }
