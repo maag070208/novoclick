@@ -19,6 +19,11 @@ import { AcademyComponent } from './component/home/academy/academy.component';
 import { BlogComponent } from './component/home/blog/blog.component';
 import { ContactComponent } from './component/home/contact/contact.component';
 import { FooterComponent } from './component/home/footer/footer.component';
+import { AperitivoComponent } from './component/home/dishes/aperitivo/aperitivo.component';
+import { PlatosFuertesComponent } from './component/home/dishes/platos-fuertes/platos-fuertes.component';
+import { PlatosEspecialesComponent } from './component/home/dishes/platos-especiales/platos-especiales.component';
+import { AdicionesComponent } from './component/home/dishes/adiciones/adiciones.component';
+import { PostresComponent } from './component/home/dishes/postres/postres.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +42,12 @@ import { FooterComponent } from './component/home/footer/footer.component';
     BlogComponent,
     ContactComponent,
     FooterComponent,
-    HamburgerComponent
+    HamburgerComponent,
+    AperitivoComponent,
+    PlatosFuertesComponent,
+    PlatosEspecialesComponent,
+    AdicionesComponent,
+    PostresComponent
   ],
   imports: [
     BrowserModule,

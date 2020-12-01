@@ -6,7 +6,7 @@
 .about{
     top: 0%;
 }
-.what-we-do-for-you{
+.what{
     top: 0%;
 }
 
@@ -14,6 +14,9 @@
     display: none;
 }
 .tools{
+    top: 0%;
+}
+.dishes{
     top: 0%;
 }
 body{

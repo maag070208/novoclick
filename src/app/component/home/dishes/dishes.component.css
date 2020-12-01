@@ -144,7 +144,9 @@ img#final-avatar {
     transition: opacity 0.5s linear;
     display: none;
 }
-
+.colorh4{
+    color: #1e4561;
+}
 .pop-my-menu-1 {
     position: fixed;
     top: 8vh;
@@ -220,6 +222,7 @@ img#final-avatar {
     background-color: rgba(255, 255, 255, 0);
     height: 90px;
     width: 149px;
+    box-shadow: 2px 2px 5px #999;
     border-radius: 10px;
 }
 .tituloPlato{
@@ -228,8 +231,8 @@ img#final-avatar {
     margin-left: 27%;
 }
 .contenedorPlatoActivo{
-    background-color: rgb(0, 0, 0);
-    height: 80px;
+    background-color:#8edff4;
+    height: 90px;
     box-shadow: 2px 2px 5px #999;
     width: 149px;
     border-radius: 10px;
@@ -276,17 +279,15 @@ img#final-avatar {
         width: 149px;
         border-radius: 10px;
     }
-    .backgroundPlato1{
-     background-image: url("../../../../assets/images/aperitivo.png");
-     background-repeat: no-repeat;
-     background-position-x: -25%;
-    }
+    
+   
+
     .plato2{
         margin-left:9%;
     }
     .plato2Active{
         margin-left:9%;
-        transform: translate(110%) ;
+        transform: translate(120%) ;
     }
     .tituloPlato2{
         position: absolute;
@@ -299,7 +300,7 @@ img#final-avatar {
     }
     .plato3Active{
         margin-left:9%;
-        transform: translate(240%) ;
+        transform: translate(245%) ;
     }
     .tituloPlato3{
         position: absolute;
@@ -329,16 +330,45 @@ img#final-avatar {
     .plato5Active{
         margin-left:9%;
         position: relative;
-        transform: translate(480%) ;
+        transform: translate(490%) ;
     }
     .tituloPlato5{
         position: absolute;
         margin-left: 30.2%;
     }
+.contenedorplatos{
+    margin-top: 5%;
+}
+.prevbtn{
+    position: absolute;
+    margin-top: 14%;
+    margin-left: -43px;
+    font-size: 50px;
+    color: #21445c !important;
+}
+.nextbtn{
+    position: absolute;
+    font-size: 50px;
+    margin-left: 101%;
+    color: #21445c !important;
+    margin-top: 14%;
+}
+
+.invisibleCarousel{
+    display: none;
+}
+.visibleCarousel{
     
 }
+
+
+}
+
+
+
 .znavbar{
     z-index: 2;
+    margin-top: 7%;
 }
 .mujerplatosDigitales{
     height: 650px;
@@ -352,4 +382,81 @@ img#final-avatar {
 
 .sectionPlatos{
     padding-top: 15%;
+}
+  
+
+  .form-group {
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  .form-group input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+  .form-group label {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .form-group label:before {
+    content:'';
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 2px solid #0079bf;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .form-group input:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 9px;
+    width: 6px;
+    height: 14px;
+    border: solid #0079bf;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+  .backgroundPlato1{
+    background-image: url("../../../../assets/images/aperitivo.png");
+    background-repeat: no-repeat;
+    background-position-x: -25%;
+   }
+   .backgroundPlato2{
+       background-image: url("../../../../assets/images/platofuerte.png");
+       background-repeat: no-repeat;
+       background-position-x: -5%;
+       background-position-y: 28%;
+   }
+   .backgroundPlato3{
+    background-image: url("../../../../assets/images/especial.png");
+    background-repeat: no-repeat;
+    background-position-x: -5%;
+    background-position-y: 28%;
+}
+.backgroundPlato4{
+    background-image: url("../../../../assets/images/adiciones.png");
+    background-repeat: no-repeat;
+    background-position-x: -5%;
+    background-position-y: 28%;
+}
+.backgroundPlato5{
+    background-image: url("../../../../assets/images/postres.png");
+    background-repeat: no-repeat;
+    background-position-x: -5%;
+    background-position-y: 28%;
 }

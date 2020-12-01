@@ -12,4 +12,16 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  nosotros() {
+   window.scrollTo({top: 1100});
+  }
+  herramientas() {
+    window.scrollTo({top: 2800});
+   }
+   platosDigitales() {
+    window.scrollTo({top: 3800});
+   }
+   academia() {
+    window.scrollTo({top: 1100});
+   }
 }

@@ -1,5 +1,3 @@
-import * as $ from 'jquery';
-import 'jqueryui'
 import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-tools',
@@ -17,8 +15,6 @@ export class ToolsComponent implements OnInit {
 
     setTimeout(()=>{ 
         this.time = 500;
-        console.log(this.time);
-        
         },1000);
   }
 
@@ -158,7 +154,8 @@ rotateCard(id){
     card = document.getElementById(id);
     card.classList.replace('noRotate','rotate');
     this.oldId += id;
-    console.log(this.oldId);
+    this.time += 0;
+    
   }
 
  setTimeout(()=>{ 

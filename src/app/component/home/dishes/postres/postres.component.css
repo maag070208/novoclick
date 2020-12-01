@@ -1,0 +1,24 @@
+@media (max-width:1930px){
+   
+
+    .prevbtn{
+        position: absolute;
+        margin-top: 14%;
+        margin-left: -43px;
+        font-size: 50px;
+    }
+    .nextbtn{
+        position: absolute;
+        font-size: 50px;
+        margin-left: 101%;
+        margin-top: 14%;
+    }
+    }
+    .znavbar{
+        z-index: 2;
+        margin-top: 7%;
+    }
+    
+    .sectionPlatos{
+        padding-top: 15%;
+    }
