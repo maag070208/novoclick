@@ -13,3 +13,4 @@ export class PlatosFuertesComponent implements OnInit {
   }
 
 }
+ 

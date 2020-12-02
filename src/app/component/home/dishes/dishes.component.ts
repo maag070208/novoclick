@@ -36,7 +36,7 @@ export class DishesComponent implements OnInit {
         '../../../../assets/images/+fotos platos digitales/menu-platosD/postres.png',
       title: 'Postres',
     },
-  ];
+  ]; 
 
   onSelectPlato() {
     let plato = document.getElementById('plato1');
@@ -81,6 +81,7 @@ export class DishesComponent implements OnInit {
     pplato5.classList.replace('tituloPlato5', 'tituloPlato');
     plato5.style.background = '#FFFFFF';
 
+    //fuertes
     let platosFuertesCarousel = document.getElementById(
       'platosFuertesCarousel'
     );
@@ -88,11 +89,27 @@ export class DishesComponent implements OnInit {
       'visibleCarousel',
       'invisibleCarousel'
     );
-
+    //especiales
     let platosEspecialesCarousel = document.getElementById(
       'platosEspecialesCarousel'
     );
     platosEspecialesCarousel.classList.replace(
+      'visibleCarousel',
+      'invisibleCarousel'
+    );
+   //adiciones
+    let adicionesCarousel = document.getElementById(
+      'adicionesCarousel'
+    );
+    adicionesCarousel.classList.replace(
+      'visibleCarousel',
+      'invisibleCarousel'
+    );
+    //postres
+    let postresCarousel = document.getElementById(
+      'postresCarousel'
+    );
+    postresCarousel.classList.replace(
       'visibleCarousel',
       'invisibleCarousel'
     );
@@ -156,13 +173,30 @@ export class DishesComponent implements OnInit {
       'visibleCarousel',
       'invisibleCarousel'
     );
-
     let platosEspecialesCarousel = document.getElementById('platosEspecialesCarousel'
     );
     platosEspecialesCarousel.classList.replace(
       'visibleCarousel',
       'invisibleCarousel'
     );
+
+    //adiciones
+    let adicionesCarousel = document.getElementById(
+      'adicionesCarousel'
+    );
+    adicionesCarousel.classList.replace(
+      'visibleCarousel',
+      'invisibleCarousel'
+    );
+    //postres
+    let postresCarousel = document.getElementById(
+      'postresCarousel'
+    );
+    postresCarousel.classList.replace(
+      'visibleCarousel',
+      'invisibleCarousel'
+    );
+
 
     plato.style.background = '#FFFFFF';
     plato3.style.background = '#FFFFFF';
@@ -242,6 +276,24 @@ export class DishesComponent implements OnInit {
       'invisibleCarousel'
     );
 
+   
+   //adiciones
+    let adicionesCarousel = document.getElementById(
+      'adicionesCarousel'
+    );
+    adicionesCarousel.classList.replace(
+      'visibleCarousel',
+      'invisibleCarousel'
+    );
+    //postres
+    let postresCarousel = document.getElementById(
+      'postresCarousel'
+    );
+    postresCarousel.classList.replace(
+      'visibleCarousel',
+      'invisibleCarousel'
+    );
+
   }
 
   onSelectPlato4() {
@@ -276,13 +328,22 @@ export class DishesComponent implements OnInit {
     plato5.classList.replace('plato5Active', 'plato5');
     pplato5.classList.replace('tituloPlato5', 'tituloPlato');
 
+      //adiciones
+      let adicionesCarousel = document.getElementById(
+        'adicionesCarousel'
+      );
+      adicionesCarousel.classList.replace(
+        'invisibleCarousel',
+        'visibleCarousel'
+      );
+
     //carousel #1
     let aperitivosCarousel = document.getElementById('aperitivosCarousel');
     aperitivosCarousel.classList.replace(
       'visibleCarousel',
       'invisibleCarousel'
     );
- //carousel #2
+     //carousel #2
     let platosFuertesCarousel = document.getElementById(
       'platosFuertesCarousel'
     );
@@ -290,7 +351,7 @@ export class DishesComponent implements OnInit {
       'visibleCarousel',
       'invisibleCarousel'
     );
- //carousel #3
+    //carousel #3
     let platosEspecialesCarousel = document.getElementById(
       'platosEspecialesCarousel'
     );
@@ -298,7 +359,14 @@ export class DishesComponent implements OnInit {
       'visibleCarousel',
       'invisibleCarousel'
     );
-
+    //postres
+    let postresCarousel = document.getElementById(
+      'postresCarousel'
+    );
+    postresCarousel.classList.replace(
+      'visibleCarousel',
+      'invisibleCarousel'
+    );
 
     let backgroundRed = document.getElementById('backgroundRed');
     backgroundRed.classList.remove('backgroundPlato1');
@@ -346,6 +414,16 @@ export class DishesComponent implements OnInit {
     plato4.classList.replace('plato4Active', 'plato4');
     pplato4.classList.replace('tituloPlato4', 'tituloPlato');
 
+
+      //postres
+      let postresCarousel = document.getElementById(
+        'postresCarousel'
+      );
+      postresCarousel.classList.replace(
+        'invisibleCarousel',
+        'visibleCarousel'
+      );
+
     //carousel #1
     let aperitivosCarousel = document.getElementById('aperitivosCarousel');
     aperitivosCarousel.classList.replace(
@@ -369,7 +447,14 @@ export class DishesComponent implements OnInit {
       'visibleCarousel',
       'invisibleCarousel'
     );
-
+   //adiciones
+   let adicionesCarousel = document.getElementById(
+    'adicionesCarousel'
+  );
+  adicionesCarousel.classList.replace(
+    'visibleCarousel',
+    'invisibleCarousel'
+  );
 
     let backgroundRed = document.getElementById('backgroundRed');
     backgroundRed.classList.remove('backgroundPlato1');
