@@ -1,264 +1,21 @@
-section#platos-digitales {
-  width: 1000px;
-}
-
-.contenedor {
-  margin-left: 40%;
-  margin-top: 10%;
-}
-.somos {
-  font-size: 25px;
-  text-align: left;
-  color: #000 !important;
-  text-align: left;
-  line-height: 1.7;
-  align-items: center;
-  text-align: center;
-}
-.title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.title hr {
-  width: 7%;
-  margin: 0;
-  border-color: #074173;
-}
-.title h4 {
-  font-size: 3.5rem;
-}
-
-.title p {
-  padding-top: 10px;
-  padding-left: 50px;
-  padding-right: 50px;
-  font-size: 1.2rem;
-  letter-spacing: none;
-  font-weight: 480;
-}
-
-.mod-1 {
-  font-size: 90px;
-  color: #4ac3f2;
-  margin: 0;
-  margin-left: -15%;
-}
-#uno {
-  font-size: 90px;
-  color: #4ac3f2;
-  margin: 0;
-  margin-left: -15%;
-}
-.mod-2 {
-  position: relative;
-  left: 50px;
-  font-weight: 430;
-  color: #606060;
-}
-h4#dos {
-  font-size: 80px;
-  color: #606060;
-  margin-top: -15px;
-  text-align: center;
-  margin-left: 35%;
-}
-.btn-avatar {
-  background-color: #074173;
-  font-size: 12px;
-  color: white;
-  border-radius: 12px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.text-avatar a {
-  color: #4bbbe8 !important;
-}
-
-.second-avatar {
-  justify-content: flex-end !important;
-}
-.text-avatar {
-  position: relative;
-  bottom: 60px;
-  left: 80px;
-  display: flex;
-  justify-content: space-evenly;
-  cursor: pointer;
-}
-
-.img-avatar {
-  position: relative;
-}
-
-.avatar {
-  display: none !important;
-  width: 100%;
-  justify-content: space-around;
-}
-
-.active-avatar {
-  display: flex !important;
-}
-
-.third-avatar {
-  justify-content: flex-start;
-}
-
-img#final-avatar {
-  position: absolute;
-  bottom: 40px;
-  right: 300px;
-  width: 300px;
-}
-.avatar-galeria {
-  width: 90%;
-  display: flex;
-  justify-content: flex-end;
-  /* position: absolute; */
-  left: 30px;
-}
-.ava-dish {
-  width: 400px;
-  left: revert;
-  right: 60px;
-}
-
-.pop-my-menu {
-  position: fixed;
-  top: 8vh;
-  height: 100vh;
-  border-radius: 4px;
-  padding: 10px;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  z-index: 99999999;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  transition: opacity 0.5s linear;
-  display: none;
-}
-.colorh4 {
-  color: #1e4561;
-}
-.pop-my-menu-1 {
-  position: fixed;
-  top: 8vh;
-  height: 100vh;
-  border-radius: 4px;
-  padding: 10px;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  z-index: 99999999;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  transition: opacity 0.5s linear;
-  display: none;
-}
-
-.pop-my-menu-active {
-  display: flex;
-  transition: opacity 0.5s linear;
-}
-
-.popup-overlay-1 {
-  visibility: visible;
-  transition: opacity 0.5s linear;
-  text-align: center;
-  background: #ffffff;
-  width: 900px;
-  height: 88vh;
-  z-index: 999999;
-  color: #000;
-  overflow: auto;
-  left: 1200px;
-}
-.logo-container {
-  width: 100%;
-}
-.shopping-card {
-  display: flex;
-  align-items: center;
-  font-size: 30px;
-  justify-content: center;
-}
-.texttomato {
-  margin-left: 30%;
-}
-
-.menudeldia {
-  margin-left: -0.5;
-  margin-top: -1%;
-  position: absolute;
-  color: #093d73;
-  font-style: oblique;
-}
-
-.contenedorPlato {
-  margin-left: 14%;
-  position: absolute;
-}
-.tituloPlato {
-  margin-top: 0%;
-  position: absolute;
-  margin-left: 27%;
-}
-.imgPlato {
-  margin-left: 30%;
-  margin-top: 28%;
-  height: 40px;
-}
-
-.contenedorPlato {
-  background-color: rgba(255, 255, 255, 0);
-  height: 90px;
-  width: 149px;
-  box-shadow: 2px 2px 5px #999;
-  border-radius: 10px;
-}
-.tituloPlato {
-  margin-top: 0%;
-  position: absolute;
-  margin-left: 27%;
-}
 .contenedorPlatoActivo {
   background-color: #8edff4;
-  height: 90px;
   box-shadow: 2px 2px 5px #999;
-  width: 149px;
+  border-radius: 10px;
+}
+.contenedorPlato {
+  background-color: #8edff4;
+  box-shadow: 2px 2px 5px #999;
   border-radius: 10px;
 }
 
-.platosNavbar {
-  padding-top: 5%;
-  position: absolute;
-  margin-left: 25%;
-  z-index: 2;
-}
-.cardW {
-  width: 550px;
-  height: 250px !important;
-  border-radius: 10px;
-  box-shadow: 6px 4px 5px #999;
-  position: absolute;
-  margin-top: 80%;
-  margin-left: -216%;
-}
+
 .btn-size {
   width: 80px !important;
   margin-top: -7%;
 }
 
-.znavbar {
-  z-index: 2;
-  margin-top: 7%;
-}
+
 .mujerplatosDigitales {
   height: 650px;
   position: relative;
@@ -267,10 +24,6 @@ img#final-avatar {
   z-index: 1;
   display: -webkit-inline-box;
   margin-bottom: -46%;
-}
-
-.sectionPlatos {
-  padding-top: 15%;
 }
 
 .backgroundPlato1 {
@@ -303,299 +56,164 @@ img#final-avatar {
   background-position-y: 35%;
 }
 .invisibleCarousel {
-    display: none;
+  display: none;
+}
+.visibleCarousel {
+}
+
+.tituloPlato1 {
+  position: absolute;
+  margin-left: 2.2%;
+}
+
+.tituloPlato3 {
+  position: absolute;
+  text-align: center;
+  margin-left: -13%;
+  margin-top: -9%;
+}
+
+.tituloPlato4 {
+  position: absolute;
+  margin-left: 5.5%;
+}
+
+.tituloPlato5 {
+  position: absolute;
+  margin-left: 12.2%;
+}
+
+.prevbtn {
+  position: absolute;
+  margin-top: 14%;
+  margin-left: -43px;
+  font-size: 50px;
+  color: #21445c !important;
+}
+
+.nextbtn {
+  position: absolute;
+  font-size: 50px;
+  margin-left: 101%;
+  color: #21445c !important;
+  margin-top: 14%;
+}
+
+.invisibleCarousel {
+  display: none;
+}
+.visibleCarousel {
+}
+
+@media (min-width: 1680px) {
+  li {
+    margin-left: 2%;
+    background: rgb(255, 255, 255);
+    height: 100px;
+    border-radius: 15px;
   }
-  .visibleCarousel {
+img{
+  height: 50px;
+}
+  ul {
+    padding-right: 0%;
+    display: flex;
+    margin-left: 42%;
   }
-/* 40 pulgadas -->*/
-@media (width: 1680px) {
-  .plato1 {
-    margin-left: 0%;
+  .imgPlato1 {
+    margin-top: 32%;
+    margin-left: 5%;
+    height: 50px;
   }
-  .plato1Active {
-    margin-left: 9%;
-    transform: translate(-5%);
-  }
-  .tituloPlato1 {
-    position: absolute;
-    margin-left: 2.2%;
-  }
-  .plato2 {
-    margin-left: 9%;
-  }
-  .plato2Active {
-    margin-left: 9%;
-    transform: translate(105%);
-  }
-  .tituloPlato2 {
-    position: absolute;
-    margin-left: 20%;
+  .imgPlatoActivo {
+    margin-top: -19%;
+    margin-left: 5%;
+    height: 50px;
   }
 
-  .plato3 {
-    margin-left: 18%;
+
+  .imgPlato2 {
+    margin-top: -12%;
+    margin-left: 12%;
+    height: 50px;
   }
-  .plato3Active {
-    margin-left: 9%;
-    transform: translate(215%);
-  }
-  .tituloPlato3 {
-    position: absolute;
-    margin-left: 8% !important;
-  }
-  .plato3p {
-    text-align: -webkit-center;
-    margin-left: 14%;
+  .imgPlatoActivo2 {
+    margin-top: -10%;
+    margin-left: 5%;
+    height: 50px;
   }
 
-  .plato4 {
-    margin-left: 27%;
-  }
-  .plato4Active {
-    margin-left: 9%;
-    transform: translate(325%);
-  }
-  .tituloPlato4 {
-    position: absolute;
-    margin-left: 25.5%;
+  .imgPlato3 {
+    margin-top: 43%;
+    margin-left: 4%;
+    height: 50px;
   }
 
-  .plato5 {
-    margin-left: 36%;
+  .imgPlato4 {
+    margin-top: 40%;
+    margin-left: 8%;
+    height: 50px;
   }
-  .plato5Active {
-    margin-left: 9%;
-    position: relative;
-    transform: translate(435%);
+  .imgPlato5 {
+    margin-top: 34%;
+    margin-left: 1%;
+    height: 50px;
   }
-  .tituloPlato5 {
-    position: absolute;
-    margin-left: 30.2%;
+}
+@media (min-width: 500px) {
+  li {
+    margin-left: 2%;
+    background: rgb(255, 255, 255);
+    height: 100px;
+    border-radius: 15px;
   }
-  .contenedorplatos {
-    margin-top: 5%;
+img{
+  height: 40px;
+}
+  ul {
+    padding-right: 0%;
+    display: flex;
+    margin-left: 42%;
   }
-  .prevbtn {
-    position: absolute;
-    margin-top: 14%;
-    margin-left: -43px;
-    font-size: 50px;
-    color: #21445c !important;
+  .imgPlato1 {
+    margin-top: 32%;
+    margin-left: 5%;
+    height: 50px;
+  }
+  .imgPlatoActivo {
+    margin-top: -19%;
+    margin-left: 5%;
+    height: 50px;
   }
 
-  .nextbtn {
-    position: absolute;
-    font-size: 50px;
-    margin-left: 101%;
-    color: #21445c !important;
-    margin-top: 14%;
+
+  .imgPlato2 {
+    margin-top: -32%;
+    margin-left: 12%;
+    height: 50px;
+  }
+  .imgPlatoActivo2 {
+    margin-top: -10%;
+    margin-left: 5%;
+    height: 50px;
   }
 
-  .invisibleCarousel {
-    display: none;
+  .imgPlato3 {
+    margin-top: 43%;
+    margin-left: 4%;
+    height: 50px;
   }
-  .visibleCarousel {
+
+  .imgPlato4 {
+    margin-top: 40%;
+    margin-left: 8%;
+    height: 50px;
+  }
+  .imgPlato5 {
+    margin-top: 34%;
+    margin-left: 1%;
+    height: 50px;
   }
 }
 
-/* 24 pulgadas -->*/
-@media (width: 1920px) {
-  .plato1 {
-    margin-left: 0%;
-  }
-  .plato1Active {
-    margin-left: 9%;
-    transform: translate(5%);
-  }
-  .tituloPlato1 {
-    position: absolute;
-    margin-left: 2.2%;
-  }
-  .tituloPlato1Activo {
-    position: absolute;
-    margin-left: 23.2%;
-  }
-  .contenedorPlato1Activo {
-    background-color: rgb(70, 102, 172);
-    height: 80px;
-    box-shadow: 2px 2px 5px #999;
-    width: 149px;
-    border-radius: 10px;
-  }
 
-  .plato2 {
-    margin-left: 9%;
-  }
-  .plato2Active {
-    margin-left: 9%;
-    transform: translate(120%);
-  }
-  .tituloPlato2 {
-    position: absolute;
-    margin-left: 20%;
-  }
-
-  .plato3 {
-    margin-left: 18%;
-  }
-  .plato3Active {
-    margin-left: 9%;
-    transform: translate(245%);
-  }
-  .tituloPlato3 {
-    position: absolute;
-    margin-left: 8% !important;
-  }
-  .plato3p {
-    text-align: -webkit-center;
-    margin-left: 14%;
-  }
-
-  .plato4 {
-    margin-left: 27%;
-  }
-  .plato4Active {
-    margin-left: 9%;
-    transform: translate(370%);
-  }
-  .tituloPlato4 {
-    position: absolute;
-    margin-left: 25.5%;
-  }
-
-  .plato5 {
-    margin-left: 36%;
-  }
-  .plato5Active {
-    margin-left: 9%;
-    position: relative;
-    transform: translate(490%);
-  }
-  .tituloPlato5 {
-    position: absolute;
-    margin-left: 30.2%;
-  }
-  .contenedorplatos {
-    margin-top: 5%;
-  }
-  .prevbtn {
-    position: absolute;
-    margin-top: 14%;
-    margin-left: -43px;
-    font-size: 50px;
-    color: #21445c !important;
-  }
-  .nextbtn {
-    position: absolute;
-    font-size: 50px;
-    margin-left: 101%;
-    color: #21445c !important;
-    margin-top: 14%;
-  }
-
-  .invisibleCarousel {
-    display: none;
-  }
-  .visibleCarousel {
-  }
-}
-@media (width: 1440px) {
-
-    .texttomato {margin-left: 40%;}
-
-    .plato1 {
-      margin-left: -11%;
-    }
-    .plato1Active {
-      margin-left: 9%;
-      transform: translate(-115%);
-    }
-    .tituloPlato1 {
-      position: absolute;
-      margin-left: 2.2%;
-    }
-    .contenedorPlato1Activo {
-      background-color: rgb(70, 102, 172);
-      height: 80px;
-      box-shadow: 2px 2px 5px #999;
-      width: 149px;
-      border-radius: 10px;
-    }
-  
-    .plato2 {
-      margin-left: 0%;
-    }
-    .plato2Active {
-      margin-left: 9%;
-      transform: translate(-8%);
-    }
-    .tituloPlato2 {
-      position: absolute;
-      margin-left: 20%;
-    }
-  
-    .plato3 {
-      margin-left: 10.5%;
-    }
-    .plato3Active {
-      margin-left: 9%;
-      transform: translate(108%);
-    }
-    .tituloPlato3 {
-      position: absolute;
-      margin-left: 8% !important;
-    }
-    .plato3p {
-      text-align: -webkit-center;
-      margin-left: 14%;
-    }
-  
-    .plato4 {
-      margin-left: 21%;
-    }
-    .plato4Active {
-      margin-left: 9%;
-      transform: translate(219%);
-    }
-    .tituloPlato4 {
-      position: absolute;
-      margin-left: 25.5%;
-    }
-  
-    .plato5 {
-      margin-left: 32%;
-    }
-    .plato5Active {
-      margin-left: 9%;
-      position: relative;
-      transform: translate(330%);
-    }
-    .tituloPlato5 {
-      position: absolute;
-      margin-left: 30.2%;
-    }
-    .contenedorplatos {
-      margin-top: 5%;
-    }
-    .prevbtn {
-      position: absolute;
-      margin-top: 14%;
-      margin-left: -43px;
-      font-size: 50px;
-      color: #21445c !important;
-    }
-    .nextbtn {
-      position: absolute;
-      font-size: 50px;
-      margin-left: 101%;
-      color: #21445c !important;
-      margin-top: 14%;
-    }
-  
-    .invisibleCarousel {
-      display: none;
-    }
-    .visibleCarousel {
-    }
-  }
-  

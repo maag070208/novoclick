@@ -1,121 +1,112 @@
-  <nav class="navbar navbar-expand-lg navbar-dark primary-color znavbar">
-    <!-- Navbar brand -->
-    <h1 class="navbar-brand">Platos Digitales</h1>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+  integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+  crossorigin="anonymous"
+></script>
+<link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+  integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+  crossorigin="anonymous"
+/>
+<script
+  src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+  integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+  crossorigin="anonymous"
+></script>
 
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="basicExampleNav">
-      <!-- Links -->
-      <ul class="navbar-nav ml-12 texttomato">
-        <li style="display: none" class="nav-items contenedorPlatoActivo">
-          <div>
-            <img
-              id="icon-platos"
-              src="../../../../assets/images/+fotos platos digitales/menu-platosD/aperitivos.png"
-              class="imgPlato"
-            />
-          </div>
-        </li>
-        <li
-          (click)="onSelectPlato()"
-          id="plato1"
-          class="nav-items contenedorPlatoActivo plato1"
-          data-options="../../../../assets/images/menu-img/foto aperitivo.png"
-        >
-          <div>
-            <p id="pplato1" class="tituloPlato1">Aperitivo</p>
-            <img
-              id="icon-platos"
-              src="../../../../assets/images/+fotos platos digitales/menu-platosD/aperitivos.png"
-              class="imgPlato"
-            />
-          </div>
-        </li>
-
-        <li
-          (click)="onSelectPlato2()"
-          id="plato2"
-          class="nav-items contenedorPlato plato2"
-          data-options="../../../../assets/images/menu-img/foto aperitivo.png"
-        >
-          <div>
-            <p id="pplato2" class="tituloPlato2">Platos Fuertes</p>
-            <img
-              id="icon-platos"
-              src="../../../../assets/images/+fotos platos digitales/menu-platosD/Platos fuertes.png"
-              class="imgPlato"
-            />
-          </div>
-        </li>
-
-        <li
-          (click)="onSelectPlato3()"
-          id="plato3"
-          class="nav-items contenedorPlato plato3"
-          data-options="../../../../assets/images/menu-img/foto aperitivo.png"
-        >
-          <div>
-            <p id="pplato3" class="tituloPlato plato3p">Platos Especiales</p>
-            <img
-              id="icon-platos"
-              src="../../../../assets/images/+fotos platos digitales/menu-platosD/platos especiales.png"
-              class="imgPlato"
-            />
-          </div>
-        </li>
-
-        <li
-          (click)="onSelectPlato4()"
-          id="plato4"
-          class="nav-items contenedorPlato plato4"
-          data-options="../../../../assets/images/menu-img/foto aperitivo.png"
-        >
-          <div>
-            <p id="pplato4" class="tituloPlato">Adiciones</p>
-            <img
-              id="icon-platos"
-              src="../../../../assets/images/+fotos platos digitales/menu-platosD/postres.png"
-              class="imgPlato"
-            />
-          </div>
-        </li>
-
-        <li
-          (click)="onSelectPlato5()"
-          id="plato5"
-          class="nav-items contenedorPlato plato5"
-          data-options="../../../../assets/images/menu-img/foto aperitivo.png"
-        >
-          <div>
-            <p id="pplato5" class="tituloPlato">Postres</p>
-            <img
-              id="icon-platos"
-              src="../../../../assets/images/+fotos platos digitales/menu-platosD/aperitivos.png"
-              class="imgPlato"
-            />
-          </div>
-        </li>
-      </ul>
+<ul class="list-group flex-sm-row">
+  <li   id="plato1" (click)="onSelectPlato()"  style="border-radius: 15px" class="list-group-item contenedorPlatoActivo">
+    <div>
+      <p id="pplato1" class="tituloPlato1 ">Aperitivo</p>
+      <img
+        id="img1"
+        src="../../../../assets/images/+fotos platos digitales/menu-platosD/aperitivos.png"
+        class="imgPlato1"
+      />
     </div>
-  </nav>
-  <!--/.Navbar-->
-  <section id="backgroundRed" class="backgroundPlato1">
-    <div class="container">
-      <div class="row text-center h5 text-xs-center text-sm-left text-md-left">
-        <div class="col col-xs-12 col-sm-4 col-md-4">
-          <div class="col-sm-4 py-2">
-            <img
-              class="mujerplatosDigitales"
-              src="../../../../assets/images/mujerplatosdigitales.png"
-            />
-          </div>
-        </div>
-        <div class="col col-xs-12 col-sm-12 col-md-8 contenedorplatos">
-          <app-aperitivo id="aperitivosCarousel" class="container my-4 visibleCarousel col-xs-12 col-sm-12 col-md-8"></app-aperitivo>
-          <app-platos-fuertes id="platosFuertesCarousel" class="container my-4 invisibleCarousel col-xs-12 col-sm-12 col-md-8"></app-platos-fuertes>
-          <app-platos-especiales id="platosEspecialesCarousel" class="container my-4 invisibleCarousel col-xs-12 col-sm-12 col-md-8"></app-platos-especiales>
-          <app-adiciones  id="adicionesCarousel" class="container my-4 invisibleCarousel col-xs-12 col-sm-12 col-md-8"></app-adiciones>
-          <app-postres  id="postresCarousel" class="container my-4 invisibleCarousel col-xs-12 col-sm-12 col-md-8"></app-postres>
+  </li>
+  <li (click)="onSelectPlato2()"  id="plato2" class="list-group-item ">
+    <div>
+      <p id="pplato2" class="tituloPlato2">Platos Fuertes</p>
+      <img
+        id="img2"
+        src="../../../../assets/images/+fotos platos digitales/menu-platosD/Platos fuertes.png"
+        class="imgPlato2"
+        />
+    </div>
+  </li>
+  <li (click)="onSelectPlato3()"  id="plato3" class="list-group-item ">
+    <div>
+      <p id="pplato3" style="margin-top: -9%;" class="tituloPlato3 plato3p">Platos Especiales</p>
+      <img
+        id="img3"
+        src="../../../../assets/images/+fotos platos digitales/menu-platosD/platos especiales.png"
+        class="imgPlato3"
+      />
+    </div>
+  </li>
+  <li (click)="onSelectPlato4()"  id="plato4" class="list-group-item ">
+    <div>
+      <p id="pplato4" style="margin-left: 1%;" class="tituloPlato4">Adiciones</p>
+      <img
+        id="img4"
+        src="../../../../assets/images/+fotos platos digitales/menu-platosD/adciones.png"
+        class="imgPlato4"
+      />
+    </div>
+  </li>
+  <li (click)="onSelectPlato5()"  style="border-radius: 15px "  id="plato5" class="list-group-item ">
+    <div>
+      <p id="pplato5" style="margin-left: 12%;" class="tituloPlato5">Postres</p>
+      <img
+        id="img5"
+        src="../../../../assets/images/+fotos platos digitales/menu-platosD/postres.png"
+        class="imgPlato5"
+      />
+    </div>
+  </li>
+</ul>
+
+<!--/.Navbar-->
+<section id="backgroundRed" class="backgroundPlato1">
+  <div class="container">
+    <div class="row text-center h5 text-xs-center text-sm-left text-md-left">
+      <div class="col col-xs-12 col-sm-4 col-md-4">
+        <div class="col-sm-4 py-2">
+          <img
+            class="mujerplatosDigitales"
+            src="../../../../assets/images/mujerplatosdigitales.png"
+          />
         </div>
       </div>
+      <div class="col col-xs-12 col-sm-12 col-md-8 contenedorplatos">
+        <app-aperitivo
+          id="aperitivosCarousel"
+          class="container my-4 visibleCarousel col-xs-12 col-sm-12 col-md-8"
+        ></app-aperitivo>
+        <app-platos-fuertes
+          id="platosFuertesCarousel"
+          class="container my-4 invisibleCarousel col-xs-12 col-sm-12 col-md-8"
+        ></app-platos-fuertes>
+        <app-platos-especiales
+          id="platosEspecialesCarousel"
+          class="container my-4 invisibleCarousel col-xs-12 col-sm-12 col-md-8"
+        ></app-platos-especiales>
+        <app-adiciones
+          id="adicionesCarousel"
+          class="container my-4 invisibleCarousel col-xs-12 col-sm-12 col-md-8"
+        ></app-adiciones>
+        <app-postres
+          id="postresCarousel"
+          class="container my-4 invisibleCarousel col-xs-12 col-sm-12 col-md-8"
+        ></app-postres>
+      </div>
     </div>
-  </section>
+  </div>
+</section>

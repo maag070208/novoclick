@@ -1,84 +1,94 @@
-@media (max-width:1930px){
-   
+@media (max-width: 1930px) {
+  .prevbtn {
+    position: absolute;
+    margin-top: 14%;
+    margin-left: -43px;
+    font-size: 50px;
+  }
+  .nextbtn {
+    position: absolute;
+    font-size: 50px;
+    margin-left: 101%;
+    margin-top: 14%;
+  }
+}
+.prevbtn {
+  position: absolute;
+  margin-top: 14%;
+  margin-left: -43px;
+  font-size: 50px;
+}
+.nextbtn {
+  position: absolute;
+  font-size: 50px;
+  margin-left: 101%;
+  margin-top: 14%;
+}
+.znavbar {
+  z-index: 2;
+  margin-top: 7%;
+}
 
-    .prevbtn{
-        position: absolute;
-        margin-top: 14%;
-        margin-left: -43px;
-        font-size: 50px;
-    }
-    .nextbtn{
-        position: absolute;
-        font-size: 50px;
-        margin-left: 101%;
-        margin-top: 14%;
-    }
-    }
-    .znavbar{
-        z-index: 2;
-        margin-top: 7%;
-    }
-    
-    .sectionPlatos{
-        padding-top: 15%;
-    }
+.sectionPlatos {
+  padding-top: 15%;
+}
+input[type="checkbox"] + label {
+  display: block;
+  margin: 0.2em;
+  cursor: pointer;
+  padding: 0.2em;
+}
 
-    
-  
-  input[type=checkbox] + label {
-    display: block;
-    margin: 0.2em;
-    cursor: pointer;
-    padding: 0.2em;
-  }
-  
-  input[type=checkbox] {
-    display: none;
-  }
-  
-  input[type=checkbox] + label:before {
-    content: "";
-    border: 0.1em solid #000;
-    border-radius: 0.2em;
-    display: inline-block;
-    width: 1.4em;
-    height: 1.4em;
-    padding-left: 0.1em;
-    padding-top: -4px;
-    margin-right: 0.2em;
-    color: transparent;
-    transition: .2s;
-  }
-  img{
-    height: 60px;
-    width: 80px;
-    margin-left: 30%;
-  }
-  input[type=checkbox] + label:active:before {
-    transform: scale(0);
-  }
-  
-  input[type=checkbox]:checked + label:before {
-    color: #fff;
-  }
-  
-  input[type=checkbox]:disabled + label:before {
-    transform: scale(1);
-    border-color: #aaa;
-  }
-  
-  input[type=checkbox]:checked:disabled + label:before {
-    transform: scale(1);
-    background-color: #bfb;
-    border-color: #bfb;
-  }
+input[type="checkbox"] {
+  display: none;
+}
 
-  .visibleCard{
-    background-color: white;
-    height: 150px;
-    border-radius: 20px;
-    box-shadow: 20px -5px 20px #999;
-    margin-top: 15px;
-  }
+input[type="checkbox"] + label:before {
+  content: "";
+  border: 0.1em solid #000;
+  border-radius: 0.2em;
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
+  padding-left: 0.1em;
+  padding-top: -4px;
+  margin-right: 0.2em;
+  color: transparent;
+  transition: 0.2s;
+}
+img {
+  height: 60px;
+  width: 80px;
+  margin-left: 30%;
+}
+input[type="checkbox"] + label:active:before {
+  transform: scale(0);
+}
 
-  .invisibleCard{display: none;}
+input[type="checkbox"]:checked + label:before {
+  color: #fff;
+}
+
+input[type="checkbox"]:disabled + label:before {
+  transform: scale(1);
+  border-color: #aaa;
+}
+
+input[type="checkbox"]:checked:disabled + label:before {
+  transform: scale(1);
+  background-color: #bfb;
+  border-color: #bfb;
+}
+
+.visibleCard {
+  background-color: white;
+  height: 150px;
+  border-radius: 20px;
+  box-shadow: 20px -5px 20px #999;
+  margin-top: 15px;
+}
+
+.invisibleCard {
+  display: none;
+}
+

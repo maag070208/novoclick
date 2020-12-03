@@ -1,8 +1,9 @@
 .video{
     position: inherit;
-    margin-top: 4.5%;
+    margin-top: 3.5%;
     padding-bottom: 9%;
     width: -webkit-fill-available;
+    display: block;
  }
  .contenedor-bienvenida {
     display: flex;
@@ -10,6 +11,8 @@
     justify-content: flex-start;
     margin-top: -48%;
     margin-left: 8%;
+    transform: translate(10px, -235%);
+
 }
 .container-welcome {
     position: relative;

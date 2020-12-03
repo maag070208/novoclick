@@ -41,8 +41,8 @@ export class DishesComponent implements OnInit {
   onSelectPlato() {
     let plato = document.getElementById('plato1');
     let pplato1 = document.getElementById('pplato1');
-
     let aperitivosCarousel = document.getElementById('aperitivosCarousel');
+    let img = document.getElementById('img1');
     aperitivosCarousel.classList.replace(
       'invisibleCarousel',
       'visibleCarousel'
@@ -50,8 +50,7 @@ export class DishesComponent implements OnInit {
 
     plato.classList.replace('contenedorPlato', 'contenedorPlatoActivo');
     pplato1.classList.replace('tituloPlato1', 'tituloPlato1Activo');
-    
-    plato.classList.replace('plato1', 'plato1Active');
+    img.classList.replace('imgPlato1', 'imgPlatoActivo');
     plato.style.background = '#8edff4';
 
     //Desactive other dishes
@@ -59,28 +58,25 @@ export class DishesComponent implements OnInit {
     //2
     let plato2 = document.getElementById('plato2');
     plato2.classList.replace('contenedorPlatoActivo', 'contenedorPlato');
-    plato2.classList.replace('plato2Active', 'plato2');
+   
     plato2.style.background = '#FFFFFF';
     //3
     let plato3 = document.getElementById('plato3');
     let pplato3 = document.getElementById('pplato3');
     plato3.classList.replace('contenedorPlatoActivo', 'contenedorPlato');
-    plato3.classList.replace('plato3Active', 'plato3');
-    pplato3.classList.replace('tituloPlato3', 'tituloPlato');
+   
     plato3.style.background = '#FFFFFF';
     //4
     let plato4 = document.getElementById('plato4');
     let pplato4 = document.getElementById('pplato4');
     plato4.classList.replace('contenedorPlatoActivo', 'contenedorPlato');
-    plato4.classList.replace('plato4Active', 'plato4');
-    pplato4.classList.replace('tituloPlato4', 'tituloPlato');
+   
     plato4.style.background = '#FFFFFF';
     //5
     let plato5 = document.getElementById('plato5');
     let pplato5 = document.getElementById('pplato5');
     plato5.classList.replace('contenedorPlatoActivo', 'contenedorPlato');
-    plato5.classList.replace('plato5Active', 'plato5');
-    pplato5.classList.replace('tituloPlato5', 'tituloPlato');
+   
     plato5.style.background = '#FFFFFF';
 
     //fuertes
@@ -127,7 +123,6 @@ export class DishesComponent implements OnInit {
   onSelectPlato2() {
     let plato2 = document.getElementById('plato2');
     let pplato2 = document.getElementById('pplato2');
-
     let platosFuertesCarousel = document.getElementById(
       'platosFuertesCarousel'
     );
@@ -146,26 +141,18 @@ export class DishesComponent implements OnInit {
     let plato = document.getElementById('plato1');
     let pplato1 = document.getElementById('pplato1');
     plato.classList.replace('contenedorPlatoActivo', 'contenedorPlato');
-    plato.classList.replace('plato1Active', 'plato1');
-    pplato1.classList.replace('tituloPlato1', 'tituloPlato');
     //3
     let plato3 = document.getElementById('plato3');
     let pplato3 = document.getElementById('pplato3');
     plato3.classList.replace('contenedorPlatoActivo', 'contenedorPlato');
-    plato3.classList.replace('plato3Active', 'plato3');
-    pplato3.classList.replace('tituloPlato3', 'tituloPlato');
     //4
     let plato4 = document.getElementById('plato4');
     let pplato4 = document.getElementById('pplato4');
     plato4.classList.replace('contenedorPlatoActivo', 'contenedorPlato');
-    plato4.classList.replace('plato4Active', 'plato4');
-    pplato4.classList.replace('tituloPlato4', 'tituloPlato');
     //5
     let plato5 = document.getElementById('plato5');
     let pplato5 = document.getElementById('pplato5');
     plato5.classList.replace('contenedorPlatoActivo', 'contenedorPlato');
-    plato5.classList.replace('plato5Active', 'plato5');
-    pplato5.classList.replace('tituloPlato5', 'tituloPlato');
 
     let aperitivosCarousel = document.getElementById('aperitivosCarousel');
     aperitivosCarousel.classList.replace(
@@ -224,8 +211,7 @@ export class DishesComponent implements OnInit {
     let plato = document.getElementById('plato1');
     let pplato1 = document.getElementById('pplato1');
     plato.classList.replace('contenedorPlatoActivo', 'contenedorPlato');
-    plato.classList.replace('plato1Active', 'plato1');
-    pplato1.classList.replace('tituloPlato1', 'tituloPlato');
+   
     //2
     let plato2 = document.getElementById('plato2');
     plato2.classList.replace('contenedorPlatoActivo', 'contenedorPlato');
@@ -234,14 +220,12 @@ export class DishesComponent implements OnInit {
     let plato4 = document.getElementById('plato4');
     let pplato4 = document.getElementById('pplato4');
     plato4.classList.replace('contenedorPlatoActivo', 'contenedorPlato');
-    plato4.classList.replace('plato4Active', 'plato4');
-    pplato4.classList.replace('tituloPlato4', 'tituloPlato');
+   
     //5
     let plato5 = document.getElementById('plato5');
     let pplato5 = document.getElementById('pplato5');
     plato5.classList.replace('contenedorPlatoActivo', 'contenedorPlato');
-    plato5.classList.replace('plato5Active', 'plato5');
-    pplato5.classList.replace('tituloPlato5', 'tituloPlato');
+    
 
     plato.style.background = '#FFFFFF';
     plato2.style.background = '#FFFFFF';
@@ -308,24 +292,20 @@ export class DishesComponent implements OnInit {
     let plato = document.getElementById('plato1');
     let pplato1 = document.getElementById('pplato1');
     plato.classList.replace('contenedorPlatoActivo', 'contenedorPlato');
-    plato.classList.replace('plato1Active', 'plato1');
-    pplato1.classList.replace('tituloPlato1', 'tituloPlato');
+   
     //2
     let plato2 = document.getElementById('plato2');
     plato2.classList.replace('contenedorPlatoActivo', 'contenedorPlato');
-    plato2.classList.replace('plato2Active', 'plato2');
     //3
     let plato3 = document.getElementById('plato3');
     let pplato3 = document.getElementById('pplato3');
     plato3.classList.replace('contenedorPlatoActivo', 'contenedorPlato');
-    plato3.classList.replace('plato3Active', 'plato3');
-    pplato3.classList.replace('tituloPlato3', 'tituloPlato');
+   
     //5
     let plato5 = document.getElementById('plato5');
     let pplato5 = document.getElementById('pplato5');
     plato5.classList.replace('contenedorPlatoActivo', 'contenedorPlato');
-    plato5.classList.replace('plato5Active', 'plato5');
-    pplato5.classList.replace('tituloPlato5', 'tituloPlato');
+   
 
       //adiciones
       let adicionesCarousel = document.getElementById(
@@ -394,24 +374,18 @@ export class DishesComponent implements OnInit {
     let plato = document.getElementById('plato1');
     let pplato1 = document.getElementById('pplato1');
     plato.classList.replace('contenedorPlatoActivo', 'contenedorPlato');
-    plato.classList.replace('plato1Active', 'plato1');
-    pplato1.classList.replace('tituloPlato1', 'tituloPlato');
+  
     //2
     let plato2 = document.getElementById('plato2');
     plato2.classList.replace('contenedorPlatoActivo', 'contenedorPlato');
-    plato2.classList.replace('plato2Active', 'plato2');
     //3
     let plato3 = document.getElementById('plato3');
     let pplato3 = document.getElementById('pplato3');
     plato3.classList.replace('contenedorPlatoActivo', 'contenedorPlato');
-    plato3.classList.replace('plato3Active', 'plato3');
-    pplato3.classList.replace('tituloPlato3', 'tituloPlato');
     //4
     let plato4 = document.getElementById('plato4');
     let pplato4 = document.getElementById('pplato4');
     plato4.classList.replace('contenedorPlatoActivo', 'contenedorPlato');
-    plato4.classList.replace('plato4Active', 'plato4');
-    pplato4.classList.replace('tituloPlato4', 'tituloPlato');
 
 
       //postres

@@ -26,6 +26,7 @@ section .section-title {
 #footer {
     background: #ffffff !important;
     margin-top: -7%;
+    display: contents;
 }
 #footer h5{
 	padding-left: 10px;
