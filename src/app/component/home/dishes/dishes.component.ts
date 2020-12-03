@@ -49,7 +49,9 @@ export class DishesComponent implements OnInit {
     );
 
     plato.classList.replace('contenedorPlato', 'contenedorPlatoActivo');
-    pplato1.classList.replace('tituloPlato', 'tituloPlato1');
+    pplato1.classList.replace('tituloPlato1', 'tituloPlato1Activo');
+    
+    plato.classList.replace('plato1', 'plato1Active');
     plato.style.background = '#8edff4';
 
     //Desactive other dishes
@@ -113,9 +115,6 @@ export class DishesComponent implements OnInit {
       'visibleCarousel',
       'invisibleCarousel'
     );
-
- 
-
 
     let backgroundRed = document.getElementById('backgroundRed');
     backgroundRed.classList.remove('backgroundPlato2');

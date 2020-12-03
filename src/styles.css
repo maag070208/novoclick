@@ -22,3 +22,12 @@
 body{
     overflow-x: hidden;
  }
+
+
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 800px) {
+    body {
+        width:480px;
+        background-color: rgb(195, 0, 0);
+    } 
+}

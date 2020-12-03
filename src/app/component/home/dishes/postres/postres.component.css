@@ -46,7 +46,11 @@
     color: transparent;
     transition: .2s;
   }
-  
+  img{
+    height: 60px;
+    width: 80px;
+    margin-left: 30%;
+  }
   input[type=checkbox] + label:active:before {
     transform: scale(0);
   }

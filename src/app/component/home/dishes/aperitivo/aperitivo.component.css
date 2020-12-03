@@ -23,7 +23,11 @@
     padding-top: 15%;
 }
 
-
+img{
+  height: 60px;
+  width: 80px;
+  margin-left: 30%;
+}
   
   input[type=checkbox] + label {
     display: block;

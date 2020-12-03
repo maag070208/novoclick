@@ -60,7 +60,7 @@ section p {
   width: 150pc;
   height: 1500px;
   position: fixed;
-  background: linear-gradient(to top, #4b4949, #081f31, #0e3555, #164769, #4bbbe8);
+  background: #f2f2f2;
   transform: translate(-18.3%, -24%);
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
 }
@@ -87,7 +87,7 @@ section p {
   position: fixed;
   margin-top: 27%;
   margin-left: -54%;
-  color: #007bff;
+  color:#21445c;
   text-decoration: none;
   background-color: transparent;
 }

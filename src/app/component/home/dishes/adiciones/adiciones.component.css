@@ -49,14 +49,16 @@
     color: transparent;
     transition: .2s;
   }
-  
+  img{
+    height: 60px;
+    width: 80px;
+    margin-left: 30%;
+  }
   input[type=checkbox] + label:active:before {
     transform: scale(0);
   }
   
   input[type=checkbox]:checked + label:before {
-    background-color: MediumSeaGreen;
-    border-color: MediumSeaGreen;
     color: #fff;
   }
   
@@ -70,3 +72,13 @@
     background-color: #bfb;
     border-color: #bfb;
   }
+
+  .visibleCard{
+    background-color: white;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: 20px -5px 20px #999;
+    margin-top: 15px;
+  }
+
+  .invisibleCard{display: none;}

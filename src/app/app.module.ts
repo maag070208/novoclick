@@ -24,6 +24,10 @@ import { PlatosFuertesComponent } from './component/home/dishes/platos-fuertes/p
 import { PlatosEspecialesComponent } from './component/home/dishes/platos-especiales/platos-especiales.component';
 import { AdicionesComponent } from './component/home/dishes/adiciones/adiciones.component';
 import { PostresComponent } from './component/home/dishes/postres/postres.component';
+import { ClientsComponent } from './component/home/clients/clients.component';
+import { InmobiliarioComponent } from './component/home/clients/inmobiliario/inmobiliario.component';
+import { EducacionComponent } from './component/home/clients/educacion/educacion.component';
+import { AutomotrizComponent } from './component/home/clients/automotriz/automotriz.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,7 +51,11 @@ import { PostresComponent } from './component/home/dishes/postres/postres.compon
     PlatosFuertesComponent,
     PlatosEspecialesComponent,
     AdicionesComponent,
-    PostresComponent
+    PostresComponent,
+    ClientsComponent,
+    InmobiliarioComponent,
+    EducacionComponent,
+    AutomotrizComponent
   ],
   imports: [
     BrowserModule,

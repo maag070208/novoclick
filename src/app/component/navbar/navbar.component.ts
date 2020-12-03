@@ -19,7 +19,7 @@ export class NavbarComponent implements OnInit {
     window.scrollTo({top: 2800});
    }
    platosDigitales() {
-    window.scrollTo({top: 3800});
+    window.scrollTo({top: 3750});
    }
    academia() {
     window.scrollTo({top: 1100});

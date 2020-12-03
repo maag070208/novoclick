@@ -11,7 +11,6 @@ export class AppComponent {
   constructor( ) {}
 
   ngOnInit(): void {
-
     setTimeout(()=>{
       this.displayLoader();
       document.getElementById('loading').style.display = 'none';

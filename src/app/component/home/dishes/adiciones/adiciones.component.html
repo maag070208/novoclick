@@ -29,80 +29,44 @@
       <!--First slide-->
       <div class="carousel-item active">
         <div class="row">
-          <div class="col-md-4">
+
+          <div *ngFor="let c of card; let i = index" class="col-md-4">
             <div
               style="border-radius: 30px; box-shadow: 2px 2px 5px #999"
               class="card mb-2"
             >
               <img
-                height="150"
                 class="card-img-top img-carousel"
-                src="../../../../../assets/images/paltosDigitales/adiciones/CALIFICACIÓN DE LEADS .png"
+                src="{{c.img}}"
                 alt="Card image cap"
               />
               <br />
-              <h4 class="card-title text-center h5">Calificacion de leads</h4>
-               <div class="form-group text-center">
+              <h4 class="card-title text-center h5">{{c.title}} {{i}} </h4>
+               <div (click)="onSelectCard(c.id, c.desc)" class="form-group text-center">
                 <div class="form-group text-center">
-                  <input
+                  <input id="inputCheck"
                     type="checkbox"
-                    id="checkboxAdiciones1"
+                    id="{{c.id}}"
                   />
-                  <label for="checkboxAdiciones1"></label>
+                  <label for="{{c.id}}"></label>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4 clearfix d-none d-md-block">
-            <div
-              style="border-radius: 30px; box-shadow: 2px 2px 5px #999"
-              class="card mb-2"
-            >
-              <img
-                height="150"
-                class="card-img-top img-carousel"
-                src="../../../../../assets/images/paltosDigitales/adiciones/CONVERSIÓN DE LEADS .png"
-                alt="Card image cap"
-              />
-              <br />
-              <h4 class="card-title text-center h5">Conversion de leads</h4>
-               <div class="form-group text-center">
-                <div class="form-group text-center">
-                  <input
-                    type="checkbox"
-                    id="checkboxAdiciones2"
-                  />
-                  <label for="checkboxAdiciones2"></label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 clearfix d-none d-md-block">
-            <div
-              style="border-radius: 30px; box-shadow: 2px 2px 5px #999"
-              class="card mb-2"
-            >
-              <img
-                height="150"
-                class="card-img-top img-carousel"
-                src="../../../../../assets/images/paltosDigitales/adiciones/GESTIÓN DE LEADS.png"
-                alt="Card image cap"
-              />
-              <br />
-              <h4 class="card-title text-center h5">Gestion de leads</h4>
-               <div class="form-group text-center">
-                <div class="form-group text-center">
-                  <input
-                    type="checkbox"
-                    id="checkboxAdiciones3"
-                  />
-                  <label for="checkboxAdiciones3"></label>
-                </div>
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
     </div>
   </div>
+<!--END CAROUSEL-->
+
+  <div id="adicionesCard" class="invisibleCard">
+    <h6 class="card-subtitle mb-2 text-muted">{{desc}}</h6>
+    <div class="card-footer cardFooter">
+      <a class="card-link "><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
+      <a class="card-link"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
+    </div>
+  </div>
+
 </div>
+
