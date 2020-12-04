@@ -3,73 +3,11 @@
 section {
     padding-top: 10%;
 }
-.invisible{
-    display: none;
-}
-.visible{
-    display: flex;
-}
-section .section-title {
-    text-align: center;
-    margin-bottom: 50px;
-    text-transform: uppercase;
-}
-
-
-@media (max-width:650px){
-    #footer {
-        background: #000000 !important;
-        margin-top: -7%;
-    }
-}
 
 #footer {
     background: #ffffff !important;
     margin-top: -7%;
     display: contents;
-}
-#footer h5{
-	padding-left: 10px;
-    border-left: 3px solid;
-    padding-bottom: 6px;
-    margin-bottom: 20px;
-}
-#footer a {
-    text-decoration: none !important;
-    background-color: transparent;
-    -webkit-text-decoration-skip: objects;
-}
-#footer ul.social li{
-	padding: 3px 0;
-}
-#footer ul.social li a i {
-    margin-right: 5px;
-	font-size:25px;
-	-webkit-transition: .5s all ease;
-	-moz-transition: .5s all ease;
-	transition: .5s all ease;
-}
-#footer ul.social li:hover a i {
-	font-size:30px;
-	margin-top:-10px;
-}
-
-#footer ul.quick-links li{
-	padding: 3px 0;
-	-webkit-transition: .5s all ease;
-	-moz-transition: .5s all ease;
-	transition: .5s all ease;
-}
-#footer ul.quick-links li:hover{
-	padding: 3px 0;
-	margin-left:5px;
-	font-weight:700;
-}
-#footer ul.quick-links li a i{
-	margin-right: 5px;
-}
-#footer ul.quick-links li:hover a i {
-    font-weight: 700;
 }
 
 @media (max-width:767px){
@@ -80,15 +18,8 @@ section .section-title {
     margin-bottom: 10px;
   }
 }
-@media (max-width:1930px){
-  .divsomos{
-    margin-left: -10%;
- }
-}
 @media (max-width:1690px){
-    .divsomos{
-      margin-left: -1%;
-   }
+   
    .imgtomate{
        height: 300px;
    }
@@ -128,8 +59,7 @@ p.line {
     font-size: 25px;
     text-align: left;
     color: #000 !important;
-    text-align: left;
-    line-height: 1.7;
+    text-align: center;
 }
 
 .img-avatar {
