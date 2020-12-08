@@ -1,0 +1,119 @@
+@media (min-width: 1024px) {
+  p.line {
+    text-align: inherit;
+    font-weight: 900;
+    color: #4ac3f2;
+    margin-top: -7%;
+    margin-left: 9%;
+    position: absolute;
+  }
+  .title {
+    color: #4ac3f2;
+    font: 50px sans-serif;
+    margin-left: 10%;
+  }
+  .subtitle {
+    font-size: 25px;
+    width: 200%;
+    margin-left: -79%;
+  }
+  .contenedorBlog {
+    transform: translateX(14%);
+    margin-top: 5%;
+    margin-left: 45%;
+    margin-bottom: 8%;
+  }
+  .imgBlog {
+      margin-top: 5%;
+  }
+
+  .cardBlog {
+    margin-top: 5%;
+    border-radius: 15px;
+    box-shadow: 13px 13px 21px #999;
+  }
+  .cardTextBlog {
+    font-size: 25px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1440px) {
+  p.line {
+    text-align: inherit;
+    font-weight: 900;
+    color: #4ac3f2;
+    margin-top: -7%;
+    margin-left: 9%;
+    position: absolute;
+  }
+  .title {
+    color: #4ac3f2;
+    font: 50px sans-serif;
+    margin-left: 10%;
+  }
+  .subtitle {
+    font-size: 25px;
+    width: 200%;
+    margin-left: -79%;
+  }
+  .contenedorBlog {
+    transform: translateX(14%);
+    margin-top: 5%;
+    margin-left: 0%;
+    margin-bottom: 8%;
+  }
+  .imgBlog {
+      margin-top: 5%;
+  }
+
+  .cardBlog {
+    margin-top: 5%;
+    border-radius: 15px;
+    box-shadow: 13px 13px 21px #999;
+  }
+  .cardTextBlog {
+    font-size: 25px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1920px) {
+  p.line {
+    text-align: inherit;
+    font-weight: 900;
+    color: #4ac3f2;
+    margin-top: -7%;
+    margin-left: 9%;
+    position: absolute;
+  }
+  .title {
+    color: #4ac3f2;
+    font: 50px sans-serif;
+    margin-left: 10%;
+  }
+  .subtitle {
+    font-size: 25px;
+    width: 200%;
+    margin-left: -79%;
+  }
+  .contenedorBlog {
+    transform: translateX(14%);
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-bottom: 8%;
+  }
+  .imgBlog {
+      margin-top: 5%;
+  }
+
+  .cardBlog {
+    margin-top: 5%;
+    border-radius: 15px;
+    box-shadow: 13px 13px 21px #999;
+  }
+  .cardTextBlog {
+    font-size: 25px;
+    text-align: center;
+  }
+}

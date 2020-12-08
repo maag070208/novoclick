@@ -1,11 +1,71 @@
-.navbarCss{ 
-    background: linear-gradient(to right, #000, #081f31, #0e3555, #164769, #4bbbe8);
+@media only screen and (min-width: 425px) {
+    #navItem1 {
+        display: none;
+      }
+      #navItem2 {
+        display: none;
+      }
+      #navItem3 {
+        display: none;
+      }
+      #navItem4 {
+        display: none;
+      }
+      #navItem5 {
+        display: contents;
+      }
+      #imgNavbarRes {
+        margin-left: -115%;
+        margin-top: -4%;
+      }
+      .navbarCss {
+        background: rgb(0, 255, 98);
+        height: 100px;
+        width: 100%;
+        position: fixed;
+        z-index: 9999;
+      }
+      .container-hamburger {
+        position: relative;
+        top: 5px;
+        color: white;
+        font-size: 35px;
+        cursor: pointer;
+        margin-left: 40px;
+        margin-bottom: 5px;
+      }
+      
+      .navbarText {
+        margin-right: 7.5%;
+      }
+}
+@media only screen and (min-width: 768px) {
+  #navItem1 {
+    display: inherit;
+  }
+  #navItem2 {
+    display: inherit;
+  }
+  #navItem3 {
+    display: inherit;
+  }
+  #navItem4 {
+    display: inherit;
+  }
+  #navItem5 {
+    display: contents;
+  }
+  #imgNavbarRes {
+    margin-left: -50%;
+  }
+  .navbarCss {
+    background: red;
     height: 100px;
     width: 100%;
     position: fixed;
     z-index: 9999;
-}
-.container-hamburger {
+  }
+  .container-hamburger {
     position: relative;
     top: 5px;
     color: white;
@@ -13,24 +73,141 @@
     cursor: pointer;
     margin-left: 40px;
     margin-bottom: 5px;
-}
+  }
 
-.navbarText{
+  .navbarText {
     margin-right: 7.5%;
+  }
 }
+@media only screen and (min-width: 1024px) {
+  #navItem1 {
+    display: inherit;
+  }
+  #navItem2 {
+    display: inherit;
+  }
+  #navItem3 {
+    display: inherit;
+  }
+  #navItem4 { 
+    display: inherit;
+  }
+  #navItem5 {
+    display: contents;
+  }
+  .navbarCss {
+    background: linear-gradient(
+      to right,
+      #000,
+      #081f31,
+      #0e3555,
+      #164769,
+      #4bbbe8
+    );
+    height: 150px;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+  }
+  .container-hamburger {
+    position: relative;
+    top: 5px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    margin-left: 40px;
+    margin-bottom: 5px;
+  }
 
-@media screen and (max-width: 600px) {
-    .navbarCss{ 
-        background: linear-gradient(to right, #000, #081f31, #0e3555, #164769, #4bbbe8);
-        height: 150px;
+  .navbarText {
+    margin-right: 7.5%;
+  }
+}
+@media only screen and (min-width: 1440px) {
+    #navItem1 {
+      display: inherit;
+    }
+    #navItem2 {
+      display: inherit;
+    }
+    #navItem3 {
+      display: inherit;
+    }
+    #navItem4 {
+      display: inherit;
+    }
+    #navItem5 {
         
     }
-    
+    .navbarCss {
+      background: linear-gradient(
+        to right,
+        #000,
+        #081f31,
+        #0e3555,
+        #164769,
+        #4bbbe8
+      );
+      height: 100px;
+      width: 100%;
+      position: fixed;
+      z-index: 9999;
+    }
+    .container-hamburger {
+      position: relative;
+      top: 5px;
+      color: white;
+      font-size: 35px;
+      cursor: pointer;
+      margin-left: 40px;
+      margin-bottom: 5px;
+    }
+  
+    .navbarText {
+      margin-right: 7.5%;
+    }
 }
-@media (min-width: 992px){
-.navbar-expand-lg .navbar-collapse {
-    display: flex!important;
-    flex-basis: auto;
-    margin-top: 1%;
- }
+@media only screen and (min-width: 1450px) {
+  #navItem1 {
+    display: inherit;
+  }
+  #navItem2 {
+    display: inherit;
+  }
+  #navItem3 {
+    display: inherit;
+  }
+  #navItem4 {
+    display: inherit;
+  }
+  #navItem5 {
+      
+  }
+  .navbarCss {
+    background: linear-gradient(
+      to right,
+      #000,
+      #081f31,
+      #0e3555,
+      #164769,
+      #4bbbe8
+    );
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+  }
+  .container-hamburger {
+    position: relative;
+    top: 5px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    margin-left: 40px;
+    margin-bottom: 5px;
+  }
+
+  .navbarText {
+    margin-right: 7.5%;
+  }
 }

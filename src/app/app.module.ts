@@ -28,6 +28,11 @@ import { ClientsComponent } from './component/home/clients/clients.component';
 import { InmobiliarioComponent } from './component/home/clients/inmobiliario/inmobiliario.component';
 import { EducacionComponent } from './component/home/clients/educacion/educacion.component';
 import { AutomotrizComponent } from './component/home/clients/automotriz/automotriz.component';
+import { CarouselComponent } from './component/home/academy/carousel/carousel.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,11 +60,13 @@ import { AutomotrizComponent } from './component/home/clients/automotriz/automot
     ClientsComponent,
     InmobiliarioComponent,
     EducacionComponent,
-    AutomotrizComponent
+    AutomotrizComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

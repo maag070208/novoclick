@@ -1,0 +1,94 @@
+@media (min-width: 1024px) {
+    .visibleCarousel{
+        width: 150%;
+        margin-left: 15%;
+    }
+  .prevbtn {
+    position: absolute;
+    margin-top: 14%;
+    margin-left: -43px;
+    font-size: 50px;
+  }
+  .nextbtn {
+    position: absolute;
+    font-size: 50px;
+    margin-left: 101%;
+    margin-top: 14%;
+  }
+
+  .znavbar {
+    z-index: 2;
+    margin-top: 7%;
+  }
+
+  .sectionPlatos {
+    padding-top: 15%;
+  }
+
+  img {
+    height: 355px;
+    width: 327px;
+  }
+}
+
+@media (min-width: 1440px) {
+    .visibleCarousel{
+        width: 100%;
+        margin-left: 0px;
+    }
+  .prevbtn {
+    position: absolute;
+    margin-top: 14%;
+    margin-left: -43px;
+    font-size: 50px;
+  }
+  .nextbtn {
+    position: absolute;
+    font-size: 50px;
+    margin-left: 101%;
+    margin-top: 14%;
+  }
+
+  .znavbar {
+    z-index: 2;
+    margin-top: 7%;
+  }
+
+  .sectionPlatos {
+    padding-top: 15%;
+  }
+
+  img {
+    height: 355px;
+    width: 327px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .prevbtn {
+    position: absolute;
+    margin-top: 14%;
+    margin-left: -43px;
+    font-size: 50px;
+  }
+  .nextbtn {
+    position: absolute;
+    font-size: 50px;
+    margin-left: 101%;
+    margin-top: 14%;
+  }
+
+  .znavbar {
+    z-index: 2;
+    margin-top: 7%;
+  }
+
+  .sectionPlatos {
+    padding-top: 15%;
+  }
+
+  img {
+    height: 355px;
+    width: 327px;
+  }
+}

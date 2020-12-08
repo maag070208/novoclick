@@ -1,1 +1,71 @@
-<p>contact works!</p>
+<div class="modal-body row cardForm">
+  <div class="col-md-6">
+    <div class="col-sm">
+      <div class="col-xs-12 col-sm-4 col-md-8">
+        <h1 class="title">CONTACTO</h1>
+        <p class="line">______________________</p>
+        <p class="subtitle">
+          Que buena experiencia te llevarías al trabajar con el mejor team de
+          chefs digitales. Estamos al servicio de una atención personalizada de
+          tus necesidades para ofrecerte el mejor.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <form action="envioformulario.php" method="POST" class="form-register">
+      <form class="text-center border border-light p-5" action="#!">
+        <div class="form-row mb-4">
+          <div class="col">
+            <input
+              type="text"
+              id="nombreForm"
+              class="form-input  form-control"
+              placeholder="Nombres:"
+            />
+          </div>
+          <div class="col">
+            <input
+              type="text"
+              id="correoElectronicoForm"
+              class="form-input  form-control"
+              placeholder="Correo electronico:"
+            />
+          </div>
+        </div>
+
+        <div class="form-row mb-4">
+          <div class="col">
+            <input
+              type="text"
+              id="telefonoForm"
+              class="form-input  form-control"
+              placeholder="Telefono:"
+            />
+          </div>
+          <div class="col">
+            <input
+              type="text"
+              id="empresaForm"
+              class="form-input  form-control"
+              placeholder="Empresa:"
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <textarea
+            class="form-control rounded-0 form-input"
+            id="mensajeForm"
+            rows="3"
+            placeholder="Mensaje:"
+          ></textarea>
+        </div>
+
+        <button class="btn btn-info my-4 btn-block" type="submit">
+          Enviar
+        </button>
+      </form>
+    </form>
+  </div>
+</div>

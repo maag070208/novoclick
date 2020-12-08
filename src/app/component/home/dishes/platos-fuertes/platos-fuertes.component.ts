@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./platos-fuertes.component.css']
 })
 export class PlatosFuertesComponent implements OnInit {
-
+  time = 1500;
   constructor() { }
 
   ngOnInit(): void {

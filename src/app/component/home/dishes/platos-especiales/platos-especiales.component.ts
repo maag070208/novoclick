@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlatosEspecialesComponent implements OnInit {
 
+  time = 1500; 
   constructor() { }
 
   ngOnInit(): void {

@@ -1,333 +1,433 @@
-/*
-    code by Iatek LLC 2018 - CC 2.0 License - Attribution required
-    code customized by Azmind.com
-*/
-@media (min-width: 768px) and (max-width: 991px) {
-    /* Show 4th slide on md if col-md-4*/
-    .carousel-inner .active.col-md-4.carousel-item + .carousel-item + .carousel-item + .carousel-item {
-        position: absolute;
-        top: 0;
-        right: -33.3333%;  /*change this with javascript in the future*/
-        z-index: -1;
-        display: block;
-        visibility: visible;
-    }
-}
-@media (min-width: 576px) and (max-width: 768px) {
-    /* Show 3rd slide on sm if col-sm-6*/
-    .carousel-inner .active.col-sm-6.carousel-item + .carousel-item + .carousel-item {
-        position: absolute;
-        top: 0;
-        right: -50%;  /*change this with javascript in the future*/
-        z-index: -1;
-        display: block;
-        visibility: visible;
-    }
-}
-@media (min-width: 576px) {
-    .carousel-item {
-        margin-right: 0;
-    }
-    /* show 2 items */
-    .carousel-inner .active + .carousel-item {
-        display: block;
-    }
-    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
-    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
-        transition: none;
-    }
-    .carousel-inner .carousel-item-next {
-        position: relative;
-        transform: translate3d(0, 0, 0);
-    }
-    /* left or forward direction */
-    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
-    .carousel-item-next.carousel-item-left + .carousel-item,
-    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
-        position: relative;
-        transform: translate3d(-100%, 0, 0);
-        visibility: visible;
-    }
-    /* farthest right hidden item must be also positioned for animations */
-    .carousel-inner .carousel-item-prev.carousel-item-right {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        display: block;
-        visibility: visible;
-    }
-    /* right or prev direction */
-    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
-    .carousel-item-prev.carousel-item-right + .carousel-item,
-    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
-        position: relative;
-        transform: translate3d(100%, 0, 0);
-        visibility: visible;
-        display: block;
-        visibility: visible;
-    }
-}
-/* MD */
 @media (min-width: 768px) {
-    /* show 3rd of 3 item slide */
-    .carousel-inner .active + .carousel-item + .carousel-item {
-        display: block;
-    }
-    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
-        transition: none;
-    }
-    .carousel-inner .carousel-item-next {
-        position: relative;
-        transform: translate3d(0, 0, 0);
-    }
-    /* left or forward direction */
-    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
-        position: relative;
-        transform: translate3d(-100%, 0, 0);
-        visibility: visible;
-    }
-    /* right or prev direction */
-    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
-        position: relative;
-        transform: translate3d(100%, 0, 0);
-        visibility: visible;
-        display: block;
-        visibility: visible;
-    }
-}
-/* LG */
-@media (min-width: 991px) {
-    /* show 4th item */
-    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
-        display: block;
-    }
-    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
-        transition: none;
-    }
-    /* Show 5th slide on lg if col-lg-3 */
-    .carousel-inner .active.col-lg-3.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
-        position: absolute;
-        top: 0;
-        right: -25%;  /*change this with javascript in the future*/
-        z-index: -1;
-        display: block;
-        visibility: visible;
-    }
-    /* left or forward direction */
-    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
-        position: relative;
-        transform: translate3d(-100%, 0, 0);
-        visibility: visible;
-    }
-    /* right or prev direction //t - previous slide direction last item animation fix */
-    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
-        position: relative;
-        transform: translate3d(100%, 0, 0);
-        visibility: visible;
-        display: block;
-        visibility: visible;
-    }
-    /* -------------------- */
-    /* Show 5th slide on lg if col-lg-3 */
-    .carousel-inner .active.col-lg-3.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
-        position: absolute;
-        top: 0;
-        right: -25%;  /*change this with javascript in the future*/
-        z-index: -1;
-        display: block;
-        visibility: visible;
-    }
-    /* left or forward direction */
-    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
-        position: relative;
-        transform: translate3d(-100%, 0, 0);
-        visibility: visible;
-    }
-    /* right or prev direction //t - previous slide direction last item animation fix */
-    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
-        position: relative;
-        transform: translate3d(100%, 0, 0);
-        visibility: visible;
-        display: block;
-        visibility: visible;
-    }
-}
 
-.cardCarrousel{
-    perspective:700px;
-}
-
-.card{
-  position:relative;
-  height:300px;
-  width:300px;
-  transition: all 0.6s ease;
-  margin:20px;
-  transform-style:preserve-3d;
-  color:rgb(0, 0, 0);
-  text-align:center;
-}
-.noRotate{
-    top: 0%;
-}
-.rotate{
-    transform:rotateY(180deg);
-}
-.on , .reverseContent {
-    width:300px;
-    background:#ffffff;
-    height:300px;
-    position:absolute;
-    top:0;
-    left:0;
-    backface-visibility:hidden;
-    border-radius:5px;
-    animation-delay:0,5s;
-    animation-duration:0,1s;
-    animation-fill-mode:both;
-    animation-iteration-count:100;
-    animation-timing-function:ease;
-}
-h1{
-    margin:0;
-}
-.reverseContent{
-    transform:rotateY(180deg);
-    font-family:'Eras ITC';
-    transition: all 0.6s ease;
-    animation-name:arkaPencere;
-    animation-delay:0,5s;
-    animation-duration:5s;
-    animation-iteration-count:10;
-    animation-timing-function:ease;
-    animation-fill-mode:both;
-}
-/*@keyframes arkaPencere{
-    50%{background-image:linear-gradient(270deg,#fff,#f8b500,#00ff90);}
-}*/
-
-img{
-    width:300px;
-    height:300px;
-}
-a{
-    text-decoration:none;
-}
-.noVisibleCard{
-    display: none;
-}
-
-/* Footer */
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-section {
-    padding-top: 11%;
-}
-.invisible{
-    display: none;
-}
-.visible{
-    display: flex;
-}
-section .section-title {
+  .carousel {
+    margin: 50px auto;
+    padding: 0 70px;
+  }
+  .carousel .carousel-item {
+    min-height: 330px;
     text-align: center;
-    margin-bottom: 50px;
-    text-transform: uppercase;
-}
-#footer {
-    background: #ffffff !important;
-    margin-top: 11%;
-}
-#footer h5{
-	padding-left: 10px;
-    border-left: 3px solid;
-    padding-bottom: 6px;
-    margin-bottom: 20px;
-}
-#footer a {
-    text-decoration: none !important;
-    background-color: transparent;
-    -webkit-text-decoration-skip: objects;
-}
-#footer ul.social li{
-	padding: 3px 0;
-}
-#footer ul.social li a i {
-    margin-right: 5px;
-	font-size:25px;
-	-webkit-transition: .5s all ease;
-	-moz-transition: .5s all ease;
-	transition: .5s all ease;
-}
-#footer ul.social li:hover a i {
-	font-size:30px;
-	margin-top:-10px;
-}
-
-#footer ul.quick-links li{
-	padding: 3px 0;
-	-webkit-transition: .5s all ease;
-	-moz-transition: .5s all ease;
-	transition: .5s all ease;
-}
-#footer ul.quick-links li:hover{
-	padding: 3px 0;
-	margin-left:5px;
-	font-weight:700;
-}
-#footer ul.quick-links li a i{
-	margin-right: 5px;
-}
-#footer ul.quick-links li:hover a i {
-    font-weight: 700;
-}
-
-@media (max-width:767px){
-	#footer h5 {
-    padding-left: 0;
-    border-left: transparent;
-    padding-bottom: 0px;
-    margin-bottom: 10px;
-}
-}
-h3.titulouno {
-    font-size: 90px;
+    overflow: hidden;
+  }
+  .carousel .carousel-item .img-box {
+    height: 160px;
+    width: 100%;
+    position: relative;
+  }
+  .carousel .carousel-item img {
+    width: 190px;
+    height: 300px;
+    position: absolute;
+    margin-left: -43%;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    height: 100px;
+    width: 40px;
+    background: none;
+    margin: auto 0;
+    background: rgba(0, 0, 0, 0.2);
+  }
+  .carousel-control-prev i,
+  .carousel-control-next i {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    margin: -16px 0 0 0;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: none;
+    font-weight: bold;
+  }
+  .carousel-control-prev i {
+    margin-left: -3px;
+  }
+  .carousel-control-next i {
+    margin-right: -3px;
+  }
+  
+  .card {
+    position: relative;
+    height: 276px;
+    width: 210px;
+    transition: all 0.6s ease;
+    margin: 20px;
+    transform-style: preserve-3d;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-left: 3%;
+  }
+  .noRotate {
+    top: 0%;
+  }
+  .rotate {
+    transform: rotateY(180deg);
+  }
+  .on,
+  .reverseContent {
+    width: 150px;
+    background: #ffffff;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    animation-delay: 0, 5s;
+    animation-duration: 0, 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 100;
+    animation-timing-function: ease;
+  }
+  h1 {
+    margin: 0;
+  }
+  .reverseContent {
+    transform: rotateY(180deg);
+    font-family: "Eras ITC";
+    transition: all 0.6s ease;
+    animation-name: arkaPencere;
+    animation-delay: 0, 5s;
+    animation-duration: 5s;
+    animation-iteration-count: 10;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+  }
+  .marginReverse{
+    margin-left: 15%;
+  }
+  .noVisibleCard {
+    display: none;
+  }
+  h3.titulouno {
+    font-size: 70px;
     color: #4ac3f2;
     margin: 0;
-    margin-left: -15%;
-}
-
-h4#titulodos {
-    font-size: 80px;
+    margin-left: 22%;
+  }
+  
+  h4#titulodos {
+    font-size: 60px;
     color: #606060;
     margin-top: -15px;
     text-align: center;
-    margin-left: 35%;
-}
-p.line {
+    margin-left: 61%;
+  }
+  p.line {
     text-align: inherit;
     font-weight: 900;
     color: #4ac3f2;
-    margin-top: -6%;
-    margin-left: -15%;
-}
-.texttomato{
-    margin-top: -3%;
-    margin-left: 12%;
-    font-size: 20px;
-    align-content: center;
-}
-.somos {
-    font-size: 25px;
-    color: #000 !important;
-    text-align: left;
-    line-height: 1.7;
-    align-items: center;
-    text-align:center;
+    margin-top: -5%;
+    margin-left: 25%;
+  }
+  .divsomos{
+    margin-left: 50%;
+    margin-top: 10%;
+  }
+  
+  .toolsTitle{
+    margin-left: -50%;
+  }
+  .toolsP{
+    width: 233%;
+    margin-left: -30%;
+  }
+
 }
 
-.divsomos{
-    margin-top: -19%;
+@media (min-width: 1024px) {
+.texttomato{
+  margin-left: -37% !important;
+  transform: translateX(61%);
+  font-size: 25px;
+}
+.carousel {
+  padding: 0 70px;
+  margin-left: -81%;
+  transform: translateX(45%);
+}
+  .carousel .carousel-item {
+    min-height: 330px;
+    text-align: center;
+    overflow: hidden;
+  }
+  .carousel .carousel-item .img-box {
+    height: 160px;
+    width: 100%;
+    position: relative;
+  }
+  .carousel .carousel-item img {
+    width: 160px;
+    height: 300px;
     position: absolute;
-    margin-left: 16%;
+    margin-left: -43%;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    height: 100px;
+    width: 40px;
+    background: none;
+    margin: auto 0;
+    background: rgba(0, 0, 0, 0.2);
+  }
+  .carousel-control-prev i,
+  .carousel-control-next i {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    margin: -16px 0 0 0;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: none;
+    font-weight: bold;
+  }
+  .carousel-control-prev i {
+    margin-left: -3px;
+  }
+  .carousel-control-next i {
+    margin-right: -3px;
+  }
+  
+  .card {
+    position: relative;
+    height: 276px;
+    width: 210px;
+    transition: all 0.6s ease;
+    margin: 20px;
+    transform-style: preserve-3d;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-left: 3%;
+  }
+  .noRotate {
+    top: 0%;
+  }
+  .rotate {
+    transform: rotateY(180deg);
+  }
+  .on,
+  .reverseContent {
+    width: 150px;
+    background: #ffffff;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    animation-delay: 0, 5s;
+    animation-duration: 0, 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 100;
+    animation-timing-function: ease;
+  }
+  h1 {
+    margin: 0;
+  }
+  .reverseContent {
+    transform: rotateY(180deg);
+    font-family: "Eras ITC";
+    transition: all 0.6s ease;
+    animation-name: arkaPencere;
+    animation-delay: 0, 5s;
+    animation-duration: 5s;
+    animation-iteration-count: 10;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+  }
+  .marginReverse{
+    margin-left: 15%;
+  }
+  .noVisibleCard {
+    display: none;
+  }
+  h3.titulouno {
+    font-size: 70px;
+    color: #4ac3f2;
+    margin: 0;
+    margin-left: 100%;
+  }
+  
+  h4#titulodos {
+    font-size: 60px;
+    color: #606060;
+    margin-top: -15px;
+    text-align: center;
+    margin-left: 156%;
+  }
+  p.line {
+    text-align: inherit;
+    font-weight: 900;
+    color: #4ac3f2;
+    margin-top: -4%;
+    margin-left: 100%;
+  }
+  .divsomos{
+    margin-left: 50%;
+    margin-top: 10%;
+  }
+  
+  .toolsTitle{
+    margin-left: -50%;
+  }
+  .toolsP{
+    width: 233%;
+    margin-left: -30%;
+  }
+
+}
+
+@media (min-width: 1440px) {
+  .texttomato{
+    margin-left: 0px;
+    transform: translateX(13%);
+    font-size: 25px;
+  }
+  .carousel {
+    margin: 50px auto;
+    padding: 0 70px;
+    margin-left: 0px;
+    transform: translateX(0%);
+  }
+  .carousel .carousel-item {
+    min-height: 330px;
+    text-align: center;
+    overflow: hidden;
+  }
+  .carousel .carousel-item .img-box {
+    height: 160px;
+    width: 100%;
+    position: relative;
+  }
+  .carousel .carousel-item img {
+    width: 190px;
+    height: 300px;
+    position: absolute;
+    margin-left: -43%;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    height: 100px;
+    width: 40px;
+    background: none;
+    margin: auto 0;
+    background: rgba(0, 0, 0, 0.2);
+  }
+  .carousel-control-prev i,
+  .carousel-control-next i {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    margin: -16px 0 0 0;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: none;
+    font-weight: bold;
+  }
+  .carousel-control-prev i {
+    margin-left: -3px;
+  }
+  .carousel-control-next i {
+    margin-right: -3px;
+  }
+  
+  .card {
+    position: relative;
+    height: 276px;
+    width: 210px;
+    transition: all 0.6s ease;
+    margin: 20px;
+    transform-style: preserve-3d;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-left: 3%;
+  }
+  .noRotate {
+    top: 0%;
+  }
+  .rotate {
+    transform: rotateY(180deg);
+  }
+  .on,
+  .reverseContent {
+    width: 150px;
+    background: #ffffff;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    animation-delay: 0, 5s;
+    animation-duration: 0, 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 100;
+    animation-timing-function: ease;
+  }
+  h1 {
+    margin: 0;
+  }
+  .reverseContent {
+    transform: rotateY(180deg);
+    font-family: "Eras ITC";
+    transition: all 0.6s ease;
+    animation-name: arkaPencere;
+    animation-delay: 0, 5s;
+    animation-duration: 5s;
+    animation-iteration-count: 10;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+  }
+  .marginReverse{
+    margin-left: 15%;
+  }
+  .noVisibleCard {
+    display: none;
+  }
+  h3.titulouno {
+    font-size: 70px;
+    color: #4ac3f2;
+    margin: 0;
+    margin-left: 22%;
+  }
+  
+  h4#titulodos {
+    font-size: 60px;
+    color: #606060;
+    margin-top: -15px;
+    text-align: center;
+    margin-left: 61%;
+  }
+  p.line {
+    text-align: inherit;
+    font-weight: 900;
+    color: #4ac3f2;
+    margin-top: -2%;
+    margin-left: 22%;
+  }
+  .divsomos{
+    margin-left: 50%;
+    margin-top: 10%;
+  }
+  
+  .toolsTitle{
+    margin-left: -50%;
+  }
+  .toolsP{
+    width: 233%;
+    margin-left: -30%;
+  }
+
 }

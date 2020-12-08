@@ -23,7 +23,7 @@
   }
   
   .carousel-item img {
-      max-height: 100vh; 
+      max-height: 12vh; 
       object-fit: cover;
     }
   

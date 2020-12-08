@@ -1,80 +1,678 @@
-p.line {
+@media (min-width: 1024px) {
+  .carouselContainer{
+    margin-left: 15%;
+  }
+    h3.titulouno {
+      font-size: 70px;
+      color: #4ac3f2;
+      margin: 0;
+      margin-left: 200%;
+  }
+  
+  h4.titulodos {
+    font-size: 60px;
+    color: #606060;
+    margin-top: 22px;
+    text-align: center;
+    margin-left: 267%;
+  }
+  
+    .cardContent{
+      border-radius: 30px;
+      box-shadow: 13px 13px 21px #999;
+      margin-left: 2%;
+      transform: translateX(135px);
+      width: 170%;
+    }
+    .card {
+      flex-direction: row;
+      max-width: 75rem;
+    }
+    .card-image {
+      height: auto;
+      flex-basis: 40%;
+    }
+    .card-content {
+      flex-basis: 60%;
+    }
+    .publication-details {
+      transform: translateX(-100%);
+      transition: transform 0.5s;
+    }
+    .card:hover .publication-details {
+      transform: translateX(0);
+    }
+    .author {
+      transform: translateY(-3rem);
+      opacity: 0;
+      transition-delay: 0.2s;
+    }
+    .date {
+      transform: translateY(3rem);
+      opacity: 0;
+      transition: all 0.5s 0.2s;
+    }
+    .card:hover .author,
+    .card:hover .date {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  
+    p.line {
+      text-align: inherit;
+      font-weight: 900;
+      color: #4ac3f2;
+      margin-top: 2%;
+      margin-left: 197%;
+  }
+  
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap");
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0.8rem 1rem rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+  }
+  
+  .card-image {
+    height: 25rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  .background-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('../../../../assets/images/academia_novoclick/Conceptos basicos sobre.jpg')
+      center no-repeat;
+    background-size: cover;
+    z-index: -1;
+    transition: transform 5s;
+  }
+  
+  .card:hover .background-image {
+    transform: scale(1.2);
+  }
+  .publication-details {
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-color);
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+  }
+  
+  .publication-details i {
+    margin-right: 1rem;
+  }
+  
+  .author {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    transition: all 0.5s 0.2s;
+  }
+  .author:hover {
+    color: rgba(255, 255, 255, 0.75);
+  }
+  .date {
+    display: block;
+  }
+   
+  .card-content {
+    background-color: #fff;
+    padding: 2rem 3rem;
+    position: relative;
+  }
+  
+  .title,
+  .subtitle {
+    font-family: "Oswald", sans-serif;
+  }
+  
+  .title {
+    font-size: 3rem;
+    line-height: 1;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #a2a2a2;
+    text-decoration: none;
+    margin: 1rem 0 1.5rem 0;
+  }
+  
+
+  
+  .cta {
+    text-align: right;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  .cta a {
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    color: transparent;
+    position: relative;
+  }
+  
+  .cta a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+    width: 100%;
+    height: 3px;
+    background: var(--gradient-color);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s;
+  }
+  
+  .cta a:hover::before {
+    transform: scaleX(1);
+  }
+  
+  
+  }
+
+@media (min-width: 1440px) {
+.carouselContainer{
+  margin-left: 15%;
+}
+  h3.titulouno {
+    font-size: 70px;
+    color: #4ac3f2;
+    margin: 0;
+    margin-left: 22%;
+}
+
+h4.titulodos {
+  font-size: 60px;
+  color: #606060;
+  margin-top: 22px;
+  text-align: center;
+  margin-left: 97%;
+}
+
+  .cardContent{
+    border-radius: 30px;
+    box-shadow: 13px 13px 21px #999;
+    margin-left: 2%;
+    transform: translateX(135px);
+    width: 100%;
+  }
+  .card {
+    flex-direction: row;
+    max-width: 75rem;
+  }
+  .card-image {
+    height: auto;
+    flex-basis: 40%;
+  }
+  .card-content {
+    flex-basis: 60%;
+  }
+  .publication-details {
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+  }
+  .card:hover .publication-details {
+    transform: translateX(0);
+  }
+  .author {
+    transform: translateY(-3rem);
+    opacity: 0;
+    transition-delay: 0.2s;
+  }
+  .date {
+    transform: translateY(3rem);
+    opacity: 0;
+    transition: all 0.5s 0.2s;
+  }
+  .card:hover .author,
+  .card:hover .date {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  p.line {
     text-align: inherit;
     font-weight: 900;
     color: #4ac3f2;
-    margin-top: -16%;
-    margin-left: 45%;
+    margin-top: 2%;
+    margin-left: 23%;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --gradient-color: linear-gradient(
+    90deg,
+    rgb(255, 88, 88, 0.8),
+    rgb(240, 152, 25, 0.8)
+  );
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+  background-color: #eee;
+  padding: 0 1.5rem;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0.8rem 1rem rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+}
+
+.card-image {
+  height: 25rem;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url('../../../../assets/images/academia_novoclick/Conceptos basicos sobre.jpg')
+    center no-repeat;
+  background-size: cover;
+  z-index: -1;
+  transition: transform 5s;
+}
+
+.card:hover .background-image {
+  transform: scale(1.2);
+}
+.publication-details {
+  width: 100%;
+  height: 100%;
+  background: var(--gradient-color);
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+}
+
+.publication-details i {
+  margin-right: 1rem;
+}
+
+.author {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  transition: all 0.5s 0.2s;
+}
+.author:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+.date {
+  display: block;
+}
+ 
+.card-content {
+  background-color: #fff;
+  padding: 2rem 3rem;
+  position: relative;
+}
+
+.title,
+.subtitle {
+  font-family: "Oswald", sans-serif;
+}
+
+.title {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #a2a2a2;
+  text-decoration: none;
+  margin: 1rem 0 1.5rem 0;
+}
+
+.description {
+  position: relative;
+  line-height: 1.5;
+}
+.description::first-letter {
+  margin-left: 1rem;
+}
+
+.description::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.5rem;
+  height: 2.5rem;
+  background: var(--gradient-color);
+  border-radius: 2rem;
+}
+
+.cta {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.cta a {
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  color: transparent;
+  position: relative;
+}
+
+.cta a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.5rem;
+  width: 100%;
+  height: 3px;
+  background: var(--gradient-color);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+.cta a:hover::before {
+  transform: scaleX(1);
 }
 
 
-.contenedor-academia {
-    width: 75%;
-    height: 366px;
-    margin: auto;
-    background: #f9f9f9;
 }
 
-
-
-.contenedor-academia {
+@media (min-width: 1920px) {
+  .carouselContainer{
+    margin-left: 25%;
+  }
+    h3.titulouno {
+      font-size: 70px;
+      color: #4ac3f2;
+      margin: 0;
+      margin-left: 22%;
+  }
+  
+  h4.titulodos {
+    font-size: 60px;
+    color: #606060;
+    margin-top: 22px;
+    text-align: center;
+    margin-left: 97%;
+  }
+  
+    .cardContent{
+      border-radius: 30px;
+      box-shadow: 13px 13px 21px #999;
+      margin-left: 2%;
+      transform: translateX(135px);
+      width: 100%;
+    }
+    .card {
+      flex-direction: row;
+      max-width: 75rem;
+    }
+    .card-image {
+      height: auto;
+      flex-basis: 40%;
+    }
+    .card-content {
+      flex-basis: 60%;
+    }
+    .publication-details {
+      transform: translateX(-100%);
+      transition: transform 0.5s;
+    }
+    .card:hover .publication-details {
+      transform: translateX(0);
+    }
+    .author {
+      transform: translateY(-3rem);
+      opacity: 0;
+      transition-delay: 0.2s;
+    }
+    .date {
+      transform: translateY(3rem);
+      opacity: 0;
+      transition: all 0.5s 0.2s;
+    }
+    .card:hover .author,
+    .card:hover .date {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  
+    p.line {
+      text-align: inherit;
+      font-weight: 900;
+      color: #4ac3f2;
+      margin-top: 2%;
+      margin-left: 23%;
+  }
+  
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap");
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --gradient-color: linear-gradient(
+      90deg,
+      rgb(255, 88, 88, 0.8),
+      rgb(240, 152, 25, 0.8)
+    );
+  }
+  
+  html {
+    font-size: 10px;
+  }
+  
+  body {
+    font-size: 1.6rem;
+    font-family: "Open Sans", sans-serif;
+    color: #333;
+    background-color: #eee;
+    padding: 0 1.5rem;
+    width: 100%;
+    height: 100vh;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    color: rgb(0, 0, 0)0, 0, 0);
-}
-
-#academia-novoclick .contenedor-academia {
+    align-items: center;
+    justify-content: center;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .card {
     display: flex;
-    justify-content: space-around;
-    -webkit-box-shadow: 11px 9px 14px 0px rgba(0, 0, 0, 0.6);
-    -moz-box-shadow: 11px 9px 14px 0px rgba(0, 0, 0, 0.6);
-    box-shadow: 11px 9px 14px 0px rgba(0, 0, 0, 0.6);
-}
-
-.academia-titulo {
-    width: 40%;
-    height: 356px;
-    padding: 10px 10px 10px 10px;
+    flex-direction: column;
+    box-shadow: 2px 0.8rem 1rem rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+  }
+  
+  .card-image {
+    height: 25rem;
     position: relative;
-}
-.academia-titulo {
-    width: 40%;
-    height: 410px;
-    padding: 34px 30px 38px 30px;
-    border-radius: 10px;
-    margin-bottom: 40px;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  .background-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('../../../../assets/images/academia_novoclick/Conceptos basicos sobre.jpg')
+      center no-repeat;
+    background-size: cover;
+    z-index: -1;
+    transition: transform 5s;
+  }
+  
+  .card:hover .background-image {
+    transform: scale(1.2);
+  }
+  .publication-details {
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-color);
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+  }
+  
+  .publication-details i {
+    margin-right: 1rem;
+  }
+  
+  .author {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    transition: all 0.5s 0.2s;
+  }
+  .author:hover {
+    color: rgba(255, 255, 255, 0.75);
+  }
+  .date {
+    display: block;
+  }
+   
+  .card-content {
+    background-color: #fff;
+    padding: 2rem 3rem;
     position: relative;
-}
-
-p#lineAcade {
-    color: blue;
-    text-align: inherit;
-    line-height: 0.5;
-}
-
-p#text-academia {
-    color: #000;
-    font-size: 20px;
-    margin-top: 30px;
-    text-align: left;
-}
-
-.academia-detail {
-    /* width: 24%; */
-    /* height: 410px; */
-    padding: 34px 30px 38px 30px;
-    border-radius: 10px;
-    /* margin-bottom: 40px; */
-}
-img#academy {
-    width: 400px;
-}
-
-
-
-
-
-
-
-
-
+  }
+  
+  .title,
+  .subtitle {
+    font-family: "Oswald", sans-serif;
+  }
+  
+  .title {
+    font-size: 3rem;
+    line-height: 1;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #a2a2a2;
+    text-decoration: none;
+    margin: 1rem 0 1.5rem 0;
+  }
+  
+  .description {
+    position: relative;
+    line-height: 1.5;
+  }
+  .description::first-letter {
+    margin-left: 1rem;
+  }
+  
+  .description::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0.5rem;
+    height: 2.5rem;
+    background: var(--gradient-color);
+    border-radius: 2rem;
+  }
+  
+  .cta {
+    text-align: right;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  .cta a {
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    color: transparent;
+    position: relative;
+  }
+  
+  .cta a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+    width: 100%;
+    height: 3px;
+    background: var(--gradient-color);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s;
+  }
+  
+  .cta a:hover::before {
+    transform: scaleX(1);
+  }
+  
+  
+  }

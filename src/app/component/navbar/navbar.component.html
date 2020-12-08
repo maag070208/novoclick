@@ -5,6 +5,7 @@
     </span>
     <a class="navbar-brand d-none d-lg-inline-block" href="#">
       <img
+        id="imgNavbar"
         height="120"
         class="navbar-brand"
         href="#"
@@ -13,6 +14,7 @@
     </a>
     <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="#">
       <img
+      id="imgNavbarRes"
         height="120"
         class="navbar-brand"
         href="#"
@@ -24,7 +26,7 @@
         class="navbar-toggler"
         type="button"
         data-toggle="collapse"
-        data-target="#myNavbar"
+        data-target="#myNavbar" 
       >
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -32,26 +34,26 @@
   </div>
   <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
     <ul class="navbar-nav ml-auto flex-nowrap">
-      <li class="nav-item ">
+      <li id="navItem1" class="nav-item ">
         <p (click)="nosotros()" class="nav-link m-2 menu-item text-white h6">
           Nosotros</p>
       </li>
-      <li class="nav-item  ">
+      <li id="navItem2" class="nav-item  ">
         <p (click)="herramientas()" href="#" class="nav-link m-2 menu-item text-white h6"
           >Herramientas Digitales</p>
       </li>
-      <li class="nav-item ">
+      <li id="navItem3" class="nav-item ">
         <p (click)="platosDigitales()" href="#" class="nav-link m-2 menu-item text-white h6"
           >Platos Digitales</p
         >
       </li>
-      <li class="nav-item mr-5 navbarText">
+      <li id="navItem4" class="nav-item mr-5 navbarText">
         <p (click)="academia()" href="#" class="nav-link m-2 menu-item text-white h6"
           >Academia NovoClick</p
         >
       </li>
       
-      <li class="nav-item">
+      <li id="navItem5" class="nav-item">
         <app-hamburger></app-hamburger>
       </li>
 

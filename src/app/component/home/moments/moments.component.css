@@ -1,0 +1,115 @@
+
+@media (min-width: 768px) {
+    h3.titulouno {
+        font-size: 70px;
+        color: #4ac3f2;
+        margin: 0;
+        margin-left: 22%;
+    }
+    
+    h4.titulodos {
+        font-size: 60px;
+        color: #606060;
+        margin-top: 22%;
+        text-align: center;
+        margin-left: 200%;
+        margin-bottom: 40%;
+    }
+    p.line {
+        text-align: inherit;
+        font-weight: 900;
+        color: #4ac3f2;
+        margin-top: 2%;
+        margin-left: 23%;
+    }
+    .divsomos{
+        margin-left: 50%;
+        margin-top: 10%;
+    }
+    img{
+        height: 500px;
+    }
+    .momentContainer{
+        transform: translateX(12.5%);
+        margin-bottom: 21%;
+        margin-top: 5%;
+    }
+
+}
+
+
+@media (min-width: 1024px) {
+    h3.titulouno {
+        font-size: 70px;
+        color: #4ac3f2;
+        margin: 0;
+        margin-left: 22%;
+    }
+    
+    h4.titulodos {
+        font-size: 60px;
+        color: #606060;
+        margin-top: 22%;
+        text-align: center;
+        margin-left: 200%;
+        margin-bottom: 40%;
+    }
+    p.line {
+        text-align: inherit;
+        font-weight: 900;
+        color: #4ac3f2;
+        margin-top: 2%;
+        margin-left: 23%;
+    }
+    .divsomos{
+        margin-left: 40%;
+        margin-top: 10%;
+    }
+    img{
+        height: 575px;
+    }
+    .momentContainer{
+        transform: translateX(55%);
+        margin-bottom: 21%;
+        margin-top: 5%;
+    }
+}
+
+
+@media (min-width: 1440px) {
+
+    h3.titulouno {
+        font-size: 70px;
+        color: #4ac3f2;
+        margin: 0;
+        margin-left: 22%;
+    }
+    
+    h4.titulodos {
+        font-size: 60px;
+        color: #606060;
+        margin-top: 22%;
+        text-align: center;
+        margin-left: 200%;
+        margin-bottom: 40%;
+    }
+    p.line {
+        text-align: inherit;
+        font-weight: 900;
+        color: #4ac3f2;
+        margin-top: 2%;
+        margin-left: 23%;
+    }
+    .divsomos{
+        margin-left: 50%;
+        margin-top: 10%;
+    }
+    img{
+        height: 500px;
+    }
+    .momentContainer{
+        transform: translateX(12.5%);
+        margin-bottom: 21%;
+        margin-top: 5%;
+    }
+}

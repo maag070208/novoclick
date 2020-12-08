@@ -1,50 +1,116 @@
-.video{
-    position: inherit;
-    margin-top: 3.5%;
-    padding-bottom: 9%;
-    width: -webkit-fill-available;
-    display: block;
- }
- .contenedor-bienvenida {
-    display: flex;
-    position: absolute;
-    justify-content: flex-start;
-    margin-top: -48%;
-    margin-left: 8%;
-    transform: translate(10px, -235%);
-
-}
-.container-welcome {
-    position: relative;
-    margin-left: 25px;
-}
- 
-.boton{
-    cursor: pointer;
-    margin-top: 53%;
-    margin-left: -71%;
-    position: absolute;
-}
-
-@media (max-width: 600px) {
-    .contenedor-bienvenida {
+@media only screen and (min-width: 425px) {
+    .video{
+        position: inherit;
+        margin-top: 12.5%;
+        padding-bottom: 9%;
+        width: 180.5%;
+        display: block;
+     }
+     .contenedor-bienvenida {
         display: flex;
         position: absolute;
         justify-content: flex-start;
-        margin-top: -94%;
-        margin-left: 105%;
+        margin-top: -0%;
+        margin-left: 8%;
+        transform: translate(6px, -120%);
     }
-    .video{
-        margin-top: -110%;
-        bottom: 0;
-        width: 500%;
-        left: 1px;
-     }
-     .boton{
+    .container-welcome {
+        position: relative;
+        margin-left: 25px;
+    }
+     
+    .boton{
         cursor: pointer;
         margin-top: 53%;
         margin-left: -71%;
         position: absolute;
     }
+}
+@media only screen and (min-width: 768px) {
+    .video{
+        position: inherit;
+        margin-top: 8.5%;
+        padding-bottom: 9%;
+        width: 130.5%;
+        display: block;
+     }
+     .contenedor-bienvenida {
+        display: flex;
+        position: absolute;
+        justify-content: flex-start;
+        margin-top: -0%;
+        margin-left: 8%;
+        transform: translate(21px, -149%);
     
- }
+    }
+    .container-welcome {
+        position: relative;
+        margin-left: 25px;
+    }
+     
+    .boton{
+        cursor: pointer;
+        margin-top: 53%;
+        margin-left: -71%;
+        position: absolute;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .video{
+        position: inherit;
+        margin-top: 1.5%;
+        padding-bottom: 9%;
+        width: 210.5%;
+        display: block;
+     }
+     .contenedor-bienvenida {
+        display: flex;
+        position: absolute;
+        justify-content: flex-start;
+        margin-top: -0%;
+        margin-left: 8%;
+        transform: translate(10px, -155%);
+    
+    }
+    .container-welcome {
+        position: relative;
+        margin-left: 25px;
+    }
+     
+    .boton{
+        cursor: pointer;
+        margin-top: 53%;
+        margin-left: -71%;
+        position: absolute;
+    }
+}
+@media only screen and (min-width: 1440px) {
+    .video{
+        position: inherit;
+        margin-top: 1.5%;
+        padding-bottom: 9%;
+        width: 125.5%;
+        display: block;
+     }
+     .contenedor-bienvenida {
+        display: flex;
+        position: absolute;
+        justify-content: flex-start;
+        margin-top: -48%;
+        margin-left: 8%;
+        transform: translate(10px, -235%);
+    
+    }
+    .container-welcome {
+        position: relative;
+        margin-left: 25px;
+    }
+     
+    .boton{
+        cursor: pointer;
+        margin-top: 53%;
+        margin-left: -71%;
+        position: absolute;
+    }
+}
+  
