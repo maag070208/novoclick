@@ -12,4 +12,10 @@ export class StartComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  activarChefDigital1(){
+    let chef1 = document.getElementById('avatar1');
+    chef1.style.display = '';
+    window.scrollTo({top: 840});
+  }
+
 }

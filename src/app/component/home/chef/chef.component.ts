@@ -3,61 +3,65 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-chef',
   templateUrl: './chef.component.html',
-  styleUrls: ['./chef.component.css']
+  styleUrls: ['./chef.component.css'],
 })
 export class ChefComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
-  }
-
-  teamMembers = 
-  [
+  teamMembers = [
     {
       img: '../../../../assets/images/novoclick_team/Sr Jorge Concha.png',
-      type:'Jorge Concha',
-      name:'CEO',
-      desc:
-      `
+      type: 'CEO',
+      name: 'Jorge Concha',
+      desc: `
       Especialista en Growth Hacking y Marketing Digital con más de 20 años de reconocida trayectoria. Su prestigio le ha permitido ser reconocido como una autoridad en asuntos de Conversión Digital y Performance logrando posicionarse como un modelo a seguir
       en Colombia, Panamá, España, Perú, Chile y México. La consigna de su Slogan: “Consiga Clientes para su Empresa”
-      `
+      `,
+      id: 1,
     },
     {
       img: '../../../../assets/images/novoclick_team/Dario Bravo.png',
-      type:'Gerente Comercial',
-      name:'Dario Bravo',
-      desc:
-      `
+      type: 'Gerente Comercial',
+      name: 'Dario Bravo',
+      desc: `
       15 años de experiencia de proyectos digitales, desarrollo de productos, planeación e implementación de estrategias publicitarias.
-      `
+      `,
+      id: 2,
     },
     {
       img: '../../../../assets/images/novoclick_team/Wendy Franco.png',
-      type:'Gerente de operaciones',
-      name:'Wendy Franco',
-      desc:
-      `
+      type: 'Gerente de operaciones',
+      name: 'Wendy Franco',
+      desc: `
       Amplia experiencia y liderazgo en la coordinación de todo el equipo de call center, contabilidad, comunicación con los comerciales, apoya el funcionamiento y cumplimiento de las campañas.
-      `
+      `,
+      id: 3,
     },
     {
-      img: '../../../../assets/images/novoclick_team/Sergio Andres Restrepo.png',
-      type:'Director de Marketing Digital',
-      name:'Sergio Andrés Restrepo',
-      desc:
-      `
+      img:
+        '../../../../assets/images/novoclick_team/Sergio Andres Restrepo.png',
+      type: 'Director de Marketing Digital',
+      name: 'Sergio Andrés Restrepo',
+      desc: `
       Director con amplio conocimiento y experiencia en el desarrollo, ejecución, implementación, control, optimización y monitoreo las estrategias de marketing digital de Novoclick y de sus clientes finales.
-      `
+      `,
+      id: 4,
+    },
+  ];
+  state = 'front';
+  rotateCard = (id) => {
+    let cardId = document.getElementById(id);
+    
+    if(this.state == "front"){
+      cardId.classList.replace('noRotate', 'rotate');
+      this.state = 'back';
+
+    }else if(this.state == "back"){
+      this.state = 'front';
+      cardId.classList.replace('rotate', 'noRotate');
     }
-  ]
 
-
-
-  flipCard = () =>{
-    var card = document.getElementById('cardTeam');
-    card.className = 'flip-card';
   };
-
 }

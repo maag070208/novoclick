@@ -1,120 +1,128 @@
-<div style="padding-top: 5%;" class="container contenedorChefs">
+<div style="padding-top: 5%" class="container contenedorChefs">
   <div class="row">
     <div class="col">
       <div class="chefsTitle row text-center text-xs-center text-sm-left text-md-left">
         <div class="col-xs-12 col-sm-4 col-md-4 divsomos">
           <h3 class="titulouno">CHEF</h3>
-          <br>
+          <br />
           <p class="line">______________________</p>
-          <br>
-          <br>
+          <br />
+          <br />
           <h4 id="titulodos">DIGITALES</h4>
         </div>
       </div>
     </div>
   </div>
 
-  <div style="margin-top: 2.5%;" class="row">
+  <div style="margin-top: 2.5%" class="row">
     <div class="col chefsTitle">
       <p class="ptitle">
-        Nuestro team está compuesto de una serie de chefs digitales ellos se encargan de que toda la magia de las recetas basadas en estrategias digitales sea posible para tener el resultado más exquisito de nuestros platos.
-    </p>
+        Nuestro team está compuesto de una serie de chefs digitales ellos se
+        encargan de que toda la magia de las recetas basadas en estrategias
+        digitales sea posible para tener el resultado más exquisito de nuestros
+        platos.
+      </p>
     </div>
     <div class="col"></div>
     <div class="col"></div>
   </div>
 
+  <div class="contenedorChefsDigitales">
+
   <div class="row chef1">
+    <div class="col"></div>
     <div class="col">
-      
-    </div>
-    <div class="col">
-
-
-      <div *ngFor="let t of teamMembers | slice:0:1; let i = index" id="cardFlip" class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img class="imgTeam" src="{{t.img}}" alt="{{t.name}}">
-            <h4 class="card-title">{{t.name}}</h4>
-            <p class="card-text">{{t.type}}</p>
-            <i id="buttonflipjorge" class=" fa fa-plus"></i>
+      <div *ngFor="let c of teamMembers | slice: 0:1; let i = index" class="col-sm-3">
+        <div (click)="rotateCard(c.name)" id="{{ c.name }}" class="card noRotate">
+          <div class="on">
+            <img class="imgTeam" src="{{ c.img }}" alt="img2" />
           </div>
-          <div class="flip-card-back">
-            <h1>Conoce más</h1> 
-            <p>{{t.desc}}</p>
+
+          <div style="
+          width: 340px;
+          margin-left: -20%;
+          "
+          class="reverseContent marginReverse">
+            <h1>
+              <a>{{ c.name }}</a>
+            </h1>
+            <br />
+            <p>
+              {{ c.desc }}
+            </p>
           </div>
         </div>
       </div>
-      
-
     </div>
     <div class="col"></div>
   </div>
-<!---->
+  <!---->
   <div class="row chef2">
     <!---->
     <div class="col">
-      
-
-      <div *ngFor="let t of teamMembers | slice:1:2; let i = index" id="cardFlip" class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img class="imgTeam" src="{{t.img}}" alt="{{t.name}}">
-            <h4 class="card-title">{{t.name}}</h4>
-            <p class="card-text">{{t.type}}</p>
-            <i id="buttonflipjorge" class=" fa fa-plus"></i>
+      <div *ngFor="let c of teamMembers | slice: 1:2; let i = index" class="col-sm-3">
+        <div (click)="rotateCard(c.name)" id="{{ c.name }}" class="card noRotate">
+          <div class="on">
+            <img class="imgTeam" src="{{ c.img }}" alt="img2" />
           </div>
-          <div class="flip-card-back">
-            <h1>Conoce más</h1> 
-            <p>{{t.desc}}</p>
+
+          <div class="reverseContent marginReverse">
+            <h1>
+              <a>{{ c.name }}</a>
+            </h1>
+            <br />
+            <p>
+              {{ c.desc }}
+            </p>
           </div>
         </div>
       </div>
-
-
     </div>
     <!---->
     <div class="col">
-
-
-      <div *ngFor="let t of teamMembers | slice:2:3; let i = index" id="cardFlip" class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img class="imgTeam" src="{{t.img}}" alt="{{t.name}}">
-            <h4 class="card-title">{{t.name}}</h4>
-            <p class="card-text">{{t.type}}</p>
-            <i id="buttonflipjorge" class=" fa fa-plus"></i>
+      <div *ngFor="let c of teamMembers | slice: 2:3; let i = index" class="col-sm-3">
+        <div (click)="rotateCard(c.name)" id="{{ c.name }}" class="card noRotate">
+          <div class="on">
+            <img class="imgTeam" src="{{ c.img }}" alt="img2" />
           </div>
-          <div class="flip-card-back">
-            <h1>Conoce más</h1> 
-            <p>{{t.desc}}</p>
+
+          <div class="reverseContent marginReverse">
+            <h1>
+              <a>{{ c.name }}</a>
+            </h1>
+            <br />
+            <p>
+              {{ c.desc }}
+            </p>
           </div>
         </div>
       </div>
-
-
     </div>
     <!---->
     <div class="col">
-
-
-      <div *ngFor="let t of teamMembers | slice:3:4; let i = index" id="cardFlip" class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img class="imgTeam" src="{{t.img}}" alt="{{t.name}}">
-            <h4 class="card-title">{{t.name}}</h4>
-            <p class="card-text">{{t.type}}</p>
-            <i id="buttonflipjorge" class=" fa fa-plus"></i>
+      <div *ngFor="let c of teamMembers | slice: 3:4; let i = index" class="col-sm-3">
+        <div (click)="rotateCard(c.name)" id="{{ c.name }}" class="card noRotate">
+          <div class="on">
+            <img class="imgTeam" src="{{ c.img }}" alt="img2" />
           </div>
-          <div class="flip-card-back">
-            <h1>Conoce más</h1> 
-            <p>{{t.desc}}</p>
+
+          <div class="reverseContent marginReverse">
+            <h1>
+              <a>{{ c.name }}</a>
+            </h1>
+            <br />
+            <p>
+              {{ c.desc }}
+            </p>
           </div>
         </div>
       </div>
-
-
     </div>
   </div>
+
+
+  <h2 align="center">Ver mas</h2>
+
+</div>
 
 </div>

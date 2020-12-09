@@ -30,6 +30,7 @@ import { EducacionComponent } from './component/home/clients/educacion/educacion
 import { AutomotrizComponent } from './component/home/clients/automotriz/automotriz.component';
 import { CarouselComponent } from './component/home/academy/carousel/carousel.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HoyosComponent } from './component/home/hoyos/hoyos.component';
 
 
 
@@ -61,7 +62,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     InmobiliarioComponent,
     EducacionComponent,
     AutomotrizComponent,
-    CarouselComponent
+    CarouselComponent,
+    HoyosComponent
   ],
   imports: [
     BrowserModule,
