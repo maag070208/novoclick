@@ -1,5 +1,3 @@
-@media (min-width: 768px) {
-}
 @media (min-width: 1024px) {
   .containerCss {
     margin-top: 15%;
@@ -83,7 +81,7 @@
   .containerCss {
     transform: translateX(5%);
   }
-  h3.titulouno {
+  h3.titulouno { 
     font-size: 70px;
     color: #4ac3f2;
     margin: 0;
@@ -93,7 +91,7 @@
   h4#titulodos {
     font-size: 70px;
     color: #606060;
-    margin-top: -25px;
+    margin-top: -20px;
     text-align: center;
     position: absolute;
     margin-left: 75%;

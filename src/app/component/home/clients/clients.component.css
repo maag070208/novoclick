@@ -5,7 +5,7 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 53pc;
+    height: 77pc;
     width: 210%;
 }
 * {
@@ -51,6 +51,51 @@ body { font-family: sans-serif; }
     -o-background-size: cover;
     background-size: cover;
     height: 53pc;
+    width: 125%;
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body { font-family: sans-serif; }
+
+.gallery {
+  background: #EEE;
+}
+
+.gallery-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.carousel-item img {
+    max-height: 90vh; 
+    object-fit: cover;
+  }
+
+}
+@media (min-width: 1920px) {
+  .background{
+    background-image: url(../../../../assets/images/clientefondo-100.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 65pc;
     width: 125%;
 }
 * {
