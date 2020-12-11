@@ -63,5 +63,9 @@ export class ChefComponent implements OnInit {
       cardId.classList.replace('rotate', 'noRotate');
     }
 
+
+    setTimeout(()=>{ 
+      cardId.classList.replace('rotate','noRotate');
+      },3000);
   };
 }

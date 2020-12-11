@@ -4,14 +4,16 @@
     transform:  translateX(100%);
   }
   h3.titulouno {
-    font-size: 70px;
+    font-size: 80px;
+    font-family: sans-serif;
     color: #4ac3f2;
     margin: 0;
     margin-left: -235%;
   }
 
   h4#titulodos {
-    font-size: 70px;
+    font-size: 80px;
+    font-family: sans-serif;
     color: #606060;
     margin-top: -24px;
     text-align: center;
@@ -44,14 +46,16 @@
     transform: translateX(5%);
   }
   h3.titulouno {
-    font-size: 70px;
+    font-size: 80px;
+    font-family: sans-serif;
     color: #4ac3f2;
     margin: 0;
     margin-left: -70%;
   }
 
   h4#titulodos {
-    font-size: 70px;
+    font-size: 80px;
+    font-family: sans-serif;
     color: #606060;
     margin-top: -25px;
     text-align: center;
@@ -82,14 +86,16 @@
     transform: translateX(5%);
   }
   h3.titulouno { 
-    font-size: 70px;
+    font-size: 80px;
+    font-family: sans-serif;
     color: #4ac3f2;
     margin: 0;
     margin-left: -70%;
   }
 
   h4#titulodos {
-    font-size: 70px;
+    font-size: 80px;
+    font-family: sans-serif;
     color: #606060;
     margin-top: -20px;
     text-align: center;

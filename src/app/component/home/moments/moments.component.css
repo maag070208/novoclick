@@ -1,14 +1,16 @@
 
 @media (min-width: 768px) {
     h3.titulouno {
-        font-size: 70px;
+        font-size: 80px;
+        font-family: sans-serif;
         color: #4ac3f2;
         margin: 0;
         margin-left: 22%;
     }
     
     h4.titulodos {
-        font-size: 60px;
+        font-size: 80px;
+        font-family: sans-serif;
         color: #606060;
         margin-top: 22%;
         text-align: center;
@@ -40,14 +42,16 @@
 
 @media (min-width: 1024px) {
     h3.titulouno {
-        font-size: 70px;
+        font-size: 80px;
+        font-family: sans-serif;
         color: #4ac3f2;
         margin: 0;
         margin-left: 22%;
     }
     
     h4.titulodos {
-        font-size: 60px;
+        font-size: 80px;
+        font-family: sans-serif;
         color: #606060;
         margin-top: 22%;
         text-align: center;
@@ -62,7 +66,7 @@
         margin-left: 23%;
     }
     .divsomos{
-        margin-left: 40%;
+        margin-left: 17%;
         margin-top: 10%;
     }
     img{
@@ -79,14 +83,16 @@
 @media (min-width: 1440px) {
 
     h3.titulouno {
-        font-size: 70px;
+        font-size: 80px;
+        font-family: sans-serif;
         color: #4ac3f2;
         margin: 0;
         margin-left: 22%;
     }
     
     h4.titulodos {
-        font-size: 60px;
+        font-size: 80px;
+        font-family: sans-serif;
         color: #606060;
         margin-top: 22%;
         text-align: center;
@@ -101,7 +107,7 @@
         margin-left: 23%;
     }
     .divsomos{
-        margin-left: 50%;
+        margin-left: 30%;
         margin-top: 10%;
     }
     img{

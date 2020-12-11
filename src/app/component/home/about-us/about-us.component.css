@@ -4,15 +4,17 @@
 }
 @media (min-width: 1024px) {
     h3.titulouno {
-        font-size: 70px;
+        font-size: 80px;
         color: #4ac3f2;
+         font-family: sans-serif;
         margin: 0;
         margin-left: 22%;
     }
     h4#titulodos {
-        font-size: 60px;
+        font-size: 80px;
         color: #606060;
         margin-top: -15px;
+            font-family: sans-serif;
         text-align: center;
         margin-left: 61%;
     }
@@ -70,15 +72,17 @@
 }
 @media (min-width: 1440px) {
     h3.titulouno {
-        font-size: 70px;
+        font-size: 80px;
         color: #4ac3f2;
+        font-family: sans-serif;
         margin: 0;
         margin-left: 22%;
     }
     h4#titulodos {
-        font-size: 60px;
+        font-size: 80px;
         color: #606060;
         margin-top: -15px;
+        font-family: sans-serif;
         text-align: center;
         margin-left: 61%;
     }
@@ -136,15 +140,17 @@
 }
 @media (min-width: 1920px) {
     h3.titulouno {
-        font-size: 70px;
+        font-size: 80px;
         color: #4ac3f2;
+         font-family: sans-serif;
         margin: 0;
         margin-left: 22%;
     }
     h4#titulodos {
-        font-size: 60px;
+        font-size: 80px;
         color: #606060;
         margin-top: -15px;
+            font-family: sans-serif;
         text-align: center;
         margin-left: 61%;
     }

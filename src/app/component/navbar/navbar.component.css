@@ -19,7 +19,14 @@
         margin-top: -4%;
       }
       .navbarCss {
-        background: rgb(0, 255, 98);
+        background: linear-gradient(
+          to right,
+          #000,
+          #081f31,
+          #0e3555,
+          #164769,
+          #4bbbe8
+        );
         height: 100px;
         width: 100%;
         position: fixed;
@@ -59,7 +66,14 @@
     margin-left: -50%;
   }
   .navbarCss {
-    background: red;
+    background: linear-gradient(
+      to right,
+      #000,
+      #081f31,
+      #0e3555,
+      #164769,
+      #4bbbe8
+    );
     height: 100px;
     width: 100%;
     position: fixed;

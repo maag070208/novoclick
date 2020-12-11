@@ -1,12 +1,14 @@
 @media (min-width: 1024px) {
   h3.titulouno {
-    font-size: 70px;
+    font-size: 80px;
+    font-family: sans-serif;
     color: #4ac3f2;
     margin: 0;
     margin-left: 120%;
   }
   h4#titulodos {
-    font-size: 60px;
+    font-size: 80px;
+    font-family: sans-serif;
     color: #606060;
     margin-top: -40px;
     text-align: center;
@@ -181,13 +183,15 @@
 
 @media (min-width: 1440px) {
   h3.titulouno {
-    font-size: 70px;
+    font-size: 80px;
+    font-family: sans-serif;
     color: #4ac3f2;
     margin: 0;
     margin-left: 70%;
   }
   h4#titulodos {
-    font-size: 60px;
+    font-size: 80px;
+    font-family: sans-serif;
     color: #606060;
     margin-top: -15px;
     text-align: center;
@@ -366,13 +370,15 @@
 
 @media (min-width: 1920px) {
   h3.titulouno {
-    font-size: 70px;
+    font-size: 80px;
+    font-family: sans-serif;
     color: #4ac3f2;
     margin: 0;
     margin-left: 70%;
   }
   h4#titulodos {
-    font-size: 60px;
+    font-size: 80px;
+    font-family: sans-serif;
     color: #606060;
     margin-top: -15px;
     text-align: center;

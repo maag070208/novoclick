@@ -231,5 +231,20 @@
     transform: scale(1);
     background-color: #bfb;
     border-color: #bfb;
+  
+  
   }
+
+
+}
+.visibleCard {
+  background-color: white;
+  height: 150px;
+  border-radius: 20px;
+  box-shadow: 20px -5px 20px #999;
+  margin-top: 15px;
+}
+
+.invisibleCard {
+  display: none;
 }

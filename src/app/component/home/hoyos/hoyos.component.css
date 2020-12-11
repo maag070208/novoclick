@@ -1,16 +1,23 @@
+.imghoyosTitleContainer{
+  margin-left: 20%;
+}
+
+
 @media (min-width: 1024px) {
   .endHoyosImg {
     width: 130%;
     margin-left: -10%;
   }
   h3.titulouno {
-    font-size: 70px;
+    font-size: 80px;
+    font-family: sans-serif;
     color: #4ac3f2;
     margin: 0;
     margin-left: 40%;
   }
   h4#titulodos {
-    font-size: 60px;
+    font-size: 80px;
+    font-family: sans-serif;
     color: #606060;
     margin-top: -40px;
     text-align: center;
@@ -61,13 +68,15 @@
     margin-left: 23%;
   }
   h3.titulouno {
-    font-size: 70px;
+    font-size: 80px;
+    font-family: sans-serif;
     color: #4ac3f2;
     margin: 0;
     margin-left: 40%;
   }
   h4#titulodos {
-    font-size: 60px;
+    font-size: 80px;
+    font-family: sans-serif;
     color: #606060;
     margin-top: -40px;
     text-align: center;
@@ -114,13 +123,15 @@
 }
 @media (min-width: 1920px) {
   h3.titulouno {
-    font-size: 70px;
+    font-size: 80px;
+    font-family: sans-serif;
     color: #4ac3f2;
     margin: 0;
     margin-left: 40%;
   }
   h4#titulodos {
-    font-size: 60px;
+    font-size: 80px;
+    font-family: sans-serif;
     color: #606060;
     margin-top: -40px;
     text-align: center;
