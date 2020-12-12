@@ -1,8 +1,48 @@
+@media (min-width: 728px) {
+  .cardCarousel{
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px #999;
+    height: 230px;
+  }
+  .contenedorCarousel{
+    transform: translateX(88%);
+    width: 160%;
+  }
+
+  .prevbtn {
+    position: absolute;
+    margin-top: 14%;
+    margin-left: -43px;
+    font-size: 50px;
+  }
+  .nextbtn {
+    position: absolute;
+    font-size: 50px;
+    margin-left: 101%;
+    margin-top: 14%;
+  }
+  .znavbar {
+    z-index: 2;
+    margin-top: 7%;
+  }
+
+  .sectionPlatos {
+    padding-top: 15%;
+  }
+
+ 
+  img {
+    height: 124px;
+    width: 130px;
+    margin-left: 20%;
+  }
+ 
+}
 @media (min-width: 1024px) {
 
   .contenedorCarousel{
-    transform: translateX(90%);
-    width: 130%;
+    transform: translateX(3%);
+    width: 100%;
   }
 
   .prevbtn {
@@ -37,7 +77,8 @@
 @media (min-width: 1440px) {
 
   .contenedorCarousel{
-    transform: translateX(0px);
+    transform: translateX(-43px);
+
     width: 100%;
   }
 

@@ -1,40 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
-.start{
-    top: 0%;
-    
+.start {
+  top: 0%;
 }
-.about{
-    top: 0%;
+.about {
+  top: 0%;
 }
-.what{
-    top: 0%;
+.what {
+  top: 0%;
 }
 
-.disableComponents{
-    display: none;
+.disableComponents {
+  display: none;
 }
-.tools{
-    top: 0%;
+.tools {
+  top: 0%;
 }
-.dishes{
-    top: 0%;
+.dishes {
+  top: 0%;
 }
-@media only screen and (min-width: 1024px) {
-
+@media (min-width: 728px) {
+ 
 }
-body{
-    overflow-x: hidden;
-    max-width: 80%;
+@media (min-width: 1024px) {
+  body,
+  html {
     margin: 0;
-    font0-family: Roboto, "Helvetica Neue", sans-serif;
- }
- @media only screen and (min-width: 1440px) {
-
-}
-body{
+    padding: 0;
     overflow-x: hidden;
-    max-width: 80%;
+    max-width: 100%;
+  }
+}
+@media (min-width: 1440px) {
+  body,
+  html {
     margin: 0;
-    font0-family: Roboto, "Helvetica Neue", sans-serif;
- }
-
+    padding: 0;
+    overflow-x: d;
+    max-width: 100%;
+  }
+}
+@media (min-width: 1920px) {
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+}

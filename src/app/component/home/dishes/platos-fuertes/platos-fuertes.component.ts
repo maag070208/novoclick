@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./platos-fuertes.component.css']
 })
 export class PlatosFuertesComponent implements OnInit {
-  time = 1500;
+  time = 5000;
   constructor() { }
 
   ngOnInit(): void {
@@ -138,11 +138,17 @@ export class PlatosFuertesComponent implements OnInit {
       desc: `
       Brief.
       Definición de los objetivos y presupuesto de la publicidad
+
       Modelado de segmentación y parrilla 
-      Diseño creatividades y contenido audiovisual (post,stories)
+
+      Diseño creatividades y contenido audiovisual
+
       Programación embudos y automatizaciones 
+
       Mención en las RRSS de Novoclick
+
       Retargeting en RRSS
+
       Medición, optimización  y reporte de estrategia
       `,
     },

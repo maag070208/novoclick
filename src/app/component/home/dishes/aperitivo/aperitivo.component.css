@@ -1,7 +1,58 @@
-@media (min-width: 1024px) {
+@media (min-width: 728px) {
+  .cardCarousel{
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px #999;
+    height: 230px;
+  }
   .contenedorCarousel{
-    transform: translateX(90%);
-    width: 130%;
+    transform: translateX(88%);
+    width: 160%;
+  }
+  .prevbtn {
+    position: absolute;
+    margin-top: 14%;
+    margin-left: -43px; 
+    font-size: 50px;
+  }
+  .nextbtn {
+    position: absolute;
+    font-size: 50px;
+    margin-left: 101%;
+    margin-top: 14%;
+  }
+  .znavbar {
+    z-index: 2;
+    margin-top: 7%;
+  }
+
+  .sectionPlatos {
+    padding-top: 15%;
+  }
+
+  img {
+    height: 124px;
+    width: 130px;
+    margin-left: 20%;
+  }
+
+  
+  .divsomos{
+
+  }
+  
+
+ 
+} 
+
+@media (min-width: 1024px) {
+  .cardCarousel{
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px #999;
+    height: 185px;
+  }
+  .contenedorCarousel{
+    transform: translateX(3%);
+    width: 100%;
   }
   .prevbtn {
     position: absolute;
@@ -31,14 +82,22 @@
   }
 
   
- 
+  .divsomos{
+
+  }
+  
 
  
 } 
 
 @media (min-width: 1440px) {
+  .cardCarousel{
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px #999;
+    height: 185px;
+  }
   .contenedorCarousel{ 
-    transform: translateX(25px);
+    transform: translateX(-43px);
     width: 100%;
   }
   .prevbtn {
@@ -67,15 +126,18 @@
     width: 80px;
     margin-left: 30%;
   }
-
   
 
- 
 
  
 }
 
 @media (min-width: 1920px) {
+  .cardCarousel{
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px #999;
+    height: 185px;
+  }
   .contenedorCarousel{
     transform: translateX(25px);
   }
@@ -106,6 +168,9 @@
     margin-left: 30%;
   }
 
+  .divsomos{
+
+  }
   
  
   

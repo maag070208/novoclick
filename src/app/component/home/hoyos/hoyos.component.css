@@ -2,11 +2,121 @@
   margin-left: 20%;
 }
 
+@media (min-width: 728px) {
 
-@media (min-width: 1024px) {
+  .moverCards{
+    transform: translateX(18pc);
+  }
+  .marginContainer1{
+    margin-left: -60%;
+  }
+  .marginContainer2{
+    margin-left: 20%;
+  }
+  .marginContainer3{
+    margin-left: 20%;
+  }
+
   .endHoyosImg {
-    width: 130%;
-    margin-left: -10%;
+    width: 140%;
+    margin-left: 0%;
+  }
+  h3.titulouno {
+    font-size: 80px;
+    font-family: sans-serif;
+    color: #4ac3f2;
+    margin: 0;
+    margin-left: 40%;
+  }
+  h4#titulodos {
+    font-size: 80px;
+    font-family: sans-serif;
+    color: #606060;
+    margin-top: -40px;
+    text-align: center;
+    margin-left: 65%;
+  }
+  p.line {
+    text-align: inherit;
+    font-weight: 900;
+    color: #4ac3f2;
+    margin-top: 1%;
+    margin-left: 40.5%;
+  }
+
+  h1.number {
+    background-color: #4ac3f2;
+    height: 34px;
+    width: 35px;
+    border-radius: 25px;
+    font-size: 32.5px;
+    color: white;
+    white-space: pre;
+    margin-left: 35%;
+  }
+  .titleHoyos {
+    color: #4ac3f2;
+    margin-left: 0%;
+  }
+  .containerTitleHoyos {
+    margin-left:-17%;
+  }
+  .containerCardsHoyos {
+    margin-left: 1%;
+    box-shadow: 13px 13px 21px #999;
+    width: 235%;
+  }
+  .containerTitle {
+    margin-left: 37%;
+    margin-bottom: 5%;
+  }
+  .containerTitle2 {
+    margin-left: 45%;
+    margin-bottom: 5%;
+
+  }
+}
+@media (min-width: 1024px) {
+
+  .moverCards{
+    transform: translateX(0px);
+  }
+  .marginContainer1{
+    margin-left: 0%;
+  }
+  .marginContainer2{
+    margin-left: 0%;
+  }
+  .marginContainer3{
+    margin-left: 0%;
+  }
+
+  .contenedorCardsProceso{
+    transform: translateX(12pc);
+  }
+  .cardHoyos{
+    width: 54%;
+    padding-left: 15%;
+    margin-left: -21%;
+  }
+  .cardHoyos1{
+    margin-left: -73%;
+  }
+  .cardHoyos2{
+  
+    margin-left: 0%;
+  }
+  .cardHoyos3{
+    margin-left: 4%;
+  }
+  .descriptionCardsHoyos{
+    width: 103%;
+    font-size: 25px;
+    margin-left: 5%;
+  }
+  .endHoyosImg {
+    width: 100%;
+    margin-left: 14%;
   }
   h3.titulouno {
     font-size: 80px;
@@ -49,20 +159,40 @@
     margin-left: 13%;
   }
   .containerCardsHoyos {
-    margin-left: 10%;
+    margin-left: 0%;
     box-shadow: 13px 13px 21px #999;
-    width: 190%;
+    width: 100%;
   }
   .containerTitle {
-    margin-left: 35%;
+    margin-left: -12%;
     margin-bottom: 5%;
   }
   .containerTitle2 {
-    margin-left: 45%;;
+    margin-left:-15%;
     margin-bottom: 5%;
   }
 }
 @media (min-width: 1440px) {
+
+  .moverCards{
+    transform: translateX(0px);
+  }
+  .marginContainer1{
+    margin-left: 0%;
+  }
+  .marginContainer2{
+    margin-left: 0%;
+  }
+  .marginContainer3{
+    margin-left: 0%;
+  }
+
+
+  .descriptionCardsHoyos{
+    width: 100%;
+    font-size: 25px;
+    margin-left: -8%;
+  }
   .endHoyosImg {
     width: 50%;
     margin-left: 23%;
@@ -110,18 +240,33 @@
   .containerCardsHoyos {
     margin-left: 2%;
     box-shadow: 13px 13px 21px #999;
-    width: 123%;
+    width: 96%;
   }
   .containerTitle {
-    margin-left: 15%;
+    margin-left: 0%;
     margin-bottom: 5%;
   }
   .containerTitle2 {
-    margin-left: 15%;
+    margin-left: 2%;
     margin-bottom: 5%;
   }
 }
 @media (min-width: 1920px) {
+
+  .moverCards{
+    transform: translateX(0px);
+  }
+  .marginContainer1{
+    margin-left: 0%;
+  }
+  .marginContainer2{
+    margin-left: 0%;
+  }
+  .marginContainer3{
+    margin-left: 0%;
+  }
+
+
   h3.titulouno {
     font-size: 80px;
     font-family: sans-serif;
@@ -163,16 +308,16 @@
     margin-left: 13%;
   }
   .containerCardsHoyos {
-    margin-left: 1%;
+    margin-left: 0%;
     box-shadow: 13px 13px 21px #999;
-    width: 123%;
+    width: 100%;
   }
   .containerTitle {
-    margin-left: 15%;
+    margin-left: 0%;
     margin-bottom: 5%;
   }
   .containerTitle2 {
-    margin-left: 15%;
+    margin-left: 0%;
     margin-bottom: 5%;
   }
   .endHoyosImg {

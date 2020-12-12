@@ -1,7 +1,41 @@
+@media (min-width: 728px) {
+  .visibleCarousel{
+    width: 185%;
+    margin-left: 8%;
+  }
+.prevbtn {
+  position: absolute;
+  margin-top: 14%;
+  margin-left: -43px;
+  font-size: 50px;
+}
+.nextbtn {
+  position: absolute;
+  font-size: 50px;
+  margin-left: 101%;
+  margin-top: 14%;
+}
+
+.znavbar {
+  z-index: 2;
+  margin-top: 7%;
+}
+
+.sectionPlatos {
+  padding-top: 15%;
+}
+
+img {
+  height: 430px;
+  width: 380px;
+}
+}
+
+
 @media (min-width: 1024px) {
     .visibleCarousel{
-        width: 150%;
-        margin-left: 15%;
+      width: 107%;
+      margin-left: -17%;
     }
   .prevbtn {
     position: absolute;

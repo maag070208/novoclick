@@ -22,22 +22,32 @@ export class ChefComponent implements OnInit {
       id: 1,
     },
     {
-      img: '../../../../assets/images/novoclick_team/Dario Bravo.png',
-      type: 'Gerente Comercial',
-      name: 'Dario Bravo',
-      desc: `
-      15 años de experiencia de proyectos digitales, desarrollo de productos, planeación e implementación de estrategias publicitarias.
-      `,
-      id: 2,
-    },
-    {
       img: '../../../../assets/images/novoclick_team/Wendy Franco.png',
       type: 'Gerente de operaciones',
       name: 'Wendy Franco',
       desc: `
       Amplia experiencia y liderazgo en la coordinación de todo el equipo de call center, contabilidad, comunicación con los comerciales, apoya el funcionamiento y cumplimiento de las campañas.
       `,
+      id: 2,
+    },
+    {
+      img: '../../../../assets/images/novoclick_team/Dario Bravo.png',
+      type: 'Gerente Comercial',
+      name: 'Dario Bravo',
+      desc: `
+      15 años de experiencia de proyectos digitales, desarrollo de productos, planeación e implementación de estrategias publicitarias.
+      `,
       id: 3,
+    },
+    {
+      img:
+        '../../../../assets/images/novoclick_team/Nataly Arias.png',
+      type: 'Director de Marketing Digital',
+      name: 'Natalia Arias',
+      desc: `
+      Director con amplio conocimiento y experiencia en el desarrollo, ejecución, implementación, control, optimización y monitoreo las estrategias de marketing digital de Novoclick y de sus clientes finales.
+      `,
+      id: 4,
     },
     {
       img:
@@ -47,7 +57,37 @@ export class ChefComponent implements OnInit {
       desc: `
       Director con amplio conocimiento y experiencia en el desarrollo, ejecución, implementación, control, optimización y monitoreo las estrategias de marketing digital de Novoclick y de sus clientes finales.
       `,
-      id: 4,
+      id: 5,
+    },
+    {
+      img:
+        '../../../../assets/images/novoclick_team/leonardo rivera.png',
+      type: 'Director de Marketing Digital',
+      name: 'Leonardo Rivera',
+      desc: `
+      Director con amplio conocimiento y experiencia en el desarrollo, ejecución, implementación, control, optimización y monitoreo las estrategias de marketing digital de Novoclick y de sus clientes finales.
+      `,
+      id: 6,
+    },
+    {
+      img:
+        '../../../../assets/images/novoclick_team/Laureano silva.png',
+      type: 'Director de Marketing Digital',
+      name: 'Laureano Silva',
+      desc: `
+      Director con amplio conocimiento y experiencia en el desarrollo, ejecución, implementación, control, optimización y monitoreo las estrategias de marketing digital de Novoclick y de sus clientes finales.
+      `,
+      id: 7,
+    },
+    {
+      img:
+        '../../../../assets/images/novoclick_team/Laura castañeda Prada.png',
+      type: 'Director de Marketing Digital',
+      name: 'Laura Castañeda',
+      desc: `
+      Director con amplio conocimiento y experiencia en el desarrollo, ejecución, implementación, control, optimización y monitoreo las estrategias de marketing digital de Novoclick y de sus clientes finales.
+      `,
+      id: 8,
     },
   ];
   state = 'front';

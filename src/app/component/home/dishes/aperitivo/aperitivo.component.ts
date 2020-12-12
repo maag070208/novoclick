@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./aperitivo.component.css'],
 })
 export class AperitivoComponent implements OnInit {
-  time = 99999;
+  time = 5000;
   constructor() {}
 
   ngOnInit(): void {}
@@ -162,34 +162,22 @@ export class AperitivoComponent implements OnInit {
       this.desc = desc;
       this.title = title;
       this.id = id;
-      console.log(this.id);
-      
     }
   };
 
   sendPlato = () => {
     let checkCard = document.getElementById(this.id);
-    console.log(checkCard);
-    
-    if (this.exist == 'yes')
-    {
+    if (this.exist == 'yes') {
       this.Addedtitle.push(this.title);
-      checkCard.classList.replace('botonInput','botonInputActive')
+      checkCard.classList.replace('botonInput', 'botonInputActive');
       this.exist = 'no';
-    }
-     else if (this.exist == 'no')
-    {
-      if (this.Addedtitle.includes(this.title)) 
-    {
+    } else if (this.exist == 'no') {
+      if (this.Addedtitle.includes(this.title)) {
         console.log(this.Addedtitle + ' ' + this.title);
-    } else 
-    {
+      } else {
         this.Addedtitle.push(this.title);
-        checkCard.classList.replace('botonInput','botonInputActive')
-        console.log(checkCard);
+        checkCard.classList.replace('botonInput', 'botonInputActive');
+      }
     }
-    
-    }
-
   };
 }

@@ -1,3 +1,164 @@
+@media (min-width: 768px) {
+  .texttomato{
+    margin-left: 0px;
+    transform: translateX(13%);
+    font-size: 25px;
+  }
+  .carousel {
+    margin: 50px auto;
+    padding: 0 70px;
+    margin-left: 0px;
+    transform: translateX(4%);
+    width: 204%;
+  }
+  .carousel .carousel-item {
+    min-height: 330px;
+    text-align: center;
+    overflow: hidden;
+  }
+  .carousel .carousel-item .img-box {
+    height: 160px;
+    width: 100%;
+    position: relative;
+  }
+
+  .carousel-itemimg {
+    width: 180px;
+    height: 47px;
+    position: absolute;
+    margin-left: -43%;
+    margin-top: 70%;
+  }
+  .logoHoyos{
+    position: absolute;
+    height: 50px;
+    width: 100px;
+    margin-top: 10%;
+    z-index: 1;
+    margin-left: -40%;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin: auto 0;
+    background:#074173;
+  }
+  .carousel-control-prev i,
+  .carousel-control-next i {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    margin: -16px 0 0 0;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    color: rgb(255, 255, 255);
+    text-shadow: none;
+    font-weight: bold;
+  }
+  .carousel-control-prev i {
+    margin-left: -3px;
+  }
+  .carousel-control-next i {
+    margin-right: -3px;
+  }
+  
+  .card {
+    position: absolute;
+    height: 276px;
+    width: 210px;
+    transition: all 0.6s ease;
+    margin: 20px;
+    transform-style: preserve-3d;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-left: 3%;
+    box-shadow: 13px 13px 21px #999;
+  }
+  .noRotate {
+    top: 0%;
+  }
+  .rotate {
+    transform: rotateY(180deg);
+  }
+  .on,
+  .reverseContent {
+    width: 150px;
+    background: #ffffff;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    animation-delay: 0, 5s;
+    animation-duration: 0, 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 100;
+    animation-timing-function: ease;
+  }
+  h1 {
+    margin: 0;
+  }
+  .reverseContent {
+    transform: rotateY(180deg);
+    font-family: "Eras ITC";
+    transition: all 0.6s ease;
+    animation-name: arkaPencere;
+    animation-delay: 0, 5s;
+    animation-duration: 5s;
+    animation-iteration-count: 10;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+  }
+  .marginReverse{
+    margin-left: 15%;
+  }
+  .noVisibleCard {
+    display: none;
+  }
+  h3.titulouno {
+    font-size: 70px;
+    color: #4ac3f2;
+    margin: 0;
+    margin-left: 22%;
+  }
+  
+  h4#titulodos {
+    font-size: 60px;
+    color: #606060;
+    margin-top: -15px;
+    text-align: center;
+    margin-left: 61%;
+  }
+  p.line {
+    text-align: inherit;
+    font-weight: 900;
+    color: #4ac3f2;
+    margin-top: -2%;
+    margin-left: 22%;
+  }
+  .divsomos{
+    margin-left: 50%;
+    margin-top: 10%;
+  }
+  
+  .toolsTitle{
+    margin-left: -50%;
+  }
+  .toolsP{
+    width: 233%;
+    margin-left: -30%;
+  }
+  .subTitleCarousel2{
+    margin-top: 90%;
+  }
+  
+}
 @media (min-width: 1024px) {
   .texttomato{
     margin-left: 0px;
@@ -8,8 +169,8 @@
     margin: 50px auto;
     padding: 0 70px;
     margin-left: 0px;
-    transform: translateX(0%);
-    width: 185%;
+    transform: translateX(-14%);
+    width: 102%;
   }
   .carousel .carousel-item {
     min-height: 330px;
@@ -157,9 +318,7 @@
   .subTitleCarousel2{
     margin-top: 90%;
   }
-  .sombra{
-    box-shadow: 13px 13px 21px #999;
-  }
+  
 }
 @media (min-width: 1440px) {
   .texttomato{
@@ -171,7 +330,7 @@
     margin: 50px auto;
     padding: 0 70px;
     margin-left: 0px;
-    transform: translateX(0%);
+    transform: translateX(-13%);
     width: 100%;
   }
   .carousel .carousel-item {
@@ -320,12 +479,9 @@
   .subTitleCarousel2{
     margin-top: 90%;
   }
-  .sombra{
-    box-shadow: 13px 13px 21px #999;
-  }
+  
 }
-
-@media (min-width: 1440px) {
+@media (min-width: 1920px) {
   .texttomato{
     margin-left: 0px;
     transform: translateX(13%);
@@ -336,7 +492,7 @@
     padding: 0 70px;
     margin-left: 0px;
     transform: translateX(0%);
-    width: 100%;
+    width: 72%;
   }
   .carousel .carousel-item {
     min-height: 330px;
@@ -485,7 +641,5 @@
   .subTitleCarousel2{
     margin-top: 90%;
   }
-  .sombra{
-    box-shadow: 13px 13px 21px #999;
-  }
+  
 }

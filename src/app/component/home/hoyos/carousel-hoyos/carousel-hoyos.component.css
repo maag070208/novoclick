@@ -1,4 +1,4 @@
-@media (min-width: 1024px) {
+@media (min-width: 728px) {
   .prev{
     transform: translateX(180%);
   }
@@ -60,9 +60,72 @@
     margin-right: 0px;
   }
 }
+@media (min-width: 1024px) {
+  .prev{
+    transform: translateX(46%);
+  }
+  .next{
+    transform: translateX(65px);
+  }
+  .cardContent {
+    border-radius: 30px;
+    box-shadow: 13px 13px 21px #999;
+    margin-left: 2%;
+    transform: translateX(135px);
+    width: 125%;
+  }
+  .card {
+    flex-direction: row;
+  }
+  .card-image {
+    height: 300px;
+    flex-basis: 40%;
+    margin-left: -12%;
+  }
+  .card-content {
+    margin-left: -20%;
+  }
+  .title {
+    text-align: center;
+    width: 50%;
+    margin-left: -16%;
+  }
+  .contenedorCarousel1 {
+    margin-bottom: 10%;
+    width: 93%;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin: auto 0;
+    background:#074173;
+  }
+  .carousel-control-prev i,
+  .carousel-control-next i {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    margin: -16px 0 0 0;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    color: rgb(255, 255, 255);
+    text-shadow: none;
+    font-weight: bold;
+  }
+  .carousel-control-prev i {
+    margin-left: 0px;
+  }
+  .carousel-control-next i {
+    margin-right: 0px;
+  }
+}
 @media (min-width: 1440px) {
   .prev{
-    transform: translateX(180%);
+    transform: translateX(-26%);
   }
   .next{
     transform: translateX(65px);
@@ -92,8 +155,8 @@
   }
   .contenedorCarousel1 {
     margin-bottom: 10%;
-    width: 100%;  
-    margin-left: 7%;
+    width: 70%;
+    margin-left: 13%;
   }
   .carousel-control-prev,
   .carousel-control-next {
@@ -126,7 +189,7 @@
 }
 @media (min-width: 1920px) {
   .prev{
-    transform: translateX(220%);
+    transform: translateX(-144%);
   }
   .next{
     transform: translateX(0%);
@@ -156,7 +219,7 @@
   }
   .contenedorCarousel1 {
     margin-bottom: 10%;
-    width: 100%;
+    width: 80%;
     margin-left: 11%;
   }
   .carousel-control-prev,

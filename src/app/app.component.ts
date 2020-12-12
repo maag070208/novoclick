@@ -14,7 +14,7 @@ export class AppComponent {
     setTimeout(()=>{
       this.displayLoader();
       document.getElementById('loading').style.display = 'none';
-    },1000);
+    },3000);
   }
 
    displayLoader(){

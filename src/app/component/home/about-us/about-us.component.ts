@@ -12,5 +12,9 @@ export class AboutUsComponent implements OnInit {
   ngOnInit(): void {
     
   }
-
+  activarChefDigital2(){
+    let chef1 = document.getElementById('avatar2');
+    chef1.style.display = '';
+    window.scrollTo({top: 1750});
+  }
 }

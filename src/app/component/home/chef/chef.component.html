@@ -1,7 +1,9 @@
 <div style="padding-top: 5%" class="container contenedorChefs">
   <div class="row">
     <div class="col">
-      <div class="chefsTitle row text-center text-xs-center text-sm-left text-md-left">
+      <div
+        class="chefsTitle row text-center text-xs-center text-sm-left text-md-left"
+      >
         <div class="col-xs-12 col-sm-4 col-md-4">
           <h3 class="titulouno">CHEF</h3>
           <br />
@@ -28,98 +30,93 @@
   </div>
 
   <div class="contenedorChefsDigitales">
+    <div class="row chef1">
+      <div class="col">
+        <div
+          *ngFor="let c of teamMembers | slice: 0:1; let i = index"
+          class="col-sm-3"
+        >
+          <div
+            (click)="rotateCard(c.name)"
+            id="{{ c.name }}"
+            class="card noRotate"
+          >
+            <div class="on">
+              <img class="imgTeam" src="{{ c.img }}" alt="img2" />
+            </div>
 
-  <div class="row chef1">
-    <div class="col"></div>
-    <div class="col">
-      <div *ngFor="let c of teamMembers | slice: 0:1; let i = index" class="col-sm-3">
-        <div (click)="rotateCard(c.name)" id="{{ c.name }}" class="card noRotate">
-          <div class="on">
-            <img class="imgTeam" src="{{ c.img }}" alt="img2" />
-          </div>
-
-          <div style="
-          width: 340px;
-          margin-left: -20%;
-          "
-          class="reverseContent marginReverse">
-            <h1>
-              <a>{{ c.name }}</a>
-            </h1>
-            <br />
-            <p>
-              {{ c.desc }}
-            </p>
+            <div
+              style="width: 340px; margin-left: -20%"
+              class="reverseContent marginReverse"
+            >
+              <h1>
+                <a>{{ c.name }}</a>
+              </h1>
+              <br />
+              <p>
+                {{ c.desc }}
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="col"></div>
-  </div>
-  <!---->
-  <div class="row chef2">
-    <!---->
-    <div class="col">
-      <div *ngFor="let c of teamMembers | slice: 1:2; let i = index" class="col-sm-3">
-        <div (click)="rotateCard(c.name)" id="{{ c.name }}" class="card noRotate">
-          <div class="on">
-            <img class="imgTeam" src="{{ c.img }}" alt="img2" />
-          </div>
+      <div class="col"></div>
+      <div class="col">
+        <div
+          *ngFor="let c of teamMembers | slice: 1:2; let i = index"
+          class="col-sm-3"
+        >
+          <div
+            (click)="rotateCard(c.name)"
+            id="{{ c.name }}"
+            class="card noRotate"
+          >
+            <div class="on">
+              <img class="imgTeam" src="{{ c.img }}" alt="img2" />
+            </div>
 
-          <div class="reverseContent marginReverse">
-            <h1>
-              <a>{{ c.name }}</a>
-            </h1>
-            <br />
-            <p>
-              {{ c.desc }}
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!---->
-    <div class="col">
-      <div *ngFor="let c of teamMembers | slice: 2:3; let i = index" class="col-sm-3">
-        <div (click)="rotateCard(c.name)" id="{{ c.name }}" class="card noRotate">
-          <div class="on">
-            <img class="imgTeam" src="{{ c.img }}" alt="img2" />
-          </div>
-
-          <div class="reverseContent marginReverse">
-            <h1>
-              <a>{{ c.name }}</a>
-            </h1>
-            <br />
-            <p>
-              {{ c.desc }}
-            </p>
+            <div
+              style="width: 340px; margin-left: -20%"
+              class="reverseContent marginReverse"
+            >
+              <h1>
+                <a>{{ c.name }}</a>
+              </h1>
+              <br />
+              <p>
+                {{ c.desc }}
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <!---->
-    <div class="col">
-      <div *ngFor="let c of teamMembers | slice: 3:4; let i = index" class="col-sm-3">
-        <div (click)="rotateCard(c.name)" id="{{ c.name }}" class="card noRotate">
-          <div class="on">
-            <img class="imgTeam" src="{{ c.img }}" alt="img2" />
-          </div>
+    <div class="row chef2">
+      <!---->
+      <div *ngFor="let c of teamMembers | slice: 2; let i = index" class="col">
+        <div class="col-sm-3">
+          <div
+            (click)="rotateCard(c.name)"
+            id="{{ c.name }}"
+            class="card noRotate"
+          >
+            <div class="on">
+              <img class="imgTeam" src="{{ c.img }}" alt="img2" />
+            </div>
 
-          <div class="reverseContent marginReverse">
-            <h1>
-              <a>{{ c.name }}</a>
-            </h1>
-            <br />
-            <p>
-              {{ c.desc }}
-            </p>
+            <div class="reverseContent marginReverse">
+              <h1>
+                <a>{{ c.name }}</a>
+              </h1>
+              <br />
+              <p>
+                {{ c.desc }}
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-</div>
-
 </div>
