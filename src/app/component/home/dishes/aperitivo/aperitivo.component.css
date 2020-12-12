@@ -1,4 +1,3 @@
-
 @media (min-width: 1024px) {
   .contenedorCarousel{
     transform: translateX(90%);
@@ -31,56 +30,15 @@
     margin-left: 30%;
   }
 
-  input[type="checkbox"] + label {
-    display: block;
-    margin: 0.2em;
-    cursor: pointer;
-    padding: 0.2em;
-  }
+  
+ 
 
-  input[type="checkbox"] {
-    display: none;
-  }
-
-  input[type="checkbox"] + label:before {
-    content: "";
-    border: 0.1em solid #000;
-    border-radius: 0.2em;
-    display: inline-block;
-    width: 1.4em;
-    height: 1.4em;
-    padding-left: 0.1em;
-    padding-top: -4px;
-    margin-right: 0.2em;
-    color: transparent;
-    transition: 0.2s;
-  }
-
-  input[type="checkbox"] + label:active:before {
-    transform: scale(0);
-  }
-
-  input[type="checkbox"]:checked + label:before {
-    background-color: MediumSeaGreen;
-    border-color: MediumSeaGreen;
-    color: #fff;
-  }
-
-  input[type="checkbox"]:disabled + label:before {
-    transform: scale(1);
-    border-color: #aaa;
-  }
-
-  input[type="checkbox"]:checked:disabled + label:before {
-    transform: scale(1);
-    background-color: #bfb;
-    border-color: #bfb;
-  }
+ 
 } 
 
 @media (min-width: 1440px) {
   .contenedorCarousel{ 
-    transform: translateX(0px);
+    transform: translateX(25px);
     width: 100%;
   }
   .prevbtn {
@@ -110,55 +68,16 @@
     margin-left: 30%;
   }
 
-  input[type="checkbox"] + label {
-    display: block;
-    margin: 0.2em;
-    cursor: pointer;
-    padding: 0.2em;
-  }
+  
 
-  input[type="checkbox"] {
-    display: none;
-  }
+ 
 
-  input[type="checkbox"] + label:before {
-    content: "";
-    border: 0.1em solid #000;
-    border-radius: 0.2em;
-    display: inline-block;
-    width: 1.4em;
-    height: 1.4em;
-    padding-left: 0.1em;
-    padding-top: -4px;
-    margin-right: 0.2em;
-    color: transparent;
-    transition: 0.2s;
-  }
-
-  input[type="checkbox"] + label:active:before {
-    transform: scale(0);
-  }
-
-  input[type="checkbox"]:checked + label:before {
-    background-color: MediumSeaGreen;
-    border-color: MediumSeaGreen;
-    color: #fff;
-  }
-
-  input[type="checkbox"]:disabled + label:before {
-    transform: scale(1);
-    border-color: #aaa;
-  }
-
-  input[type="checkbox"]:checked:disabled + label:before {
-    transform: scale(1);
-    background-color: #bfb;
-    border-color: #bfb;
-  }
+ 
 }
-@media (min-width: 1930px) {
+
+@media (min-width: 1920px) {
   .contenedorCarousel{
-    transform: translateX(0px);
+    transform: translateX(25px);
   }
   .prevbtn {
     position: absolute;
@@ -187,64 +106,82 @@
     margin-left: 30%;
   }
 
-  input[type="checkbox"] + label {
-    display: block;
-    margin: 0.2em;
+  
+ 
+  
+}
+
+
+.botonInput{
+  background-color: white;
+  height: 26px;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+}
+.botonInputActive{
+  background-color: #73cdf0;
+  height: 26px;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+}
+.textAgregarCard{
+  margin-top: 6px;
+  margin-left: 35%;
+}
+.botonAgregarCard{
     cursor: pointer;
-    padding: 0.2em;
-  }
-
-  input[type="checkbox"] {
-    display: none;
-  }
-
-  input[type="checkbox"] + label:before {
-    content: "";
-    border: 0.1em solid #000;
-    border-radius: 0.2em;
-    display: inline-block;
-    width: 1.4em;
-    height: 1.4em;
-    padding-left: 0.1em;
-    padding-top: -4px;
-    margin-right: 0.2em;
-    color: transparent;
-    transition: 0.2s;
-  }
-
-  input[type="checkbox"] + label:active:before {
-    transform: scale(0);
-  }
-
-  input[type="checkbox"]:checked + label:before {
-    background-color: MediumSeaGreen;
-    border-color: MediumSeaGreen;
-    color: #fff;
-  }
-
-  input[type="checkbox"]:disabled + label:before {
-    transform: scale(1);
-    border-color: #aaa;
-  }
-
-  input[type="checkbox"]:checked:disabled + label:before {
-    transform: scale(1);
-    background-color: #bfb;
-    border-color: #bfb;
-  
-  
-  }
-
-
+    background: #73cdf0da;
+    width: 20%;
+    height: 35px;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    border-radius: 15px;
+}
+.botonAgregarCard:hover {background-color: #73cdf0}
+.descriptionPlatoDigital{
+  font-size: 15px;
+  margin-left: -2%;
+  color: #17456d;
+  font-family: 'Roboto';
+}
+.titleCardDescription{
+  padding-top: 3%;
+  padding-left: 3%;
+}
+.imgCardDescription{
+  background: #73cdf0;
+  margin-left: 80%;
+  border-radius: 15px;
+  height: 50px;
+  width: 50px;
+  margin-top: -6%;
+}
+.imgCardDescPlato{
+  height: 40px;
+  width: 55px;
+  margin-left: 0px;
+  margin-top: 9%;
+}
+.titleCard{
+  font-size: 30px;
+  color: #17456d;
+  font-family: sans-serif;
+  font-weight: 600;
+  width: 78%;
 }
 .visibleCard {
   background-color: white;
-  height: 150px;
+  height: 50%;
+  width: 55%;
   border-radius: 20px;
   box-shadow: 20px -5px 20px #999;
   margin-top: 15px;
+  margin-left: 46%;
+  border-color: #9b9b9b57;
+  border-style: solid;
 }
-
 .invisibleCard {
   display: none;
 }

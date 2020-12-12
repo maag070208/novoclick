@@ -32,9 +32,13 @@
       <div class="carousel-item active">
         <div class="row">
 
-          <div *ngFor="let c of card; let i = index" class="col-md-4">
+          <div *ngFor="let c of card |slice:0:3; let i = index" class="col-md-4">
             <div
-              style="border-radius: 30px; box-shadow: 2px 2px 5px #999"
+              style="
+              border-radius: 30px; 
+              box-shadow: 2px 2px 5px #999;
+              height: 185px;
+              "
               class="card mb-2"
             >
               <img
@@ -43,13 +47,13 @@
                 alt="Card image cap"
               />
               <br />
-              <h4 class="card-title text-center h5">{{c.title}} {{i}} </h4>
-               <div (click)="onSelectCard(c.id, c.desc)" class="form-group text-center">
+              <h4 class="card-title text-center h5">{{c.title}}  </h4>
+               <div (click)="onSelectCard(c.id, c.desc, c.title)" class="form-group text-center">
                 <div class="form-group text-center">
-                  <input id="inputCheck"
-                    type="checkbox"
+                  <button 
+                    class="botonInput btn"
                     id="{{c.id}}"
-                  />
+                  ></button>
                   <label for="{{c.id}}"></label>
                 </div>
               </div>
@@ -63,12 +67,29 @@
 <!--END CAROUSEL-->
 
   <div id="adicionesCard" class="invisibleCard">
-    <h6 class="card-subtitle mb-2 text-muted">{{desc}}</h6>
-    <div class="card-footer cardFooter">
-      <a class="card-link "><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
-      <a class="card-link"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
+    <div class="titleCardDescription">
+      <h4 class="mb-2 titleCard">{{title}}</h4>
+    <p style=
+    "
+    font-size: 15px;
+    color: #17456d !important;
+    font-family: 'Roboto';
+    "
+    class="mb-2 cardSubtitle">Ingredientes</p>
+    </div>
+    <div class="imgCardDescription">
+      <img class="imgCardDescPlato" src="../../../../../assets/images/+fotos platos digitales/menu-platosD/adciones.png">
+    </div>
+    <div>
+      <pre class="descriptionPlatoDigital">
+        {{desc}}
+      </pre>
+    </div>
+    <div (click)="sendPlato()" class="botonAgregarCard">
+      <a> <i class="fa fa-thumbs-up text-white textAgregarCard" aria-hidden="true"></i></a>
     </div>
   </div>
+
 
 </div>
 

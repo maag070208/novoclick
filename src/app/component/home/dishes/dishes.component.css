@@ -130,12 +130,7 @@
     background-position-x: -5%;
     background-position-y: 42%;
   }
-  .invisibleCarousel {
-    display: none;
-  }
-  .visibleCarousel {
-  }
-
+ 
   .tituloPlato1 {
     position: absolute;
     margin-left: 2.2%;
@@ -174,11 +169,7 @@
     margin-top: 14%;
   }
 
-  .invisibleCarousel {
-    display: none;
-  }
-  .visibleCarousel {
-  }
+
 }
 
 @media (min-width: 1440px) {
@@ -317,11 +308,7 @@
     background-position-x: -5%;
     background-position-y: 35%;
   }
-  .invisibleCarousel {
-    display: none;
-  }
-  .visibleCarousel {
-  }
+
 
   .tituloPlato1 {
     position: absolute;
@@ -361,14 +348,18 @@
     margin-top: 14%;
   }
 
-  .invisibleCarousel {
-    display: none;
-  }
-  .visibleCarousel {
-  }
+ 
 }
 
 @media (min-width: 1920px) {
+  .textSubtitle{
+    margin-top: 7%;
+    margin-left: 5% !important;
+    text-align: center;
+    font-size: 25px;
+    transform: translateX(44%);
+    margin-bottom: 8%;
+}
   h3.titulouno {
     font-size: 80px;
     font-family: sans-serif;
@@ -503,11 +494,7 @@
     background-position-x: -5%;
     background-position-y: 35%;
   }
-  .invisibleCarousel {
-    display: none;
-  }
-  .visibleCarousel {
-  }
+
 
   .tituloPlato1 {
     position: absolute;
@@ -547,9 +534,11 @@
     margin-top: 14%;
   }
 
-  .invisibleCarousel {
-    display: none;
-  }
-  .visibleCarousel {
-  }
+ 
+}
+.invisibleCarousel {
+  display: none;
+}
+.visibleCarousel {
+  margin-left: 5%;
 }

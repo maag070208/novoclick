@@ -33,7 +33,7 @@
         
           <div *ngFor="let c of card |slice:0:3; let i = index" class="col-md-4">
             <div
-              style="border-radius: 30px; box-shadow: 2px 2px 5px #999"
+              style="border-radius: 30px; box-shadow: 2px 2px 5px #999;height: 185px;"
               class="card mb-2"
             >
               <img
@@ -45,10 +45,10 @@
               <h4 class="card-title text-center h5">{{c.title}}  </h4>
                <div (click)="onSelectCard(c.id, c.desc, c.title)" class="form-group text-center">
                 <div class="form-group text-center">
-                  <input id="inputCheck"
-                    type="checkbox"
+               <button 
+                    class="botonInput btn"
                     id="{{c.id}}"
-                  />
+                  ></button>
                   <label for="{{c.id}}"></label>
                 </div>
               </div>
@@ -65,7 +65,7 @@
 
            <div *ngFor="let c of card |slice:3:6; let i = index" class="col-md-4">
             <div
-              style="border-radius: 30px; box-shadow: 2px 2px 5px #999"
+              style="border-radius: 30px; box-shadow: 2px 2px 5px #999;height: 185px;"
               class="card mb-2"
             >
               <img
@@ -77,16 +77,16 @@
               <h4 class="card-title text-center h5">{{c.title}}  </h4>
                <div (click)="onSelectCard(c.id, c.desc, c.title)" class="form-group text-center">
                 <div class="form-group text-center">
-                  <input id="inputCheck"
-                    type="checkbox"
+                  <button 
+                    class="botonInput btn"
                     id="{{c.id}}"
-                  />
+                  ></button>
                   <label for="{{c.id}}"></label>
                 </div>
               </div>
             </div>
-
           </div>
+          
         </div>
       </div>
       <!--/.Second slide-->
@@ -96,7 +96,7 @@
         <div class="row">
           <div *ngFor="let c of card |slice:6:9; let i = index" class="col-md-4">
             <div
-              style="border-radius: 30px; box-shadow: 2px 2px 5px #999"
+              style="border-radius: 30px; box-shadow: 2px 2px 5px #999;height: 185px;"
               class="card mb-2"
             >
               <img
@@ -108,10 +108,10 @@
               <h4 class="card-title text-center h5">{{c.title}}  </h4>
                <div (click)="onSelectCard(c.id, c.desc, c.title)" class="form-group text-center">
                 <div class="form-group text-center">
-                  <input id="inputCheck"
-                    type="checkbox"
+               <button 
+                    class="botonInput btn"
                     id="{{c.id}}"
-                  />
+                  ></button>
                   <label for="{{c.id}}"></label>
                 </div>
               </div>
@@ -123,17 +123,26 @@
   </div>
   
   <div id="aperitivosCard" class="invisibleCard">
-    <h4 class="mb-2 titleCard">{{title}}</h4>
+    <div class="titleCardDescription">
+      <h4 class="mb-2 titleCard">{{title}}</h4>
     <p style=
-    " 
-    font-size: 13px;
-    font-style: italic;
-    color: blue !important;
+    "
+    font-size: 15px;
+    color: #17456d !important;
+    font-family: 'Roboto';
     "
     class="mb-2 cardSubtitle">Ingredientes</p>
-    <div  class="card-footer cardFooter">
-      <a (click)="sendPlato()" class="card-link "><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
-      <a class="card-link"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
+    </div>
+    <div class="imgCardDescription">
+      <img class="imgCardDescPlato" src="../../../../../assets/images/+fotos platos digitales/menu-platosD/aperitivos.png">
+    </div>
+    <div>
+      <pre class="descriptionPlatoDigital">
+        {{desc}}
+      </pre>
+    </div>
+    <div (click)="sendPlato()" class="botonAgregarCard">
+      <a> <i class="fa fa-thumbs-up text-white textAgregarCard" aria-hidden="true"></i></a>
     </div>
   </div>
 

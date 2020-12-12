@@ -30,66 +30,32 @@
       <!--First slide-->
       <div class="carousel-item active">
         <div class="row">
-          <div class="col-md-4">
+
+          <div *ngFor="let c of card |slice:0:3; let i = index" class="col-md-4">
             <div
-              style="border-radius: 30px; box-shadow: 2px 2px 5px #999"
+              style="border-radius: 30px; box-shadow: 2px 2px 5px #999;height: 185px;"
               class="card mb-2"
             >
               <img
                 class="card-img-top img-carousel"
-                src="../../../../../assets/images/paltosDigitales/platosfuertes/1 Estrategia SEO.png"
+                src="{{c.img}}"
                 alt="Card image cap"
               />
               <br />
-              <h4 class="card-title text-center h5">Estrategia SEO</h4>
-              <div class="form-group text-center">
+              <h4 class="card-title text-center h5">{{c.title}}  </h4>
+               <div (click)="onSelectCard(c.id, c.desc, c.title)" class="form-group text-center">
                 <div class="form-group text-center">
-                  <input type="checkbox" id="checkboxFuertes1" />
-                  <label for="checkboxFuertes1"></label>
+               <button 
+                    class="botonInput btn"
+                    id="{{c.id}}"
+                  ></button>
+                  <label for="{{c.id}}"></label>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4 clearfix d-none d-md-block">
-            <div
-              style="border-radius: 30px; box-shadow: 2px 2px 5px #999"
-              class="card mb-2"
-            >
-              <img
-                class="card-img-top img-carousel"
-                src="../../../../../assets/images/paltosDigitales/platosfuertes/2 Estrategia SEM.png"
-                alt="Card image cap"
-              />
-              <br />
-              <h4 class="card-title text-center h5">Estrategia SEM</h4>
-              <div class="form-group text-center">
-                <div class="form-group text-center">
-                  <input type="checkbox" id="checkboxFuertes2" />
-                  <label for="checkboxFuertes2"></label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 clearfix d-none d-md-block">
-            <div
-              style="border-radius: 30px; box-shadow: 2px 2px 5px #999"
-              class="card mb-2"
-            >
-              <img
-                class="card-img-top img-carousel"
-                src="../../../../../assets/images/paltosDigitales/platosfuertes/3 E-mail Marketing.png"
-                alt="Card image cap"
-              />
-              <br />
-              <h4 class="card-title text-center h5">E-mail marketing</h4>
-              <div class="form-group text-center">
-                <div class="form-group text-center">
-                  <input type="checkbox" id="checkboxFuertes3" />
-                  <label for="checkboxFuertes3"></label>
-                </div>
-              </div>
-            </div>
-          </div>
+       
+          
         </div>
       </div>
       <!--/.First slide-->
@@ -97,71 +63,31 @@
       <!--Second slide-->
       <div class="carousel-item">
         <div class="row">
-          <div class="col-md-4">
+        
+          <div *ngFor="let c of card |slice:3:6; let i = index" class="col-md-4">
             <div
-              style="
-                border-radius: 30px;
-                box-shadow: 2px 2px 5px #999;
-              "
+              style="border-radius: 30px; box-shadow: 2px 2px 5px #999;height: 185px;"
               class="card mb-2"
             >
               <img
                 class="card-img-top img-carousel"
-                src="../../../../../assets/images/paltosDigitales/platosfuertes/4 Administracion de trafico en RRSS.png"
-                alt="Card image cap"
-              />
-              <h4 class="card-title text-center h4">
-              
-                Administracion de trafico en rrss
-              </h4>
-              <div class="form-group text-center">
-                <div class="form-group text-center">
-                  <input type="checkbox" id="checkboxFuertes4" />
-                  <label for="checkboxFuertes4"></label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 clearfix d-none d-md-block">
-            <div
-              style="border-radius: 30px; box-shadow: 2px 2px 5px #999"
-              class="card mb-2"
-            >
-              <img
-                class="card-img-top img-carousel"
-                src="../../../../../assets/images/paltosDigitales/platosfuertes/5 Analitica de datos  (planear, ejecutar y.png"
+                src="{{c.img}}"
                 alt="Card image cap"
               />
               <br />
-              <h4 class="card-title text-center h5">Analitica de datos</h4>
-              <div class="form-group text-center">
+              <h4 class="card-title text-center h5">{{c.title}}  </h4>
+               <div (click)="onSelectCard(c.id, c.desc, c.title)" class="form-group text-center">
                 <div class="form-group text-center">
-                  <input type="checkbox" id="checkboxFuertes5" />
-                  <label for="checkboxFuertes5"></label>
+                  <button 
+                    class="botonInput btn"
+                    id="{{c.id}}"
+                  ></button>
+                  <label for="{{c.id}}"></label>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4 clearfix d-none d-md-block">
-            <div
-              style="border-radius: 30px; box-shadow: 2px 2px 5px #999"
-              class="card mb-2"
-            >
-              <img
-                class="card-img-top img-carousel"
-                src="../../../../../assets/images/paltosDigitales/platosfuertes/6 Whatsapp Marketing.png"
-                alt="Card image cap"
-              />
-              <br />
-              <h4 class="card-title text-center h5">Whatsapp marketing</h4>
-              <div class="form-group text-center">
-                <div class="form-group text-center">
-                  <input type="checkbox" id="checkboxFuertes6" />
-                  <label for="checkboxFuertes6"></label>
-                </div>
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
       <!--/.Second slide-->
@@ -169,66 +95,25 @@
       <!--Third slide-->
       <div class="carousel-item">
         <div class="row">
-          <div class="col-md-4">
+          <div *ngFor="let c of card |slice:6:9; let i = index" class="col-md-4">
             <div
-              style="border-radius: 30px; box-shadow: 2px 2px 5px #999"
+              style="border-radius: 30px; box-shadow: 2px 2px 5px #999;height: 185px;"
               class="card mb-2"
             >
               <img
                 class="card-img-top img-carousel"
-                src="../../../../../assets/images/paltosDigitales/platosfuertes/7 SMS marketing.png"
+                src="{{c.img}}"
                 alt="Card image cap"
               />
               <br />
-              <h4 class="card-title text-center h5">SMS marketing</h4>
-              <div class="form-group text-center">
+              <h4 class="card-title text-center h5">{{c.title}}  </h4>
+               <div (click)="onSelectCard(c.id, c.desc, c.title)" class="form-group text-center">
                 <div class="form-group text-center">
-                  <input type="checkbox" id="checkboxFuertes7" />
-                  <label for="checkboxFuertes7"></label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 clearfix d-none d-md-block">
-            <div
-              style="border-radius: 30px; box-shadow: 2px 2px 5px #999"
-              class="card mb-2"
-            >
-              <img
-                class="card-img-top img-carousel"
-                src="../../../../../assets/images/paltosDigitales/platosfuertes/8 Publicidad en Redes Sociales .png"
-                alt="Card image cap"
-              />
-              <br>
-              <h4 class="card-title text-center h5">
-                Publicidad en redes sociales
-              </h4>
-              <div class="form-group text-center">
-                <div class="form-group text-center">
-                  <input type="checkbox" id="checkboxFuertes8" />
-                  <label for="checkboxFuertes8"></label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 clearfix d-none d-md-block">
-            <div
-              style="border-radius: 30px; box-shadow: 2px 2px 5px #999"
-              class="card mb-2"
-            >
-              <img
-                class="card-img-top img-carousel"
-                src="../../../../../assets/images/paltosDigitales/platosfuertes/9 Publicidad programatica.png"
-                alt="Card image cap"
-              />
-              <br>
-              <h4 class="card-title text-center h5">
-                Publicidad programaticada
-              </h4>
-              <div class="form-group text-center">
-                <div class="form-group text-center">
-                  <input type="checkbox" id="checkboxFuertes9" />
-                  <label for="checkboxFuertes9"></label>
+                  <button 
+                    class="botonInput btn"
+                    id="{{c.id}}"
+                  ></button>
+                  <label for="{{c.id}}"></label>
                 </div>
               </div>
             </div>
@@ -236,117 +121,32 @@
         </div>
       </div>
 
-      <!--Four slide-->
-      <div class="carousel-item">
-        <div class="row">
-          <div class="col-md-4">
-            <div
-              style="border-radius: 30px; box-shadow: 2px 2px 5px #999"
-              class="card mb-2"
-            >
-              <img
-                class="card-img-top img-carousel"
-                src="../../../../../assets/images/paltosDigitales/platosfuertes/EnviomasivoSMS.png"
-                alt="Card image cap"
-              />
-              <br />
-              <h4 class="card-title text-center h5">Envio masivo SMS</h4>
-              <div class="form-group text-center">
-                <div class="form-group text-center">
-                  <input type="checkbox" id="checkboxFuertes10" />
-                  <label for="checkboxFuertes10"></label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 clearfix d-none d-md-block">
-            <div
-              style="border-radius: 30px; box-shadow: 2px 2px 5px #999"
-              class="card mb-2"
-            >
-              <img
-                class="card-img-top img-carousel"
-                src="../../../../../assets/images/paltosDigitales/platosfuertes/mailing.png"
-                alt="Card image cap"
-              />
-              <br />
-              <h4 class="card-title text-center h5">Mailing</h4>
-              <div class="form-group text-center">
-                <div class="form-group text-center">
-                  <input type="checkbox" id="checkboxFuertes11" />
-                  <label for="checkboxFuertes11"></label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 clearfix d-none d-md-block">
-            <div
-              style="border-radius: 30px; box-shadow: 2px 2px 5px #999"
-              class="card mb-2"
-            >
-              <img
-                class="card-img-top img-carousel"
-                src="../../../../../assets/images/paltosDigitales/platosfuertes/push app web.png"
-                alt="Card image cap"
-              />
-              <br />
-              <h4 class="card-title text-center h5">Push app web</h4>
-              <div class="form-group text-center">
-                <div class="form-group text-center">
-                  <input type="checkbox" id="checkboxFuertes12" />
-                  <label for="checkboxFuertes12"></label>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <!--Four slide-->
-      <div class="carousel-item">
-        <div class="row">
-          <div class="col-md-4">
-            <div
-              style="border-radius: 30px; box-shadow: 2px 2px 5px #999"
-              class="card mb-2"
-            >
-              <img
-                class="card-img-top img-carousel"
-                src="../../../../../assets/images/paltosDigitales/platosfuertes/Serviciodevoz.png"
-                alt="Card image cap"
-              />
-              <br />
-              <h4 class="card-title text-center h5">Servicios de voz</h4>
-              <div class="form-group text-center">
-                <div class="form-group text-center">
-                  <input type="checkbox" id="checkboxFuertes13" />
-                  <label for="checkboxFuertes13"></label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 clearfix d-none d-md-block">
-            <div
-              style="border-radius: 30px; box-shadow: 2px 2px 5px #999"
-              class="card mb-2"
-            >
-              <img
-                class="card-img-top img-carousel"
-                src="../../../../../assets/images/paltosDigitales/platosfuertes/smslandingpage.png"
-                alt="Card image cap"
-              />
-              <br />
-              <h4 class="card-title text-center h5">SMS landing page</h4>
-              <div class="form-group text-center">
-                <div class="form-group text-center">
-                  <input type="checkbox" id="checkboxFuertes14" />
-                  <label for="checkboxFuertes14"></label>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    </div>
+
+    <div id="fuertesCard" class="invisibleCard">
+      <div class="titleCardDescription">
+        <h4 class="mb-2 titleCard">{{title}}</h4>
+      <p style=
+      "
+      font-size: 15px;
+      color: #17456d !important;
+      font-family: 'Roboto';
+      "
+      class="mb-2 cardSubtitle">Ingredientes</p>
+      </div>
+      <div class="imgCardDescription">
+        <img class="imgCardDescPlato" src="../../../../../assets/images/+fotos platos digitales/menu-platosD/Platos fuertes.png">
+      </div>
+      <div>
+        <pre class="descriptionPlatoDigital">
+          {{desc}}
+        </pre>
+      </div>
+      <div (click)="sendPlato()" class="botonAgregarCard">
+        <a> <i class="fa fa-thumbs-up text-white textAgregarCard" aria-hidden="true"></i></a>
       </div>
     </div>
+
   </div>
 </div>

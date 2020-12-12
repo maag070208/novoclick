@@ -30,77 +30,65 @@
       <!--First slide-->
       <div class="carousel-item active">
         <div class="row">
-          <div class="col-md-4">
+       
+          <div *ngFor="let c of card |slice:0:3; let i = index" class="col-md-4">
             <div
-              style="border-radius: 30px; box-shadow: 2px 2px 5px #999"
+              style="
+              border-radius: 30px; 
+              box-shadow: 2px 2px 5px #999;
+              height: 185px;
+              width: 80%"
               class="card mb-2"
             >
               <img
                 class="card-img-top img-carousel"
-                src="../../../../../assets/images/paltosDigitales/platosespeciales/A-PLATOS ESPECIAL DE CONVERSION PARA.png"
+                src="{{c.img}}"
                 alt="Card image cap"
               />
               <br />
-              <h4 class="card-title text-center h5">De conversion</h4>
-              <div class="form-group text-center">
+              <h4 class="card-title text-center h5">{{c.title}}  </h4>
+               <div (click)="onSelectCard(c.id, c.desc, c.title)" class="form-group text-center">
                 <div class="form-group text-center">
-                  <input
-                    type="checkbox"
-                    id="checkboxEspeciales1"
-                  />
-                  <label for="checkboxEspeciales1"></label>
+                  <button 
+                    class="botonInput btn"
+                    id="{{c.id}}"
+                  ></button>
+                  <label for="{{c.id}}"></label>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4 clearfix d-none d-md-block">
-            <div
-              style="border-radius: 30px; box-shadow: 2px 2px 5px #999"
-              class="card mb-2"
-            >
-              <img
-                class="card-img-top img-carousel"
-                src="../../../../../assets/images/paltosDigitales/platosespeciales/B-PLATOS ESPECIALES POR OBJETIVO.png"
-                alt="Card image cap"
-              />
-              <br />
-              <h4 class="card-title text-center h5">Por objetivo</h4>
-              <div class="form-group text-center">
-                <div class="form-group text-center">
-                  <input
-                    type="checkbox"
-                    id="checkboxEspeciales2"
-                  />
-                  <label for="checkboxEspeciales2"></label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 clearfix d-none d-md-block">
-            <div
-              style="border-radius: 30px; box-shadow: 2px 2px 5px #999"
-              class="card mb-2"
-            >
-              <img
-                class="card-img-top img-carousel"
-                src="../../../../../assets/images/paltosDigitales/platosespeciales/C-PLATOS ESPECIALES INTERACTIVO.png"
-                alt="Card image cap"
-              />
-              <br>
-              <h4 class="card-title text-center h5">Interactivo</h4>
-              <div class="form-group text-center">
-                <div class="form-group text-center">
-                  <input
-                    type="checkbox"
-                    id="checkboxEspeciales3"
-                  />
-                  <label for="checkboxEspeciales3"></label>
-                </div>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </div>
     </div>
+
+
+      
+  <div id="especialesCard" class="invisibleCard">
+    <div class="titleCardDescription">
+      <h4 class="mb-2 titleCard">{{title}}</h4>
+    <p style=
+    "
+    font-size: 15px;
+    color: #17456d !important;
+    font-family: 'Roboto';
+    "
+    class="mb-2 cardSubtitle">Ingredientes</p>
+    </div>
+    <div class="imgCardDescription">
+      <img class="imgCardDescPlato" src="../../../../../assets/images/+fotos platos digitales/menu-platosD/platos especiales.png">
+    </div>
+    <div>
+      <pre class="descriptionPlatoDigital">
+        {{desc}}
+      </pre>
+    </div>
+    <div (click)="sendPlato()" class="botonAgregarCard">
+      <a> <i class="fa fa-thumbs-up text-white textAgregarCard" aria-hidden="true"></i></a>
+    </div>
+  </div>
+
+
   </div>
 </div>
